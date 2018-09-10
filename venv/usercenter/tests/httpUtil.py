@@ -26,4 +26,4 @@ if __name__ == '__main__':
                    "ymmoa_user": '{%22name%22:%22%E6%9D%8E%E4%BD%B3%E7%BE%8E%22%2C%22avatarUrl%22:%22%22%2C%22departmentName%22:%22%E5%9F%BA%E7%A1%80%E5%B9%B3%E5%8F%B0%E6%B5%8B%E8%AF%95%22%2C%22id%22:10236%2C%22jobNumber%22:%22Y0010236%22}'
                    }
         PostJson = {"env_id": 327, "token": '', "test_suite_id": "393", "test_case_datas": [{"test_case_id": 541}]}
-        post(restUrl, headers, PostJson)
+        Post(restUrl, headers, PostJson)
