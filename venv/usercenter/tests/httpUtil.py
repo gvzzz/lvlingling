@@ -1,6 +1,5 @@
 #import urllib.request
 import urllib2
-import urllib
 import json
 
 def Post(url,headers,body):
@@ -8,7 +7,7 @@ def Post(url,headers,body):
         req = urllib2.Request(url=url, data=json.dumps(body).encode(),headers=headers)
         #response = urllib.request.urlopen(req).read()
         response = urllib2.urlopen(req).read()
-        print(response.decode('utf8'))
+        #print(response.decode('utf8'))
         return response
 
 
@@ -20,7 +19,7 @@ def Get(url,data,headers):
         req = urllib2.Request(url = new_url,headers=headers)
         result = urllib2.urlopen(req)
         response = result.read()
-        print(response.decode('utf8'))
+        #print(response.decode('utf8'))
         return response.decode('utf8')
 
 
