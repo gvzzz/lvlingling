@@ -1,1 +1,0 @@
-SELECT * FROM `t_addr` WHERE address_id='80003218';
