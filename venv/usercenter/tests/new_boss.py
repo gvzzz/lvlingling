@@ -14,7 +14,7 @@ class new_boss_serviceablityTest(unittest.TestCase):
     def test_getuserinfo(self):
         triggerUrl = data.trigger_url
         triggerHeaders = data.trigger_header
-        PostJson = {"env_id": 327,"token":None, "test_suite_id": "393", "test_case_datas": [{"test_case_id": 541}]}
+        PostJson = {"env_id": 327,"token":None, "test_suite_id": "393", "test_case_datas": [{"test_case_id": 541},{"test_case_id": 83}, {"test_case_id": 84}, {"test_case_id": 493}]}
        # PostJson =
         triggerResponse = httpUtil.Post(triggerUrl,triggerHeaders,PostJson)
         triggerReponseJson = json.loads(triggerResponse)
