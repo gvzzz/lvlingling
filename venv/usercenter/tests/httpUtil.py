@@ -1,7 +1,6 @@
 import urllib.request
 import json
-import sys
-sys.path.append('venv/lib/python3.7/site-packages')
+
 def Post(url,headers,body):
         req = urllib.request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
         #req = urllib2.Request(url=url, data=json.dumps(body).encode(),headers=headers)
