@@ -1,24 +1,25 @@
-import urllib.request
+#import urllib.request
 import json
+import urllib2
 
 def Post(url,headers,body):
-        req = urllib.request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
-        #req = urllib2.Request(url=url, data=json.dumps(body).encode(),headers=headers)
-        response = urllib.request.urlopen(req).read()
-        #response = urllib2.urlopen(req).read()
-        print(response.decode('utf8'))
+        #req = urllib.request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
+        req = urllib2.Request(url=url, data=json.dumps(body).encode(),headers=headers)
+        #response = urllib.request.urlopen(req).read()
+        response = urllib2.urlopen(req).read()
+        #print(response.decode('utf8'))
         return response
 
 
 
 def Get(url,data,headers):
         new_url = url + "?" + "token="+data
-        req = urllib.request.Request(url = new_url,method="GET",headers=headers)
-        result = urllib.request.urlopen(req)
-        #req = urllib2.Request(url = new_url,headers=headers)
-        #result = urllib2.urlopen(req)
+        #req = urllib.request.Request(url = new_url,method="GET",headers=headers)
+        #result = urllib.request.urlopen(req)
+        req = urllib2.Request(url = new_url,headers=headers)
+        result = urllib2.urlopen(req)
         response = result.read()
-        print(response.decode('utf8'))
+        #print(response.decode('utf8'))
         return response.decode('utf8')
 
 
