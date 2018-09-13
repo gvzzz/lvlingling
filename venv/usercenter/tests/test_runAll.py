@@ -38,7 +38,7 @@ class runAll_sharkTest(unittest.TestCase):
         triggerResponse = httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
         triggerReponseJson = json.loads(triggerResponse)
         timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告
-        time.sleep(25)
+        time.sleep(35)
         reportUrl = data.report_url
         reportHeaders = data.report_header
         reportResponse = httpUtil.Get(reportUrl, timeData, reportHeaders)
