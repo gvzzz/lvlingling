@@ -7,16 +7,16 @@ import time
 
 
 
-class userCenter_service_sharkTest(TestCase):
+class ymm_info_app_sharkTest(TestCase):
     def test_userCenter(self):
         triggerUrl = data.trigger_url
         triggerHeaders = data.trigger_header
-        f = file('userCenter4_service.json')
+        f = file('ymm_info_app.json')
         PostJson = json.load(f)
         triggerResponse = httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
         triggerReponseJson = json.loads(triggerResponse)
         timeData = triggerReponseJson['data']     #从触发器的接口中读出返回data，去查询对应的报告
-        time.sleep(15)
+        time.sleep(10)
         reportUrl = data.report_url
         reportHeaders = data.report_header
         reportResponse = httpUtil.Get(reportUrl, timeData, reportHeaders)
