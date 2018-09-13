@@ -1,6 +1,8 @@
 #import urllib.request
 import sys
 sys.path.append("venv/usercenter/utils")
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 import json
 import urllib2
