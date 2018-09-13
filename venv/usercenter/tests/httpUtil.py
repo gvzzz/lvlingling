@@ -1,7 +1,10 @@
 #import urllib.request
-#coding:utf-8
+import sys
+sys.path.append("venv/usercenter/utils")
+
 import json
 import urllib2
+
 
 def Post(url,headers,body):
         #req = urllib.request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
@@ -21,7 +24,9 @@ def Get(url,data,headers):
         result = urllib2.urlopen(req)
         response = result.read()
         #print(response.decode('utf8'))
-
+        print response.decode('utf8')
+        print response.decode('utf8')
+        return response.decode('utf8')
 
 
 

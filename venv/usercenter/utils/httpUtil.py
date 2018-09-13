@@ -1,6 +1,11 @@
 #import urllib.request
+import sys
+sys.setdefaultencoding('utf-8')
+sys.path.append("venv/usercenter/utils")
+
 import json
 import urllib2
+
 
 def Post(url,headers,body):
         #req = urllib.request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
