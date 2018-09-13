@@ -14,6 +14,7 @@ def Post(url,headers,body):
         #response = urllib.request.urlopen(req).read()
         response = urllib2.urlopen(req).read()
         #print(response.decode('utf8'))
+        print response.decode('utf8')
         return response
 
 
@@ -26,7 +27,6 @@ def Get(url,data,headers):
         result = urllib2.urlopen(req)
         response = result.read()
         #print(response.decode('utf8'))
-        print response.decode('utf8')
         print response.decode('utf8')
         return response.decode('utf8')
 
