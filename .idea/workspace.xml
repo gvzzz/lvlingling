@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d06a37-7ff6-42a3-bc9e-a79cae198480" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/userCenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/userCenter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +20,7 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_new_boss_serviceabilityTest_py.coverage" NAME="Unittests in new_boss.py Coverage Results" MODIFIED="1536817896298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test2_py.coverage" NAME="Unittests in test2.py Coverage Results" MODIFIED="1536295122121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$httpUtils.coverage" NAME="httpUtils Coverage Results" MODIFIED="1536286284984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/ymm" />
+    <SUITE FILE_PATH="coverage/userCenter$sharkUtil.coverage" NAME="sharkUtil Coverage Results" MODIFIED="1536901391798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_runAll_py.coverage" NAME="Unittests in test_runAll.py Coverage Results" MODIFIED="1536894379615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_userCenter4_service_userCenter_service_sharkTest_test_userCenter.coverage" NAME="Unittests for userCenter4_service.userCenter_service_sharkTest.test_userCenter Coverage Results" MODIFIED="1536803169236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1536298874611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -32,8 +33,10 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest_test_new_boss.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest.test_new_boss Coverage Results" MODIFIED="1536894021060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test2_new_boss_serviceablityTest_test_getuserinfo.coverage" NAME="Unittests for test2.new_boss_serviceablityTest.test_getuserinfo Coverage Results" MODIFIED="1536296691631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_ymm_info_app_py.coverage" NAME="Unittests in ymm_info_app.py Coverage Results" MODIFIED="1536805162539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_runAllNew_runAll_sharkTest.coverage" NAME="Unittests for test_runAllNew.runAll_sharkTest Coverage Results" MODIFIED="1536902484194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_new_boss_serviceablityTest_test_getuserinfo.coverage" NAME="Unittests for test.new_boss_serviceablityTest.test_getuserinfo Coverage Results" MODIFIED="1536298860424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$test.coverage" NAME="test Coverage Results" MODIFIED="1536286328655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/ymm" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_runAllNew_runAll_sharkTest_test_new_boss.coverage" NAME="Unittests for test_runAllNew.runAll_sharkTest.test_new_boss Coverage Results" MODIFIED="1536902451632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_doorkeeper_center.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center Coverage Results" MODIFIED="1536893995730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_new_boss__py.coverage" NAME="Unittests in userCenter4_service1.py Coverage Results" MODIFIED="1536748068313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_new_boss_serviceabilityTest_new_boss_serviceablityTest.coverage" NAME="Unittests for new_boss_serviceabilityTest.new_boss_serviceablityTest Coverage Results" MODIFIED="1536299466929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -47,6 +50,7 @@
     <SUITE FILE_PATH="coverage/userCenter$readJson.coverage" NAME="readJson Coverage Results" MODIFIED="1536754291135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_new_boss_new_boss_sharkTest_test_new_boss.coverage" NAME="Unittests for new_boss.new_boss_sharkTest.test_new_boss Coverage Results" MODIFIED="1536754425469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_check_service.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest.test_uc_check_service Coverage Results" MODIFIED="1536832868070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_runAllNew_py.coverage" NAME="Unittests in test_runAllNew.py Coverage Results" MODIFIED="1536902575142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1460193236">
@@ -64,30 +68,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="2" />
-          <entry key="json" value="13" />
-          <entry key="py" value="58" />
+          <entry key="json" value="14" />
+          <entry key="py" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="2" />
-          <entry key="JSON" value="13" />
-          <entry key="Python" value="58" />
+          <entry key="JSON" value="14" />
+          <entry key="Python" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="62" />
           <entry key="json" value="203" />
-          <entry key="py" value="2406" />
-          <entry key="txt" value="158" />
+          <entry key="py" value="3019" />
+          <entry key="txt" value="166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="203" />
-          <entry key="PLAIN_TEXT" value="220" />
-          <entry key="Python" value="2406" />
+          <entry key="PLAIN_TEXT" value="228" />
+          <entry key="Python" value="3019" />
         </counts>
       </usages-collector>
     </session>
@@ -97,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="223">
               <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
@@ -107,15 +111,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="393">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="e#14#29#0" expanded="true" />
-                <marker date="1536894816607" expanded="true" signature="134:4710" ph="..." />
+                <marker date="1536898526313" expanded="true" signature="134:4713" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+              <folding>
+                <marker date="1536903040111" expanded="true" signature="208:217" ph="..." />
+                <marker date="1536903040111" expanded="true" signature="263:268" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -123,10 +149,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="679">
+              <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#14#29#0" expanded="true" />
+                <marker date="1536902573288" expanded="true" signature="1115:1689" ph="..." />
               </folding>
             </state>
           </provider>
@@ -135,17 +162,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/uc_doorkeeper_center.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -155,15 +173,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_userCenter_app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-560">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -208,6 +217,7 @@
     <findStrings>
       <find>user</find>
       <find>ymm_userCenter_app</find>
+      <find>info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,7 +234,6 @@
         <option value="$PROJECT_DIR$/venv/usercenter/ymm/test2.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test2.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/data.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/data/new_boss.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/new_boss_serviceabilityTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter4.x-service.py" />
@@ -247,15 +256,17 @@
         <option value="$PROJECT_DIR$/venv/usercenter/tests/runAll.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/testrunAll.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/tes_trunAll.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/authenticate_service.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_userCenter_app.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/uc_check_service.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/uc_doorkeeper_center.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/data.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" />
       </list>
     </option>
   </component>
@@ -389,8 +400,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_runAll.py">
-    <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_new_boss" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in test_runAllNew.py">
+    <configuration name="sharkUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="userCenter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_runAllNew.runAll_sharkTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -401,11 +434,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_New_boss.new_boss_sharkTest.test_new_boss&quot;" />
+      <option name="_new_target" value="&quot;test_runAllNew.runAll_sharkTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_uc_check_service" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_runAllNew.runAll_sharkTest.test_new_boss" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,11 +449,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_New_boss.new_boss_sharkTest.test_uc_check_service&quot;" />
+      <option name="_new_target" value="&quot;test_runAllNew.runAll_sharkTest.test_new_boss&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_runAllNew.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,22 +464,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_New_boss.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="userCenter" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -466,19 +484,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_New_boss.py" />
-      <item itemvalue="Python tests.Unittests for test_New_boss.new_boss_sharkTest.test_uc_check_service" />
-      <item itemvalue="Python tests.Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center" />
-      <item itemvalue="Python tests.Unittests for test_New_boss.new_boss_sharkTest.test_new_boss" />
       <item itemvalue="Python tests.Unittests in test_runAll.py" />
+      <item itemvalue="Python tests.Unittests in test_runAllNew.py" />
+      <item itemvalue="Python.sharkUtil" />
+      <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest.test_new_boss" />
+      <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_runAllNew.py" />
+        <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest" />
+        <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest.test_new_boss" />
+        <item itemvalue="Python.sharkUtil" />
         <item itemvalue="Python tests.Unittests in test_runAll.py" />
-        <item itemvalue="Python tests.Unittests in test_New_boss.py" />
-        <item itemvalue="Python tests.Unittests for test_New_boss.new_boss_sharkTest.test_new_boss" />
-        <item itemvalue="Python tests.Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center" />
-        <item itemvalue="Python tests.Unittests for test_New_boss.new_boss_sharkTest.test_uc_check_service" />
       </list>
     </recent_temporary>
   </component>
@@ -675,51 +693,58 @@
       <option name="project" value="LOCAL" />
       <updated>1536838970217</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="提一下方法">
+      <created>1536894956582</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1536894956582</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_New_boss_py - 2018.09.13 at 17h 57m 11s.xml">
-      <configuration name="Unittests in test_New_boss.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_check_service - 2018.09.13 at 18h 01m 24s.xml">
-      <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_uc_check_service" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_doorkeeper_center - 2018.09.13 at 18h 06m 44s.xml">
-      <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_New_boss_py - 2018.09.13 at 18h 07m 56s.xml">
-      <configuration name="Unittests in test_New_boss.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_New_boss_py - 2018.09.13 at 18h 08m 53s.xml">
-      <configuration name="Unittests in test_New_boss.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_New_boss_py - 2018.09.14 at 10h 59m 16s.xml">
-      <configuration name="Unittests in test_New_boss.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_doorkeeper_center - 2018.09.14 at 10h 59m 56s.xml">
-      <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_New_boss_new_boss_sharkTest_test_new_boss - 2018.09.14 at 11h 00m 21s.xml">
-      <configuration name="Unittests for test_New_boss.new_boss_sharkTest.test_new_boss" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_New_boss_py - 2018.09.14 at 11h 01m 18s.xml">
       <configuration name="Unittests in test_New_boss.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_runAll_py - 2018.09.14 at 11h 11m 32s.xml">
       <configuration name="Unittests in test_runAll.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_runAllNew_py - 2018.09.14 at 12h 38m 36s.xml">
+      <configuration name="Unittests in test_runAllNew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_runAllNew_py - 2018.09.14 at 12h 42m 40s.xml">
+      <configuration name="Unittests in test_runAllNew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_runAllNew_py - 2018.09.14 at 12h 54m 51s.xml">
+      <configuration name="Unittests in test_runAllNew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_runAllNew_py - 2018.09.14 at 13h 00m 21s.xml">
+      <configuration name="Unittests in test_runAllNew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_runAllNew_py - 2018.09.14 at 13h 05m 31s.xml">
+      <configuration name="Unittests in test_runAllNew.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_runAllNew_runAll_sharkTest_test_new_boss - 2018.09.14 at 13h 20m 52s.xml">
+      <configuration name="Unittests for test_runAllNew.runAll_sharkTest.test_new_boss" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_runAllNew_runAll_sharkTest - 2018.09.14 at 13h 21m 24s.xml">
+      <configuration name="Unittests for test_runAllNew.runAll_sharkTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_runAllNew_py - 2018.09.14 at 13h 26m 42s.xml">
+      <configuration name="Unittests in test_runAllNew.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1260" height="722" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27422002" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27422002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -758,7 +783,8 @@
     <MESSAGE value="utf8" />
     <MESSAGE value="补充了用户中心的服务的case" />
     <MESSAGE value="增加时长" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加时长" />
+    <MESSAGE value="提一下方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="提一下方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -777,6 +803,11 @@
           <url>file://$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py</url>
           <line>46</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -968,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/authenticate_service.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1017,16 +1041,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/new_boss.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="223">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
@@ -1035,30 +1073,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="393">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#14#29#0" expanded="true" />
+            <marker date="1536898526313" expanded="true" signature="134:4713" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/new_boss.json">
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="679">
+          <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
+            <marker date="1536902573288" expanded="true" signature="1115:1689" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py">
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+        <state relative-caret-position="193">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
           <folding>
-            <element signature="e#14#29#0" expanded="true" />
-            <marker date="1536894816607" expanded="true" signature="134:4710" ph="..." />
+            <marker date="1536903040111" expanded="true" signature="208:217" ph="..." />
+            <marker date="1536903040111" expanded="true" signature="263:268" ph="..." />
           </folding>
         </state>
       </provider>
