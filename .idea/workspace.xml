@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d06a37-7ff6-42a3-bc9e-a79cae198480" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/usercenter/tests/triggerbody.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/userCenter$httpUtil.coverage" NAME="httpUtil Coverage Results" MODIFIED="1536572021959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
+    <SUITE FILE_PATH="coverage/userCenter$httpUtil.coverage" NAME="httpUtil Coverage Results" MODIFIED="1536906579303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_userCenter4_service_py.coverage" NAME="Unittests in userCenter4_service.py Coverage Results" MODIFIED="1536817259027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_new_boss_serviceabilityTest_py.coverage" NAME="Unittests in new_boss.py Coverage Results" MODIFIED="1536817896298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test2_py.coverage" NAME="Unittests in test2.py Coverage Results" MODIFIED="1536295122121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$httpUtils.coverage" NAME="httpUtils Coverage Results" MODIFIED="1536286284984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/ymm" />
-    <SUITE FILE_PATH="coverage/userCenter$sharkUtil.coverage" NAME="sharkUtil Coverage Results" MODIFIED="1536901391798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
+    <SUITE FILE_PATH="coverage/userCenter$sharkUtil.coverage" NAME="sharkUtil Coverage Results" MODIFIED="1537013303311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_runAll_py.coverage" NAME="Unittests in test_runAll.py Coverage Results" MODIFIED="1536894379615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_userCenter4_service_userCenter_service_sharkTest_test_userCenter.coverage" NAME="Unittests for userCenter4_service.userCenter_service_sharkTest.test_userCenter Coverage Results" MODIFIED="1536803169236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1536298874611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -68,30 +69,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="2" />
-          <entry key="json" value="14" />
-          <entry key="py" value="59" />
+          <entry key="json" value="16" />
+          <entry key="py" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="2" />
-          <entry key="JSON" value="14" />
-          <entry key="Python" value="59" />
+          <entry key="JSON" value="16" />
+          <entry key="Python" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="62" />
-          <entry key="json" value="203" />
-          <entry key="py" value="3019" />
-          <entry key="txt" value="166" />
+          <entry key="json" value="230" />
+          <entry key="py" value="4456" />
+          <entry key="txt" value="178" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="203" />
-          <entry key="PLAIN_TEXT" value="228" />
-          <entry key="Python" value="3019" />
+          <entry key="JSON" value="230" />
+          <entry key="PLAIN_TEXT" value="240" />
+          <entry key="Python" value="4456" />
         </counts>
       </usages-collector>
     </session>
@@ -101,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="88">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
                 <marker date="1536894021053" expanded="true" signature="107:585" ph="..." />
@@ -111,68 +112,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-              <folding>
-                <element signature="e#14#29#0" expanded="true" />
-                <marker date="1536898526313" expanded="true" signature="134:4713" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
-              <folding>
-                <marker date="1536903040111" expanded="true" signature="208:217" ph="..." />
-                <marker date="1536903040111" expanded="true" signature="263:268" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+            <state relative-caret-position="140">
+              <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
               <folding>
-                <element signature="e#14#29#0" expanded="true" />
-                <marker date="1536902573288" expanded="true" signature="1115:1689" ph="..." />
+                <element signature="e#23#38#0" expanded="true" />
+                <marker date="1537013328675" expanded="true" signature="1773:2526" ph="..." />
+                <marker date="1537013328675" expanded="true" signature="2543:3117" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/data.py">
+        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="124">
+              <caret line="238" selection-start-line="238" selection-end-line="238" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/uc_check_service.json">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/triggerbody.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -180,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/new_boss.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="21" />
+            <state>
+              <caret selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -189,17 +156,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="31" />
+            <state relative-caret-position="254">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -250,7 +217,6 @@
         <option value="$PROJECT_DIR$/venv/usercenter/tests/new_boss.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_admin_app.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/new_boss_userCenter.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_Ymm_admin_app.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/runAll.py" />
@@ -260,13 +226,15 @@
         <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_userCenter_app.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/uc_check_service.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/uc_doorkeeper_center.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/data.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/data.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/triggerbody.json" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
       </list>
     </option>
   </component>
@@ -400,7 +368,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_runAllNew.py">
+  <component name="RunManager" selected="Python.sharkUtil">
+    <configuration name="httpUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="userCenter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="sharkUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -468,35 +458,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_runAll.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="userCenter" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_runAll.py" />
       <item itemvalue="Python tests.Unittests in test_runAllNew.py" />
       <item itemvalue="Python.sharkUtil" />
       <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest.test_new_boss" />
       <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest" />
+      <item itemvalue="Python.httpUtil" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sharkUtil" />
+        <item itemvalue="Python.httpUtil" />
         <item itemvalue="Python tests.Unittests in test_runAllNew.py" />
         <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest" />
         <item itemvalue="Python tests.Unittests for test_runAllNew.runAll_sharkTest.test_new_boss" />
-        <item itemvalue="Python.sharkUtil" />
-        <item itemvalue="Python tests.Unittests in test_runAll.py" />
       </list>
     </recent_temporary>
   </component>
@@ -700,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536894956582</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="触发后统一等">
+      <created>1536903066517</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1536903066517</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -754,7 +736,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32857144" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -784,7 +766,8 @@
     <MESSAGE value="补充了用户中心的服务的case" />
     <MESSAGE value="增加时长" />
     <MESSAGE value="提一下方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="提一下方法" />
+    <MESSAGE value="触发后统一等" />
+    <option name="LAST_COMMIT_MESSAGE" value="触发后统一等" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,6 +791,21 @@
           <url>file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py</url>
           <line>21</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -878,13 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4530">
           <caret line="326" column="19" selection-start-line="326" selection-start-column="19" selection-end-line="326" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
         </state>
       </provider>
     </entry>
@@ -1020,10 +1011,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <marker date="1536903040111" expanded="true" signature="208:217" ph="..." />
+            <marker date="1536903040111" expanded="true" signature="263:268" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_info_app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="253">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1031,45 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/new_boss.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <marker date="1536894021053" expanded="true" signature="107:585" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,24 +1047,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/ymm_reference_app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+        <state relative-caret-position="43">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="e#14#29#0" expanded="true" />
-            <marker date="1536902573288" expanded="true" signature="1115:1689" ph="..." />
+            <element signature="e#15#30#0" expanded="true" />
+            <marker date="1536894021053" expanded="true" signature="107:585" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py">
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/triggerbody.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/new_boss.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
           <folding>
-            <marker date="1536903040111" expanded="true" signature="208:217" ph="..." />
-            <marker date="1536903040111" expanded="true" signature="263:268" ph="..." />
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1537013328675" expanded="true" signature="1773:2526" ph="..." />
+            <marker date="1537013328675" expanded="true" signature="2543:3117" ph="..." />
           </folding>
         </state>
       </provider>
