@@ -3,7 +3,7 @@ import httpUtil
 import data
 import json
 import time
-import numpy as np
+
 
 #触发shark平台
 def trigger(test_suite_id):
