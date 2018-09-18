@@ -6,7 +6,8 @@ import time
 import sharkUtil
 
 
-
+list_sucess = []
+list_fail = []
 
 class runAll_sharkTest(unittest.TestCase):
     list = sharkUtil.triggerAll()
@@ -22,6 +23,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_newBoss)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_progress, 0, msg="new_boss有正在执行的项目"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_newBoss)
         #self.assertEqual(total_run_failed, 0, msg="new_boss执行失败")
 
@@ -30,6 +34,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_userCenter)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="new_boss有正在执行的项目"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_userCenter)
         #self.assertEqual(total_run_progress, 0, msg="userCenter有正在执行的项目")
 
@@ -39,6 +46,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_ymm_admin_app)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="ymm_admin_app有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_ymm_admin_app)
         #self.assertEqual(total_run_progress, 0, msg="ymm_admin_app有正在执行的项目")
 
@@ -47,6 +57,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_ymm_info_app)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="ymm_info_app有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_ymm_info_app)
         #self.assertEqual(total_run_progress, 0, msg="ymm_info_app有正在执行的项目")
 
@@ -55,6 +68,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_ymm_reference_app)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="ymm_reference_app有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_ymm_reference_app)
         #self.assertEqual(total_run_progress, 0, msg="ymm_reference_app有正在执行的项目")
 
@@ -63,6 +79,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_authenticate_service)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="authenticate_service有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_authenticate_service)
         #self.assertEqual(total_run_progress, 0, msg="authenticate_service有正在执行的项目")
 
@@ -71,6 +90,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_ymm_userCenter_app)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="ymm_userCenter_app有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_ymm_userCenter_app)
         #self.assertEqual(total_run_progress, 0, msg="ymm_userCenter_app有正在执行的项目")
 
@@ -79,6 +101,9 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_uc_check_service)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="uc_check_service有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_uc_check_service)
         #self.assertEqual(total_run_progress, 0, msg="uc_check_service有正在执行的项目")
 
@@ -87,8 +112,13 @@ class runAll_sharkTest(unittest.TestCase):
         reporteponseJson = sharkUtil.queryReport(timeData_uc_doorkeeper_center)
         total_run_failed = reporteponseJson['data']['summary']['total_run_failed']
         total_run_progress = reporteponseJson['data']['summary']['total_run_progress']
+        total_run_success = reporteponseJson['data']['summary']['total_run_success']
+        list_sucess.append(total_run_success)
+        list_fail.append(total_run_failed)
         self.assertEqual(total_run_failed, 0, msg="uc_doorkeeper_center有执行失败的case"+"报告地址："+"http://shark.ymmoa.com/#/report/report?token="+timeData_uc_doorkeeper_center)
         #self.assertEqual(total_run_progress, 0, msg="uc_doorkeeper_center有正在执行的项目")
+
+
 
 
 

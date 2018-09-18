@@ -68,7 +68,18 @@ def rebuildJson(test_suite_id):
 
     #test_case_dataArray = newTestList
 
-
+#跑一个组的case
+def runGroupASync(postJson):
+    triggerUrl = data.runGroupASync_url
+    triggerHeaders = data.runGroupASync_header
+    # f = file(jsonName)
+    # PostJson = json.load(f)
+    PostJson = postJson
+    triggerResponse = httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
+    triggerReponseJson = json.loads(triggerResponse)
+    timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告
+    print timeData
+    return timeData
 
 
 
@@ -118,5 +129,8 @@ if __name__ == '__main__':
     #queryTestIdBytest_suite_id(393)
     #rebuildJson(393)
     list = []
+    total_sucess = 0
     list =[606, 525, 526, 527, 529, 531, 532, 535, 536, 537, 538, 539, 540, 542, 543, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 560, 561, 563, 564, 565, 569, 581, 582, 583, 584, 585, 586, 587, 591, 596, 597, 603, 654, 655, 657, 696, 697, 701, 702, 703, 704, 707, 709]
-    print len(list)
+    for i in range(len(list)):
+        total_sucess = total_sucess+list[i]
+    print total_sucess
