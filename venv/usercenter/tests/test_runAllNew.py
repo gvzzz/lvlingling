@@ -1,7 +1,5 @@
 #coding:utf-8
 import unittest
-import data
-import json
 import time
 import sharkUtil
 

@@ -1,19 +1,26 @@
 # -*- coding:utf-8 -*-
-import httpUtil
-import data
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+import data.requestData
+import utils.httpUtil
 import json
 import time
 
 
+
+
 #触发shark平台
 def trigger(test_suite_id):
-    triggerUrl = data.trigger_url
-    triggerHeaders = data.trigger_header
+    triggerUrl = data.requestData.trigger_url
+    triggerHeaders = data.requestData.trigger_header
     #f = file(jsonName)
     #PostJson = json.load(f)
     PostJson = rebuildJson(test_suite_id)
 
-    triggerResponse = httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
+    triggerResponse = utils.httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
     triggerReponseJson = json.loads(triggerResponse)
     timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告
     print timeData
@@ -21,20 +28,20 @@ def trigger(test_suite_id):
 
 #查询报告
 def queryReport(timeData):
-    reportUrl = data.report_url
-    reportHeaders = data.report_header
-    reportResponse = httpUtil.Get(reportUrl, timeData, reportHeaders)
+    reportUrl = data.requestData.report_url
+    reportHeaders = data.requestData.report_header
+    reportResponse = utils.httpUtil.Get(reportUrl, timeData, reportHeaders)
     reporteponseJson = json.loads(reportResponse)
     return reporteponseJson
 
 
 #按照test_suite_id查询需要每日dayliy的testId的数组
 def queryTestIdBytest_suite_id(test_suite_id):
-    queryTestIdBytest_suite_id_url = data.queryTestId_url
-    queryTestIdBytest_suite_id_header = data.queryTestId_header
+    queryTestIdBytest_suite_id_url = data.requestData.queryTestId_url
+    queryTestIdBytest_suite_id_header = data.requestData.queryTestId_header
     PostJson = {"operation": "query", "data": {"test_suite_id": "0"}}
     PostJson['data']['test_suite_id']= test_suite_id
-    queryTestIdResponse = httpUtil.Post(queryTestIdBytest_suite_id_url, queryTestIdBytest_suite_id_header, PostJson)
+    queryTestIdResponse = utils.httpUtil.Post(queryTestIdBytest_suite_id_url, queryTestIdBytest_suite_id_header, PostJson)
     queryTestIdResponseJson = json.loads(queryTestIdResponse)
     childrenArray = json.loads(json.dumps(queryTestIdResponseJson['data'][0]['children'], ensure_ascii=False))   #把children那层遍历出来
     print childrenArray[1]
@@ -70,12 +77,12 @@ def rebuildJson(test_suite_id):
 
 #跑一个组的case
 def runGroupASync(postJson):
-    triggerUrl = data.runGroupASync_url
-    triggerHeaders = data.runGroupASync_header
+    triggerUrl = data.requestData.runGroupASync_url
+    triggerHeaders = data.requestData.runGroupASync_header
     # f = file(jsonName)
     # PostJson = json.load(f)
     PostJson = postJson
-    triggerResponse = httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
+    triggerResponse = utils.httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
     triggerReponseJson = json.loads(triggerResponse)
     timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告
     print timeData
@@ -96,15 +103,15 @@ def runGroupASync(postJson):
 
 def triggerAll():
     list = []
-    timeData_newBoss = trigger(data.new_boss_test_suite_id)
-    timeData_userCenter = trigger(data.userCenter4_service_test_suite_id)
-    timeData_ymm_admin_app = trigger(data.ymm_admin_app_test_suite_id)
-    timeData_ymm_info_app = trigger(data.ymm_info_app_test_suite_id)
-    timeData_ymm_reference_app = trigger(data.ymm_reference_app_test_suite_id)
-    timeData_authenticate_service = trigger(data.authenticate_service_test_suite_id)
-    timeData_ymm_userCenter_app = trigger(data.ymm_userCenter_app_test_suite_id)
-    timeData_uc_check_service = trigger(data.uc_check_service_test_suite_id)
-    timeData_uc_doorkeeper_center = trigger(data.uc_doorkeeper_center_test_suite_id)
+    timeData_newBoss = trigger(data.requestData.new_boss_test_suite_id)
+    timeData_userCenter = trigger(data.requestData.userCenter4_service_test_suite_id)
+    timeData_ymm_admin_app = trigger(data.requestData.ymm_admin_app_test_suite_id)
+    timeData_ymm_info_app = trigger(data.requestData.ymm_info_app_test_suite_id)
+    timeData_ymm_reference_app = trigger(data.requestData.ymm_reference_app_test_suite_id)
+    timeData_authenticate_service = trigger(data.requestData.authenticate_service_test_suite_id)
+    timeData_ymm_userCenter_app = trigger(data.requestData.ymm_userCenter_app_test_suite_id)
+    timeData_uc_check_service = trigger(data.requestData.uc_check_service_test_suite_id)
+    timeData_uc_doorkeeper_center = trigger(data.requestData.uc_doorkeeper_center_test_suite_id)
     list.append(timeData_newBoss)
     time.sleep(5)
     list.append(timeData_userCenter)
