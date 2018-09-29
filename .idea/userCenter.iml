@@ -3,9 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/tests" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/requestdata" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/utils" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/usercenter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/base" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
