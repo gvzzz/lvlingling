@@ -22,3 +22,14 @@ ymm_reference_app_test_suite_id = 438
 ymm_userCenter_app_test_suite_id =512
 
 
+#服务的url
+qa = "http://qa.ymm56.com"
+dev = "http://dev.ymm56.com"
+#new_boss
+getuserstatus_request = "/new_boss/users/getuserstatus"
+getuserstatus_header_qa= {"Content-Type": 'application/json',"Authorization":"Basic YV83MDo0OWRjNTJlNmJmMmFiZTVlZjZlMmJiNWIwZjFlZTJkNzY1YjkyMmFlNmNjOGI5NWQzOWRjMDZjMjFjODQ4Zjhj"}
+getuserstatus_header_dev={"Content-Type": 'application/json',"Authorization":"Basic YV83MDo0OWRjNTJlNmJmMmFiZTVlZjZlMmJiNWIwZjFlZTJkNzY1YjkyMmFlNmNjOGI5NWQzOWRjMDZjMjFjODQ4Zjhj"}
+
+
+#userCenter_app
+getShipperInfo_request = "/ymm-userCenter-app/authenticate/getShipperInfo"
