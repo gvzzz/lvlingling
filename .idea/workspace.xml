@@ -1,30 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8d06a37-7ff6-42a3-bc9e-a79cae198480" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/base/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/base/new_boss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_qa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/data/getuserstatus_body_dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/data/getuserstatus_body_qa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/serviceability/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/serviceability/test_dev.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/usercenter/utils/getAuth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/data/requestData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/httpUtil.py" beforeDir="false" />
+    <list default="true" id="d8d06a37-7ff6-42a3-bc9e-a79cae198480" name="Default Changelist" comment="新增可用性case">
       <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/test_New_boss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/utils/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/utils/readJson.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,21 +78,21 @@
         <counts>
           <entry key="cfg" value="2" />
           <entry key="json" value="34" />
-          <entry key="py" value="137" />
+          <entry key="py" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="2" />
           <entry key="JSON" value="34" />
-          <entry key="Python" value="137" />
+          <entry key="Python" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="94" />
           <entry key="json" value="247" />
-          <entry key="py" value="7120" />
+          <entry key="py" value="7126" />
           <entry key="txt" value="244" />
         </counts>
       </usages-collector>
@@ -122,13 +100,39 @@
         <counts>
           <entry key="JSON" value="247" />
           <entry key="PLAIN_TEXT" value="338" />
-          <entry key="Python" value="7120" />
+          <entry key="Python" value="7126" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-166">
+              <caret line="113" column="44" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
+              <folding>
+                <element signature="e#23#33#0" expanded="true" />
+                <marker date="1538217645560" expanded="true" signature="2044:2979" ph="..." />
+                <marker date="1538217645560" expanded="true" signature="2541:2979" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/getAuth.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,16 +169,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="253">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/data/requestData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="253">
               <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
@@ -253,7 +266,6 @@
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_runAllNew.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/requestdata/__init__.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/data/getuserstatus.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/test_runAll.py" />
@@ -273,6 +285,7 @@
         <option value="$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_qa.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_dev.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py" />
       </list>
     </option>
   </component>
@@ -764,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537238579708</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="新增可用性case">
+      <created>1538216920799</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1538216920800</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -810,14 +830,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1260" height="722" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21346469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -826,7 +845,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -979,16 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/readJson.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1016,27 +1025,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/data/requestData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/base/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-            <marker date="1537528827253" expanded="true" signature="2079:3024" ph="..." />
-            <marker date="1537528827253" expanded="true" signature="2576:3024" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/common.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1128,19 +1118,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="253">
           <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/data/requestData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/sharkUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="113" column="44" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+            <marker date="1538217645560" expanded="true" signature="2044:2979" ph="..." />
+            <marker date="1538217645560" expanded="true" signature="2541:2979" ph="..." />
           </folding>
         </state>
       </provider>
