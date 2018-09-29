@@ -14,9 +14,10 @@ class runAll_Test(unittest.TestCase):
     def test_All_UserCenter(self):
         runGroupASync_postJson = data.requestData.runGroupASync_postJson
         timeData = sharkUtil.runGroupASync(runGroupASync_postJson)
-        #timeData = "2018-09-18-10-28-32_87"
+        #timeData = "2018-09-29-19-04-20_19"
         time.sleep(180)
         reporteponseJson = sharkUtil.queryReport(timeData)
+        print  reporteponseJson
         childrenArray =  reporteponseJson["data"]["summary"]["children"]
         for i in range(len(childrenArray)):
             self.assertEqual(childrenArray[i]["summary_info"]["total_failed"], 0,
