@@ -2,7 +2,10 @@
 #从wrench平台获取auth头 参考林放的接口
 
 import httpUtil
-def setenv(phone,usertype,env):
+
+
+#获取司机或者货主的auth头
+def generateAuthApi(phone,usertype,env):
     request_url = "http://qa.ymmoa.com/wrench/ymm/GenerateAuthApi"
     headers = {"Content-Type": 'application/json'}
     data = {}
@@ -13,6 +16,7 @@ def setenv(phone,usertype,env):
     return response
 
 
+
 if __name__ == '__main__':
-    setenv(13057580010,1,"dev")
+    generateAuthApi(13057580010,1,"dev")
 

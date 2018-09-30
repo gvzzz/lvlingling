@@ -33,3 +33,10 @@ getuserstatus_header_dev={"Content-Type": 'application/json',"Authorization":"Ba
 
 #userCenter_app
 getShipperInfo_request = "/ymm-userCenter-app/authenticate/getShipperInfo"
+
+#info_app
+getDriverInfo_request = "/ymm-info-app/authenticate/getDriverInfo"
+
+
+#reference_app
+getCopilotlist_request = "/ymm-reference-app/copilot/list"
