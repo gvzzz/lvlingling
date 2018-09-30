@@ -12,23 +12,15 @@ import utils.getAuth
 #qa和dev环境的 域名头  body里面的json数据  头文件的鉴权都不一样 所以需要把三个参数提出来写
 def getuserstatus(env_url,path):
     request_url = env_url+ data.requestData.getuserstatus_request
-    if env_url.find("qa") >= 0:
-        env = "beta"
-    else :
-        env = "dev"
     f = open(path, "rb")
     PostJson = json.load(f)
-    phone = PostJson["telephone"]
-    usertype = PostJson["userType"]
-    authJson = utils.getAuth.setenv(phone, usertype, env)
-    headers = {}
-    headers["Content-Type"] = 'application/json'
-    headers["Authorization"] = json.loads(authJson)['auth']
-    print headers
-    response = utils.httpUtil.Post(request_url, headers, PostJson)
+    header = PostJson["header"]
+    body = PostJson["body"]
+    response = utils.httpUtil.Post(request_url, header, body)
     print response
+    return response
 
 if __name__ == '__main__':
-    env_url = data.requestData.qa
-    path = "../data/getuserstatus_qa.json"
+    env_url = data.requestData.dev
+    path = "../data/getuserstatus_dev.json"
     getuserstatus(env_url,path)

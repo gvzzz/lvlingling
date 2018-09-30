@@ -8,9 +8,11 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 import utils.httpUtil
 import utils.getAuth
+
+
 #qa和dev环境的 域名头  body里面的json数据  头文件的鉴权都不一样 所以需要把三个参数提出来写
-def getShipperInfo(env_url,path):
-    request_url = env_url+ data.requestData.getShipperInfo_request
+def getDriverInfo(env_url,path):
+    request_url = env_url+ data.requestData.getDriverInfo_request
     if env_url.find("qa") >= 0:
         env = "beta"
     else :
@@ -32,5 +34,5 @@ def getShipperInfo(env_url,path):
 
 if __name__ == '__main__':
     env_url = data.requestData.qa
-    path = "../data/getShipperInfo_qa.json"
-    getShipperInfo(env_url,path)
+    path = "../data/getDriverInfo_qa.json"
+    getDriverInfo(env_url,path)
