@@ -7,7 +7,7 @@ import json
 
 #获取IP和端口号
 def get_pigon_ip_and_port(service_name, env):
-    request_url = 'http://docker-beidou.ymmoa.com/internal/api/get_service_port/?name={}'.format(service_name)
+    request_url = 'http://docker-beidou.ymmoa.com/internal/api/get_service_port/?name={0}'.format(service_name)
     headers = {}
     response = httpUtil.Get(request_url,headers)
     responseToJson = json.loads(response)
