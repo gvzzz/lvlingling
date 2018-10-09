@@ -40,3 +40,7 @@ getDriverInfo_request = "/ymm-info-app/authenticate/getDriverInfo"
 
 #reference_app
 getCopilotlist_request = "/ymm-reference-app/copilot/list"
+
+
+#admin_app
+findByTelephone_request = "/ymm-admin-app/audit/review/findByTelephone"
