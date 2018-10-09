@@ -14,6 +14,7 @@ import base.reference_app
 import base.userCenter4x_service
 import base.uc_check_service
 import base.uc_doorkeeper_center
+import base.admin_app
 import base.authenticate_service
 import utils.getIpPort
 
