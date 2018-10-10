@@ -16,6 +16,8 @@ import base.uc_check_service
 import base.uc_doorkeeper_center
 import base.admin_app
 import base.authenticate_service
+import base.uc_auth_center
+import base.verifycode_service
 import utils.getIpPort
 
 
@@ -66,7 +68,7 @@ class runAll_Test(unittest.TestCase):
         self.assertNotEqual(len(responseJson),0,"qa环境uc_check_service可用性运行失败")
 
 
-    def test_qa_uc_check_service(self):
+    def test_qa_doorkeeper_center(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-doorkeeper-center","qa")
         responseJson = base.uc_doorkeeper_center.selectByAccountId(http_host, "0")
         self.assertNotEqual(len(responseJson),0,"qa环境uc-doorkeeper-center可用性运行失败")
@@ -75,6 +77,17 @@ class runAll_Test(unittest.TestCase):
         http_host = utils.getIpPort.get_pigon_ip_and_port("authenticate-service","qa")
         responseJson = base.authenticate_service.findByCertifyIDAndCertifyNameV2(http_host, "410101196709012881","哒哒","1")
         self.assertNotEqual(len(responseJson),0,"qa环境authenticate-service可用性运行失败")
+
+    def test_qa_uc_auth_center(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","qa")
+        responseJson = base.uc_auth_center.findUserBlacklistInfo(http_host,"2")
+        self.assertNotEqual(len(responseJson),0,"qa环境uc-auth-center可用性运行失败")
+
+
+    def test_qa_verifycode_service(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-verifycode-service","qa")
+        responseJson = base.verifycode_service.querySMSVerifyCode(http_host,"2")
+        self.assertNotEqual(len(responseJson),0,"qa环境verifycode_service可用性运行失败")
 
 
 if __name__ == '__main__':
