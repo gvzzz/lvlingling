@@ -18,6 +18,8 @@ import base.uc_doorkeeper_center
 import base.authenticate_service
 import base.uc_auth_center
 import base.verifycode_service
+import base.useraudit_service
+import base.user_reference_service
 import utils.getIpPort
 
 
@@ -89,7 +91,18 @@ class runAll_Test(unittest.TestCase):
     def test_dev_verifycode_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-verifycode-service","dev")
         responseJson = base.verifycode_service.querySMSVerifyCode(http_host,"2")
-        self.assertNotEqual(len(responseJson),0,"dev环境verifycode_service可用性运行失败")
+        self.assertNotEqual(len(responseJson),0,"dev环境verifycode-service可用性运行失败")
+
+    def test_dev_useraudit_service(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-useraudit-service", "qa")
+        responseJson = base.useraudit_service.getAuditors(http_host)
+        self.assertNotEqual(len(responseJson), 0, "dev环境ymm-useraudit-service可用性运行失败")
+
+        # 最好看下代码的接口原型 看了4080无论如何传参，虽然能调通但是结果都是null
+    def test_dev_user_reference_service(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("user-reference-service", "dev")
+        responseJson = base.user_reference_service.findByUserId(http_host, "")
+    # self.assertNotEqual(len(responseJson), 0, "qa环境user-reference-service可用性运行失败")
 
 
 if __name__ == '__main__':
