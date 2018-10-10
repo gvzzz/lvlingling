@@ -8,9 +8,20 @@ sys.path.append(rootPath)
 import time
 import sharkUtil
 import data.requestData
+import base.admin_app
 
 
 class runAll_Test(unittest.TestCase):
+
+    #专门跑408的问题
+    def test_qa_408(self):
+        path_base = os.path.abspath('..')  #获取上级目录
+        path = path_base + "/data/getTelephoneAudit_qa.json"     #拼成绝对路径
+        env_url = "http://qa.ymmoa.com"
+        for i in range(1000):
+            responseJson= base.admin_app.getTelephoneAudit(env_url, path)
+            self.assertNotEqual(len(responseJson), 0, "专门跑408运行失败")
+
     def test_All_UserCenter(self):
         runGroupASync_postJson = data.requestData.runGroupASync_postJson
         timeData = sharkUtil.runGroupASync(runGroupASync_postJson)
