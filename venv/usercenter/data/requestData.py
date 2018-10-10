@@ -44,3 +44,4 @@ getCopilotlist_request = "/ymm-reference-app/copilot/list"
 
 #admin_app
 findByTelephone_request = "/ymm-admin-app/audit/review/findByTelephone"
+getTelephoneAudit_request = "/ymm-admin-app/selfUpdate/getTelephoneAudit"
