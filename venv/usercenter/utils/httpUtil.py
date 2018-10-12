@@ -26,7 +26,8 @@ def Get(url,headers):
                 result = urllib2.urlopen(req)
                 response = result.read()
         except urllib2.HTTPError, e:
-                print "http请求出错，response 的code码不是200！是" + e.code
+                print "http请求出错，response 的code码不是200！是"
+                print e.code
         #print(response.decode('utf8'))
         print response.decode('utf8')
         return response.decode('utf8')

@@ -15,5 +15,5 @@ def getTelephone(http_host,parameter1):
     return response
 
 if __name__ == '__main__':
-    http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","qa")
+    http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","dev")
     getTelephone(http_host, "18916377820")
