@@ -64,10 +64,10 @@ class runAll_Test(unittest.TestCase):
         responseJson = base.userCenter4x_service.getUserNameForWithDraw(http_host, "3123191582325473698")
         self.assertNotEqual(len(responseJson),0,"qa环境serCenter4x_service可用性运行失败")
 
-    def test_qa_uc_check_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","qa")
-        responseJson = base.uc_check_service.getTelephone(http_host, "18916377820")
-        self.assertNotEqual(len(responseJson),0,"qa环境uc_check_service可用性运行失败")
+    # def test_qa_uc_check_service(self):
+    #     http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","qa")
+    #     responseJson = base.uc_check_service.getTelephone(http_host, "18916377820")
+    #     self.assertNotEqual(len(responseJson),0,"qa环境uc_check_service可用性运行失败")
 
 
     def test_qa_doorkeeper_center(self):
