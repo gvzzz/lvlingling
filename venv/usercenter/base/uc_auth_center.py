@@ -15,5 +15,5 @@ def findUserBlacklistInfo(http_host,parameter1):
     return response
 
 if __name__ == '__main__':
-    http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","qa")
+    http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","dev")
     findUserBlacklistInfo(http_host, "2")
