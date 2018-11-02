@@ -31,12 +31,12 @@ class runAll_Test(unittest.TestCase):
         responseJson= base.userCenter_app.getShipperInfo(env_url, path)
         self.assertNotEqual(len(responseJson),0,"qa环境userCenter_app可用性运行失败")
 
-    def test_qa_new_boss_serviceablity(self):
-        env_url = data.requestData.qa
-        path_base = os.path.abspath('..')  #获取上级目录
-        path = path_base + "/data/getuserstatus_qa.json"     #拼成绝对路径
-        responseJson= base.new_boss.getuserstatus(env_url, path)
-        self.assertNotEqual(len(responseJson),0,"qa环境new_boss可用性运行失败")
+    # def test_qa_new_boss_serviceablity(self):
+    #     env_url = data.requestData.qa
+    #     path_base = os.path.abspath('..')  #获取上级目录
+    #     path = path_base + "/data/getuserstatus_qa.json"     #拼成绝对路径
+    #     responseJson= base.new_boss.getuserstatus(env_url, path)
+    #     self.assertNotEqual(len(responseJson),0,"qa环境new_boss可用性运行失败")
 
     def test_qa_info_app_serviceablity(self):
         env_url = data.requestData.qa
