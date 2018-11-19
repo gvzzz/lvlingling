@@ -33,11 +33,11 @@ class runAll_Test(unittest.TestCase):
         self.assertNotEqual(len(responseJson), 0, "dev环境userCenter_app可用性运行失败")
 
     def test_dev_new_boss_serviceablity(self):
-        env_url = data.requestData.dev
-        path_base = os.path.abspath('..')  #获取上级目录
-        path = path_base + "/data/getuserstatus_dev.json"     #拼成绝对路径
-        responseJson= base.new_boss.getuserstatus(env_url, path)
-        self.assertNotEqual(len(responseJson),0,"dev环境new_boss可用性运行失败")
+         env_url = data.requestData.dev
+         path_base = os.path.abspath('..')  #获取上级目录
+         path = path_base + "/data/getuserstatus_dev.json"     #拼成绝对路径
+         responseJson= base.new_boss.getuserstatus(env_url, path)
+         self.assertNotEqual(len(responseJson),0,"dev环境new_boss可用性运行失败")
 
     def test_dev_info_app_serviceablity(self):
         env_url = data.requestData.dev
@@ -79,7 +79,7 @@ class runAll_Test(unittest.TestCase):
     #最好重新查一下dev环境的参数
     def test_dev_authenticate_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("authenticate-service","dev")
-        responseJson = base.authenticate_service.findByCertifyIDAndCertifyNameV2(http_host, "410101196709012881","哒哒","1")
+        responseJson = base.authenticate_service.findByCertifyIDAndCertifyNameV2(http_host,"361021198905222996","李孟柱","1")
         self.assertNotEqual(len(responseJson),0,"dev环境authenticate-service可用性运行失败")
 
 
