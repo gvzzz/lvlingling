@@ -29,6 +29,7 @@ def trigger(test_suite_id):
 #查询报告
 def queryReport(timeData):
     reportUrl = data.requestData.report_url + "token="+timeData
+    print reportUrl
     reportHeaders = data.requestData.report_header
     reportResponse = utils.httpUtil.Get(reportUrl, reportHeaders)
     reporteponseJson = json.loads(reportResponse)

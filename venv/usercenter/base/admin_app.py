@@ -37,5 +37,5 @@ def getTelephoneAudit(env_url,path):
 
 if __name__ == '__main__':
     env_url = "http://qa.ymmoa.com"
-    path = "../data/getTelephoneAudit_qa.json"
+    path = "../data/getTelephoneAudit_dev.json"
     getTelephoneAudit(env_url,path)

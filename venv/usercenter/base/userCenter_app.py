@@ -31,6 +31,6 @@ def getShipperInfo(env_url,path):
     return response
 
 if __name__ == '__main__':
-    env_url = data.requestData.qa
-    path = "../data/getShipperInfo_qa.json"
+    env_url = data.requestData.dev
+    path = "../data/getShipperInfo_dev.json"
     getShipperInfo(env_url,path)
