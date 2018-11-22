@@ -47,5 +47,5 @@ def get_pigon_ip_and_port(service_name, env):
 
 if __name__ == '__main__':
    #get_pigon_ip_and_port("uc-doorkeeper-center","qa")
-   get_pigon_ip_and_port("user-reference-service", "dev")
-   #get_pigon_ip_and_port("uc-check-service", "prd")
+   #get_pigon_ip_and_port("ymm-verifycode-service", "qa")
+   get_pigon_ip_and_port("uc-check-service", "prd")

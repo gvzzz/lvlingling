@@ -15,5 +15,5 @@ def querySMSVerifyCode(http_host,parameter1):
     return response
 
 if __name__ == '__main__':
-    http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-verifycode-service","qa")
+    http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-verifycode-service","dev")
     querySMSVerifyCode(http_host, "2")

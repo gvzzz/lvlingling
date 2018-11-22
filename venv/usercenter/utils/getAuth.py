@@ -14,6 +14,7 @@ def generateAuthApi(phone,usertype,env):
     data["usertype"] = usertype
     data["env"] = env
     response = httpUtil.Post(request_url, headers, data)
+    print response
     return response
 
 #登录sso拿到ymmoa-passport  env填入qa或者dev
@@ -29,8 +30,8 @@ def getSso(path,env):
 
 
 if __name__ == '__main__':
-    #generateAuthApi(13057580010,1,"dev")
-    path = "../data/sso_qa.json"
-    getSso(path,"qa")
+    #generateAuthApi(13423300016,1,"dev")
+    path = "../data/sso_dev.json"
+    getSso(path,"dev")
 
 

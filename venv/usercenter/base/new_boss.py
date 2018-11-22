@@ -22,5 +22,5 @@ def getuserstatus(env_url,path):
 
 if __name__ == '__main__':
     env_url = data.requestData.dev
-    path = "../data/getuserstatus_qa.json"
+    path = "../data/getuserstatus_dev.json"
     getuserstatus(env_url,path)

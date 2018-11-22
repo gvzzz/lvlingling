@@ -33,6 +33,6 @@ def getDriverInfo(env_url,path):
     return response
 
 if __name__ == '__main__':
-    env_url = data.requestData.qa
-    path = "../data/getDriverInfo_qa.json"
+    env_url = data.requestData.dev
+    path = "../data/getDriverInfo_dev.json"
     getDriverInfo(env_url,path)
