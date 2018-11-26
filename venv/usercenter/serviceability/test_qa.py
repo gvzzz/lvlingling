@@ -20,6 +20,7 @@ import base.uc_auth_center
 import base.verifycode_service
 import base.useraudit_service
 import base.user_reference_service
+import base.uc_info_center
 import utils.getIpPort
 
 
@@ -64,10 +65,10 @@ class runAll_Test(unittest.TestCase):
         responseJson = base.userCenter4x_service.getUserNameForWithDraw(http_host, "3123191582325473698")
         self.assertNotEqual(len(responseJson),0,"qa环境serCenter4x_service可用性运行失败")
 
-    # def test_qa_uc_check_service(self):
-    #     http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","qa")
-    #     responseJson = base.uc_check_service.getTelephone(http_host, "18916377820")
-    #     self.assertNotEqual(len(responseJson),0,"qa环境uc_check_service可用性运行失败")
+    def test_qa_uc_check_service(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","qa")
+        responseJson = base.uc_check_service.getOcrSupplierBillCounts(http_host,'','')
+        self.assertNotEqual(len(responseJson),0,"qa环境uc_check_service可用性运行失败")
 
 
     def test_qa_doorkeeper_center(self):
@@ -101,6 +102,11 @@ class runAll_Test(unittest.TestCase):
         http_host = utils.getIpPort.get_pigon_ip_and_port("user-reference-service","qa")
         responseJson = base.user_reference_service.findByUserId(http_host,"96500606549622848")
        # self.assertNotEqual(len(responseJson), 0, "qa环境user-reference-service可用性运行失败")
+
+    def test_qa_uc_info_center(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-info-center", "qa")
+        responseJson = base.uc_info_center.getEnterpriseInfoByAccountId(http_host, "2")
+        self.assertNotEqual(len(responseJson), 0, "qa环境uc-info-center可用性运行失败")
 
 
 if __name__ == '__main__':
