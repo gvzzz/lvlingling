@@ -20,6 +20,7 @@ import base.uc_auth_center
 import base.verifycode_service
 import base.useraudit_service
 import base.user_reference_service
+import base.uc_info_center
 import utils.getIpPort
 
 
@@ -66,10 +67,10 @@ class runAll_Test(unittest.TestCase):
         self.assertNotEqual(len(responseJson),0,"dev环境serCenter4x_service可用性运行失败")
 
 
-    # def test_dev_uc_check_service(self):
-    #     http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","dev")
-    #     responseJson = base.uc_check_service.getTelephone(http_host, "18916377820")
-    #     self.assertNotEqual(len(responseJson),0,"dev环境uc_check_service可用性运行失败")
+    def test_dev_uc_check_service(self):
+         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","dev")
+         responseJson = base.uc_check_service.getOcrSupplierBillCounts(http_host,'','')
+         self.assertNotEqual(len(responseJson),0,"dev环境uc_check_service可用性运行失败")
 
     def test_dev_uc_doorkeeper_center(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-doorkeeper-center","dev")
@@ -94,7 +95,7 @@ class runAll_Test(unittest.TestCase):
         self.assertNotEqual(len(responseJson),0,"dev环境verifycode-service可用性运行失败")
 
     def test_dev_useraudit_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-useraudit-service", "qa")
+        http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-useraudit-service", "dev")
         responseJson = base.useraudit_service.getAuditors(http_host)
         self.assertNotEqual(len(responseJson), 0, "dev环境ymm-useraudit-service可用性运行失败")
 
@@ -102,7 +103,15 @@ class runAll_Test(unittest.TestCase):
     def test_dev_user_reference_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("user-reference-service", "dev")
         responseJson = base.user_reference_service.findByUserId(http_host, "")
+        print responseJson
     # self.assertNotEqual(len(responseJson), 0, "qa环境user-reference-service可用性运行失败")
+
+
+    def test_dev_uc_info_center(self):
+        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-info-center", "dev")
+        responseJson = base.uc_info_center.getEnterpriseInfoByAccountId(http_host, "2")
+        self.assertNotEqual(len(responseJson), 0, "dev环境uc-info-center可用性运行失败")
+
 
 
 if __name__ == '__main__':
