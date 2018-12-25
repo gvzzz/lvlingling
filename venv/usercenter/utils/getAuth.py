@@ -31,7 +31,7 @@ def getSso(path,env):
 
 if __name__ == '__main__':
     #generateAuthApi(13423300016,1,"dev")
-    path = "../data/sso_dev.json"
-    getSso(path,"dev")
+    path = "../data/sso_qa.json"
+    getSso(path,"qa")
 
 
