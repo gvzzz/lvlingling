@@ -17,7 +17,7 @@ def findByTelephone(env_url,path):
     headers = PostJson["header"]
     bodyJson = PostJson["body"]
     response = utils.httpUtil.Post(request_url, headers, bodyJson)
-    print response
+    print (response)
     return response
 
 
@@ -32,7 +32,7 @@ def getTelephoneAudit(env_url,path):
     headers = PostJson["header"]
     bodyJson = PostJson["body"]
     response = utils.httpUtil.Post(request_url, headers, bodyJson)
-    print response
+    print (response)
     return response
 
 if __name__ == '__main__':

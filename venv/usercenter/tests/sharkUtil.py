@@ -23,13 +23,13 @@ def trigger(test_suite_id):
     triggerResponse = utils.httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
     triggerReponseJson = json.loads(triggerResponse)
     timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告
-    print timeData
+    print (timeData)
     return timeData
 
 #查询报告
 def queryReport(timeData):
     reportUrl = data.requestData.report_url + "token="+timeData
-    print reportUrl
+    print (reportUrl)
     reportHeaders = data.requestData.report_header
     reportResponse = utils.httpUtil.Get(reportUrl, reportHeaders)
     reporteponseJson = json.loads(reportResponse)
@@ -45,15 +45,15 @@ def queryTestIdBytest_suite_id(test_suite_id):
     queryTestIdResponse = utils.httpUtil.Post(queryTestIdBytest_suite_id_url, queryTestIdBytest_suite_id_header, PostJson)
     queryTestIdResponseJson = json.loads(queryTestIdResponse)
     childrenArray = json.loads(json.dumps(queryTestIdResponseJson['data'][0]['children'], ensure_ascii=False))   #把children那层遍历出来
-    print childrenArray[1]
-    print len(childrenArray)
+    print (childrenArray[1])
+    print (len(childrenArray))
 
     list = []
     for i in range(len(childrenArray)-1):            #遍历children 但是第一个object弃用
         if(childrenArray[i+1]['is_Daily'] == 1 ):     #判断下这个case是否需要执行的状态位
             test_id = childrenArray[i+1]['test_case_id']   #不取第一个object
             list.append(test_id)
-    print list
+    print (list)
     return list
 
 #将testId重新组装到json里面
@@ -69,7 +69,7 @@ def rebuildJson(test_suite_id):
     data["token"] = None
     data["test_suite_id"] = str(test_suite_id)
     data["test_case_datas"] = test_case_datas_list
-    print data
+    print (data)
     return data
 
 
@@ -86,7 +86,7 @@ def runGroupASync(postJson):
     triggerResponse = utils.httpUtil.Post(triggerUrl, triggerHeaders, PostJson)
     triggerReponseJson = json.loads(triggerResponse)
     timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告
-    print timeData
+    print (timeData)
     return timeData
 
 
@@ -141,4 +141,4 @@ if __name__ == '__main__':
     list =[606, 525, 526, 527, 529, 531, 532, 535, 536, 537, 538, 539, 540, 542, 543, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 560, 561, 563, 564, 565, 569, 581, 582, 583, 584, 585, 586, 587, 591, 596, 597, 603, 654, 655, 657, 696, 697, 701, 702, 703, 704, 707, 709]
     for i in range(len(list)):
         total_sucess = total_sucess+list[i]
-    print total_sucess
+    print (total_sucess)

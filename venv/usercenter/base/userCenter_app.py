@@ -27,7 +27,7 @@ def getShipperInfo(env_url,path):
     headers["Content-Type"] = 'application/json'
     headers["Authorization"] = json.loads(authResponseJson)['auth']
     response = utils.httpUtil.Post(request_url, headers, bodyJson)
-    print response
+    print (response)
     return response
 
 if __name__ == '__main__':

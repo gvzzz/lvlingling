@@ -31,7 +31,7 @@ class runAll_Test(unittest.TestCase):
         #timeData = "2018-11-22-19-28-58_19"
         time.sleep(180)
         reporteponseJson = sharkUtil.queryReport(timeData)
-        print  reporteponseJson
+        print  (reporteponseJson)
         childrenArray =  reporteponseJson["data"]["summary"]["children"]
         for i in range(len(childrenArray)):
             self.assertEqual(childrenArray[i]["summary_info"]["total_failed"], 0,

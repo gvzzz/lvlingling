@@ -103,7 +103,7 @@ class runAll_Test(unittest.TestCase):
     def test_dev_user_reference_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("user-reference-service", "dev")
         responseJson = base.user_reference_service.findByUserId(http_host, "")
-        print responseJson
+        print (responseJson)
     # self.assertNotEqual(len(responseJson), 0, "qa环境user-reference-service可用性运行失败")
 
 
