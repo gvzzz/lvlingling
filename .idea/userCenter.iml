@@ -7,10 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/utils" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/usercenter" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/crawler" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/usercenter/jenkins" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (userCenter)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

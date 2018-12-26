@@ -85,9 +85,9 @@ class runAll_Test(unittest.TestCase):
 
 
     def test_dev_uc_auth_center(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center", "dev")
-        responseJson = base.uc_auth_center.findUserBlacklistInfo(http_host, "12")
-        self.assertNotEqual(len(responseJson), 0, "dev环境uc-auth-center可用性运行失败")
+         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center", "dev")
+         responseJson = base.uc_auth_center.findUserBlacklistInfo(http_host, "12")
+         self.assertNotEqual(len(responseJson), 0, "dev环境uc-auth-center可用性运行失败")
 
     def test_dev_verifycode_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-verifycode-service","dev")
@@ -103,7 +103,7 @@ class runAll_Test(unittest.TestCase):
     def test_dev_user_reference_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("user-reference-service", "dev")
         responseJson = base.user_reference_service.findByUserId(http_host, "")
-        print responseJson
+        print (responseJson)
     # self.assertNotEqual(len(responseJson), 0, "qa环境user-reference-service可用性运行失败")
 
 

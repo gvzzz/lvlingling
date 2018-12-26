@@ -17,7 +17,7 @@ def getuserstatus(env_url,path):
     header = PostJson["header"]
     body = PostJson["body"]
     response = utils.httpUtil.Post(request_url, header, body)
-    print response
+    print (response)
     return response
 
 if __name__ == '__main__':

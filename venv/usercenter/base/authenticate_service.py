@@ -12,7 +12,7 @@ import urllib
 def findByCertifyIDAndCertifyNameV2(http_host,parameter1,parameter2,parameter3):
     parameter2_encode =  urllib.quote(parameter2)
     url = http_host + "/invoke.json?validate=true&direct=false&token=undefined&url=http%3A%2F%2Fcom.ymm.services%2FauthenticateServiceWithMultiRoles_2.0.0&method=findByCertifyIDAndCertifyNameV2&parameterTypes%5B%5D=java.lang.String&parameterTypes%5B%5D=java.lang.String&parameterTypes%5B%5D=com.ymm.userCenter4.api.enums.UserType"+"&parameters%5B%5D=" + parameter1 + "&parameters%5B%5D=" + parameter2_encode + "&parameters%5B%5D=" + parameter3
-    print url
+    print (url)
     headers = {}
     response = utils.httpUtil.Get(url,headers)
     return response
