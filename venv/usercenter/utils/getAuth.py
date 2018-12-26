@@ -1,8 +1,16 @@
 # -*- coding:utf-8 -*-
 #从wrench平台获取auth头 参考林放的接口
-
+import sys
+print(sys.path)
+import os
+#获取项目路径下的目录
+os.chdir('../utils')
+#打印出项目路径下的目录
+for file in os.listdir(os.getcwd()):
+    sys.path.append('../utils')
 import httpUtil
 import json
+
 
 
 #获取司机或者货主的auth头
