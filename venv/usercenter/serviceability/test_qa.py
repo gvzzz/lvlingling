@@ -76,10 +76,10 @@ class runAll_Test(unittest.TestCase):
         responseJson = base.uc_doorkeeper_center.selectByAccountId(http_host, "0")
         self.assertNotEqual(len(responseJson),0,"qa环境uc-doorkeeper-center可用性运行失败")
 
-    def test_qa_authenticate_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("authenticate-service","qa")
-        responseJson = base.authenticate_service.findByCertifyIDAndCertifyNameV2(http_host, "410101196709012881","哒哒","1")
-        self.assertNotEqual(len(responseJson),0,"qa环境authenticate-service可用性运行失败")
+    # def test_qa_authenticate_service(self):
+    #     http_host = utils.getIpPort.get_pigon_ip_and_port("authenticate-service","qa")
+    #     responseJson = base.authenticate_service.findByCertifyIDAndCertifyNameV2(http_host, "410101196709012881","哒哒","1")
+    #     self.assertNotEqual(len(responseJson),0,"qa环境authenticate-service可用性运行失败")
 
     def test_qa_uc_auth_center(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","qa")
