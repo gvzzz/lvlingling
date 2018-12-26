@@ -1,13 +1,12 @@
 # -*- coding:utf-8 -*-
 import json
-import urllib.request
-import urllib.request
+from urllib import request
 
 
 def Post(url,headers,body):
-        req = urllib.request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
+        req = request.Request(url=url, data=json.dumps(body).encode(), method="POST",headers=headers)
         #req = urllib2.Request(url=url, data=json.dumps(body).encode(),headers=headers)
-        response = urllib.request.urlopen(req).read()
+        response = request.urlopen(req).read()
         #try:
                 #result = urllib2.urlopen(req)
                 #response = result.read()
@@ -22,8 +21,8 @@ def Post(url,headers,body):
 def Get(url,headers):
 
 
-        req = urllib.request.Request(url = url,method="GET",headers=headers)
-        response = urllib.request.urlopen(req).read()
+        req = request.Request(url = url,method="GET",headers=headers)
+        response = request.urlopen(req).read()
         #req = urllib2.Request(url = url,headers=headers)
        # try:
                 #result = urllib.request.urlopen(req)
