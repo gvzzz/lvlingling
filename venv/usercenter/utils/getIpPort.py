@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 #从运维的接口里面获取
 
-import httpUtil
+import utils.httpUtil
 import json
 
 
@@ -9,7 +9,7 @@ import json
 def get_pigon_ip_and_port(service_name, env):
     request_url = 'http://docker-beidou.ymmoa.com/internal/api/get_service_port/?name={0}'.format(service_name)
     headers = {}
-    response = httpUtil.Get(request_url,headers)
+    response = utils.httpUtil.Get(request_url,headers)
     responseToJson = json.loads(response)
     if  env not in ["dev","qa","prd"]:
         print( "输入的env环境有误，请重新确认下环境")
