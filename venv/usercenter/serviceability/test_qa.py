@@ -23,7 +23,6 @@ import base.user_reference_service
 import base.uc_info_center
 import utils.getIpPort
 
-
 class runAll_Test(unittest.TestCase):
     def test_qa_userCenter_app_serviceablity(self):
         env_url = data.requestData.qa
