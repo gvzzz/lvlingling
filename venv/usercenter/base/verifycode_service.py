@@ -9,7 +9,8 @@ import utils.httpUtil
 import utils.getIpPort
 #这是pigeon接口需要去机器的host域名，还有parameter1是方法的参数
 def querySMSVerifyCode(http_host,parameter1):
-    url = http_host + "/invoke.json?validate=true&direct=false&token=undefined&url=http%3A%2F%2Fservice.ymm.com%2Fsms%2FsmsVerifycodeService_1.0.0&method=querySMSVerifyCode&parameterTypes%5B%5D=java.lang.Long" + "&group=&parameters%5B%5D=" + parameter1
+    url = http_host + "/invoke.json?validate=true&direct=true&token=undefined&url=http%3A%2F%2Fservice.ymm.com%2Fsms%2FsmsVerifycodeService_1.0.0&method=querySMSVerifyCode&parameterTypes%5B%5D=java.lang.Long" + "&group=&parameters%5B%5D=" + parameter1
+    print(url)
     headers = {}
     response = utils.httpUtil.Get(url,headers)
     return response
