@@ -12,7 +12,7 @@ import utils.getIpPort
 
 
 
-class runQaUserCenter4xService_Test(unittest.TestCase):
+class runDevUserCenter4xService_Test(unittest.TestCase):
     def test_dev_userCenter4x_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("userCenterServer4.x", "dev")
         responseJson = base.userCenter4x_service.getUserNameForWithDraw(http_host, "")
