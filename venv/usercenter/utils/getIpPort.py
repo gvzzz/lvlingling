@@ -4,7 +4,7 @@
 import utils.httpUtil
 import json
 
-
+'''
 #获取IP和端口号
 def get_pigon_ip_and_port(service_name, env):
     request_url = 'http://docker-beidou.ymmoa.com/internal/api/get_service_port/?name={0}'.format(service_name)
@@ -41,9 +41,18 @@ def get_pigon_ip_and_port(service_name, env):
                 return "http://" + prdIp + ':4080'
             else:
                 print (service_name + "不存在prd的机器")
+'''
 
-
-
+#调北斗获取IP的最新的接口
+def get_pigon_ip_and_port(serviceName, env):
+    request_url = 'http://docker-beidou.ymmoa.com/cloud/api/get_real_ips/?project_name={0}&env={1}'.format(serviceName,env)
+    headers = {}
+    response = utils.httpUtil.Get(request_url, headers)
+    responseToJsonArrry = json.loads(response)
+    machine_prdJson = responseToJsonArrry[0]
+    ip = machine_prdJson['ip']
+    print("http://" + ip + ':4080')
+    return "http://" + ip + ':4080'
 
 if __name__ == '__main__':
    #get_pigon_ip_and_port("uc-doorkeeper-center","qa")
