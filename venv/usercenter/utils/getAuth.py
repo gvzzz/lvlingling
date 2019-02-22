@@ -21,7 +21,12 @@ def generateAuthApi(phone,usertype,env):
     data["telephone"] = phone
     data["usertype"] = usertype
     data["env"] = env
-    response = httpUtil.Post(request_url, headers, data)
+    #取到auth值为空的话进行3次尝试
+    for i in range(3) :
+        response = httpUtil.Post(request_url, headers, data)
+        auth = json.loads(response)['auth']
+        if(auth!=''):
+            break;
     print (response)
     return response
 
@@ -38,8 +43,8 @@ def getSso(path,env):
 
 
 if __name__ == '__main__':
-    #generateAuthApi(13423300016,1,"dev")
-    path = "../data/sso_qa.json"
-    getSso(path,"qa")
+    generateAuthApi(13423300016,1,"dev")
+    #path = "../data/sso_qa.json"
+    #getSso(path,"qa")
 
 
