@@ -33,6 +33,11 @@ getuserstatus_header_dev={"Content-Type": 'application/json',"Authorization":"Ba
 
 #userCenter_app
 getShipperInfo_request = "/ymm-userCenter-app/authenticate/getShipperInfo"
+checkUserStatus_request = "/ymm-userCenter-app/user/checkUserStatus"
+getloginverifycode_request = "/ymm-userCenter-app/user/getloginverifycode"
+login_request = "/ymm-userCenter-app/account/login"
+partnerToken_request = '/ymm-userCenter-app/token/partnerToken'
+
 
 #info_app
 getDriverInfo_request = "/ymm-info-app/authenticate/getDriverInfo"
@@ -45,3 +50,9 @@ getCopilotlist_request = "/ymm-reference-app/copilot/list"
 #admin_app
 findByTelephone_request = "/ymm-admin-app/audit/review/findByTelephone"
 getTelephoneAudit_request = "/ymm-admin-app/selfUpdate/getTelephoneAudit"
+
+
+#clientinfo
+shipper_client = "ed9a0bb4fbf0d079ff46659323c7e1e8/shipper/5.17.0.0/android/com.xiwei.logistics.consignor"
+driver_client = "ed9a0bb4fbf0d079ff46659323c7e1e8/driver/6.17.0.0/android/com.xiwei.logistics"
+
