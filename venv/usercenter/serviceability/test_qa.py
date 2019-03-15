@@ -7,105 +7,76 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 import data.requestData
 import unittest
-import base.userCenter_app
-import base.new_boss
-import base.info_app
-import base.reference_app
-import base.userCenter4x_service
-import base.uc_check_service
-import base.uc_doorkeeper_center
-import base.admin_app
-import base.authenticate_service
-import base.uc_auth_center
-import base.verifycode_service
-import base.useraudit_service
-import base.user_reference_service
-import base.uc_info_center
+import json
 import utils.getIpPort
+import utils.getAuth
 
-class runAll_Test(unittest.TestCase):
-    def test_qa_userCenter_app_serviceablity(self):
+#dev环境检测登录
+class runQaLogin_Test(unittest.TestCase):
+    def test_qa_checkUserStatus(self):
         env_url = data.requestData.qa
-        path_base = os.path.abspath('..')  #获取上级目录
-        path = path_base + "/data/getShipperInfo_qa.json"     #拼成绝对路径
-        responseJson= base.userCenter_app.getShipperInfo(env_url, path)
-        self.assertNotEqual(len(responseJson),0,"qa环境userCenter_app可用性运行失败")
+        request_url = env_url + data.requestData.checkUserStatus_request
+        headers = {}
+        headers["Content-Type"] = 'application/json'
+        headers["client-info"] = data.requestData.shipper_client
+        bodyJson = {"telephone": "15660000090"}
+        response = utils.httpUtil.Post(request_url, headers, bodyJson)
+        responseJson = json.loads(response)
+        self.assertEqual(responseJson['result'],1,"判断是否注册的接口有问题")
+        self.assertEqual(responseJson['success'], True, "判断是否注册的接口有问题")
+        self.assertEqual(responseJson['errorMsg'],'成功',"判断是否注册的接口有问题")
 
-    def test_qa_new_boss_serviceablity(self):
-         env_url = data.requestData.qa
-         path_base = os.path.abspath('..')  #获取上级目录
-         path = path_base + "/data/getuserstatus_qa.json"     #拼成绝对路径
-         responseJson= base.new_boss.getuserstatus(env_url, path)
-         self.assertNotEqual(len(responseJson),0,"qa环境new_boss可用性运行失败")
 
-    def test_qa_info_app_serviceablity(self):
+
+    def test_qa_getloginverifycode(self):
         env_url = data.requestData.qa
-        path_base = os.path.abspath('..')  #获取上级目录
-        path = path_base + "/data/getDriverInfo_qa.json"     #拼成绝对路径
-        responseJson = base.info_app.getDriverInfo(env_url,path)
-        self.assertNotEqual(len(responseJson),0,"qa环境info_app可用性运行失败")
+        request_url = env_url + data.requestData.getloginverifycode_request
+        headers = {}
+        headers["Content-Type"] = 'application/json'
+        headers["client-info"] = data.requestData.shipper_client
+        bodyJson = {"from": 6, "telephone": "15660000090"}
+        response = utils.httpUtil.Post(request_url, headers, bodyJson)
+        responseJson = json.loads(response)
+        self.assertEqual(responseJson['result'], 1, "获取二维码接口有问题")
+        self.assertEqual(responseJson['success'], True, "获取二维码接口有问题")
 
-    def test_qa_reference_app_serviceablity(self):
+
+
+    #注意要保证下这个账号的状态，不能随便乱动
+    def test_qa_login(self):
         env_url = data.requestData.qa
-        path_base = os.path.abspath('..')  #获取上级目录
-        path = path_base + "/data/getCopilotlist_qa.json"     #拼成绝对路径
-        responseJson= base.reference_app.getCopilotlist(env_url,path)
-        self.assertNotEqual(len(responseJson),0,"qa环境reference_app可用性运行失败")
-
-    def test_qa_admin_app_serviceablity(self):
-        env_url = "http://qa-boss.ymmoa.com"
-        path_base = os.path.abspath('..')  #获取上级目录
-        path = path_base + "/data/findByTelephone_qa.json"     #拼成绝对路径
-        responseJson= base.admin_app.findByTelephone(env_url,path)
-        self.assertNotEqual(len(responseJson),0,"qa环境admin_app可用性运行失败")
-
-    def test_qa_userCenter4x_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("userCenterServer4.x", "qa")
-        responseJson = base.userCenter4x_service.getUserNameForWithDraw(http_host, "3123191582325473698")
-        self.assertNotEqual(len(responseJson),0,"qa环境serCenter4x_service可用性运行失败")
-
-    def test_qa_uc_check_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-check-service","qa")
-        responseJson = base.uc_check_service.getOcrSupplierBillCounts(http_host,'','')
-        self.assertNotEqual(len(responseJson),0,"qa环境uc_check_service可用性运行失败")
+        request_url = env_url + data.requestData.login_request
+        headers = {}
+        headers["Content-Type"] = 'application/json'
+        headers["client-info"] = data.requestData.shipper_client
+        bodyJson = {"cmToken": "", "code": "1234", "telephone": "15660000000"}
+        response = utils.httpUtil.Post(request_url, headers, bodyJson)
+        responseJson = json.loads(response)
+        print(responseJson)
+        self.assertEqual(responseJson['result'], 1, "登录接口有问题")
+        self.assertEqual(responseJson['success'], True, "登录接口有问题")
+        self.assertIsNotNone(responseJson['info'])
 
 
-    def test_qa_doorkeeper_center(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-doorkeeper-center","qa")
-        responseJson = base.uc_doorkeeper_center.selectByAccountId(http_host, "0")
-        self.assertNotEqual(len(responseJson),0,"qa环境uc-doorkeeper-center可用性运行失败")
 
-    def test_qa_authenticate_service(self):
-         http_host = utils.getIpPort.get_pigon_ip_and_port("authenticate-service","qa")
-         responseJson = base.authenticate_service.findByCertifyIDAndCertifyNameV2(http_host, "410101196709012881","哒哒","1")
-         self.assertNotEqual(len(responseJson),0,"qa环境authenticate-service可用性运行失败")
+    def test_qa_partnerToken(self):
+        env_url = data.requestData.qa
+        request_url = env_url + data.requestData.partnerToken_request
+        headers = {}
+        authResponseJson = utils.getAuth.generateAuthApi(15670000095, 1, 'beta')
+        headers["Content-Type"] = 'application/json'
+        headers["client-info"] = data.requestData.driver_client
+        headers["Authorization"] = json.loads(authResponseJson)['auth']
+        bodyJson = {}
+        response = utils.httpUtil.Post(request_url, headers, bodyJson)
+        responseJson = json.loads(response)
+        print(responseJson)
+        self.assertEqual(responseJson['result'], 1, "调货车帮的接口有问题，请联系货车帮")
+        self.assertEqual(responseJson['errorMsg'], "成功", "调货车帮的接口有问题，请联系货车帮")
 
-    def test_qa_uc_auth_center(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","qa")
-        responseJson = base.uc_auth_center.findUserBlacklistInfo(http_host,"2")
-        self.assertNotEqual(len(responseJson),0,"qa环境uc-auth-center可用性运行失败")
 
 
-    def test_qa_verifycode_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-verifycode-service","qa")
-        responseJson = base.verifycode_service.querySMSVerifyCode(http_host,"2")
-        self.assertNotEqual(len(responseJson),0,"qa环境verifycode-service可用性运行失败")
 
-    def test_qa_useraudit_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("ymm-useraudit-service", "qa")
-        responseJson = base.useraudit_service.getAuditors(http_host)
-        self.assertNotEqual(len(responseJson), 0, "qa环境ymm-useraudit-service可用性运行失败")
-
-    #最好看下代码的接口原型 看了4080无论如何传参，虽然能调通但是结果都是null
-    def test_qa_user_reference_service(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("user-reference-service","qa")
-        responseJson = base.user_reference_service.findByUserId(http_host,"96500606549622848")
-       # self.assertNotEqual(len(responseJson), 0, "qa环境user-reference-service可用性运行失败")
-
-    def test_qa_uc_info_center(self):
-        http_host = utils.getIpPort.get_pigon_ip_and_port("uc-info-center", "qa")
-        responseJson = base.uc_info_center.getEnterpriseInfoByAccountId(http_host, "2")
-        self.assertNotEqual(len(responseJson), 0, "qa环境uc-info-center可用性运行失败")
 
 
 if __name__ == '__main__':
