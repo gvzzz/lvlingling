@@ -72,6 +72,8 @@ if __name__ == '__main__':
     joblist.append('qa_userCenter4x_service_serviceablity')
     joblist.append('qa_new_boss_serviceablity')
     joblist.append('qa_verifycode_service_serviceablity')
+    joblist.append('qa_agreement_service_serviceablity')
+    joblist.append('qa_agreement_app_serviceablity')
 
     joblist.append('dev_doorkeeper_center_serviceablity')
     joblist.append('dev_uc_check_service_serviceablity')
@@ -87,7 +89,10 @@ if __name__ == '__main__':
     joblist.append('dev_userCenter4x_service_serviceablity')
     joblist.append('dev_new_boss_serviceablity')
     joblist.append('dev_verifycode_service_serviceablity')
+    joblist.append('dev_agreement_service_serviceablity')
+    joblist.append('dev_agreement_app_serviceablity')
     today = datetime.datetime.now().strftime('%Y-%m-%d')
     yesterday = (datetime.datetime.now()-datetime.timedelta(days=1)).strftime('%Y-%m-%d')
     writeExcelDaliy(joblist,yesterday, today)
+
 
