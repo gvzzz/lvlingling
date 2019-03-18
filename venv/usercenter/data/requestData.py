@@ -56,3 +56,7 @@ getTelephoneAudit_request = "/ymm-admin-app/selfUpdate/getTelephoneAudit"
 shipper_client = "ed9a0bb4fbf0d079ff46659323c7e1e8/shipper/5.17.0.0/android/com.xiwei.logistics.consignor"
 driver_client = "ed9a0bb4fbf0d079ff46659323c7e1e8/driver/6.17.0.0/android/com.xiwei.logistics"
 
+
+#uc_agreement_app
+getAllAuthItem_request = '/uc-agreement-app/authorize/getAllAuthItem'
+
