@@ -2,13 +2,13 @@
 # -*- coding:utf-8 -*-
 import sys
 import os.path
-import base.agreement_service
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 import unittest
 import utils.getIpPort
 import json
+import base.agreement_service
 
 
 class runQaAgreementService_Test(unittest.TestCase):
