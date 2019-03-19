@@ -73,7 +73,7 @@ class runDevLogin_Test(unittest.TestCase):
         response = utils.httpUtil.Post(request_url, headers, bodyJson)
         responseJson = json.loads(response)
         print(responseJson)
-        self.assertEqual(responseJson['2result'], 1, "调货车帮的接口有问题，请联系货车帮")
+        self.assertEqual(responseJson['result'], 1, "调货车帮的接口有问题，请联系货车帮")
         self.assertEqual(responseJson['errorMsg'], "成功", "调货车帮的接口有问题，请联系货车帮")
 
 
