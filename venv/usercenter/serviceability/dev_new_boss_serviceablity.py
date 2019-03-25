@@ -15,7 +15,7 @@ class runDevNewboss_Test(unittest.TestCase):
          path_base = os.path.abspath('..')  #获取上级目录
          path = path_base + "/data/getuserstatus_dev.json"     #拼成绝对路径
          responseJson= base.new_boss.getuserstatus(env_url, path)
-         self.assertNotEqual(len(responseJson),0,"dev环境new_boss可用性运行失败")
+         self.assertEqual(responseJson["result"],1,"dev环境new_boss可用性运行失败")
 
 
 
