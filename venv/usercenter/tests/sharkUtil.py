@@ -30,10 +30,11 @@ def trigger(test_suite_id):
 def triggerGroup(test_suit_id,env_id):
     triggerUrl = data.requestData.runGroupASync_url
     triggerHeaders = data.requestData.trigger_header
+
     dict = {}
-    dict['suite_id'] = test_suit_id
-    dict['env_id'] = env_id
     dict['project_id'] = None
+    dict['service_id'] = test_suit_id
+    dict['env_id'] = env_id
     triggerResponse = utils.httpUtil.Post(triggerUrl, triggerHeaders, dict)
     triggerReponseJson = json.loads(triggerResponse)
     timeData = triggerReponseJson['data']  # 从触发器的接口中读出返回data，去查询对应的报告'''
@@ -54,6 +55,9 @@ def queryReport(timeData):
 def queryResult(timeData,test_suit_id):
     reportUrl = data.requestData.result_url_service + "&token="+timeData + "&ref_id="+test_suit_id
     print (reportUrl)
+    "http://shark.ymmoa.com/api/show/status?token=2019-04-09-17-26-18_0&ref_id=392&report_type=service"
+    "http://shark.ymmoa.com/api/show/status?token=2019-04-09-18-14-19_81&ref_id=809&report_type=service"
+    "http://shark.ymmoa.com/api/show/status?token=2019-04-09-17-42-56_15&ref_id=392&report_type=service"
     reportHeaders = data.requestData.report_header
     reportResponse = utils.httpUtil.Get(reportUrl, reportHeaders)
     reporteponseJson = json.loads(reportResponse)
@@ -167,4 +171,4 @@ if __name__ == '__main__':
         total_sucess = total_sucess+list[i]
     print (total_sucess)'''
 
-    queryReport("2019-04-09-11-35-38_57")
+    triggerGroup(392,327)
