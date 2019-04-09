@@ -17,7 +17,7 @@ ymm_info_app_test_suite_id = data.requestData.ymm_info_app_test_suite_id
 
 uc_check_service_timeData = before_shark.uc_check_service(env_id)
 ymm_info_app_timeData = before_shark.ymm_info_app(env_id)
-time.sleep(30)
+time.sleep(60)
 
 class tianlong_shark_Test(unittest.TestCase):
      def test_uc_check_service(self):
