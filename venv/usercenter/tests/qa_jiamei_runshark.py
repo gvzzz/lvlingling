@@ -20,7 +20,7 @@ uc_doorkeeper_center_timeData = before_shark.uc_doorkeeper_center(env_id)
 reference_service_timeData = before_shark.reference_service(env_id)
 ymm_refenrence_app_timeData = before_shark.ymm_refenrence_app(env_id)
 
-#time.sleep(90)
+time.sleep(90)
 
 class jiamei_shark_Test(unittest.TestCase):
      def test_uc_doorkeeper_center(self):

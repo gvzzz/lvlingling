@@ -31,6 +31,5 @@ class tianlong_shark_Test(unittest.TestCase):
          print("ymm_info_app测试报告地址" + data.requestData.report_url_service + "&ref_id=" + str(ymm_info_app_test_suite_id) + "&token=" + ymm_info_app_timeData)
 
 
-
 if __name__ == '__main__':
     unittest.main()
