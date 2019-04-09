@@ -50,9 +50,13 @@ def get_pigon_ip_and_port(serviceName, env):
     response = utils.httpUtil.Get(request_url, headers)
     responseToJsonArrry = json.loads(response)
     machine_prdJson = responseToJsonArrry[0]
-    ip = machine_prdJson['ip']
-    print("http://" + ip + ':4080')
-    return "http://" + ip + ':4080'
+    if(len(machine_prdJson) != 0):
+        ip = machine_prdJson['ip']
+        print("http://" + ip + ':4080')
+        return "http://" + ip + ':4080'
+    else:
+        print("机器IP获取失败，请排查北斗接口")
+        return None
 
 if __name__ == '__main__':
    #get_pigon_ip_and_port("uc-doorkeeper-center","qa")
