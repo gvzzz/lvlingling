@@ -15,7 +15,7 @@ import base.agreement_service
 class runDevAgreementService_Test(unittest.TestCase):
     def test_dev_agreement_service(self):
         http_host = utils.getIpPort.get_pigon_ip_and_port("agreement-service", "dev")
-        response = base.agreement_service.getAllAuthItems(http_host, '2')
+        response = base.agreement_service.getAllAuthItems(http_host, '4')
         responseJson = json.loads(response)
         self.assertEqual(responseJson['errorCode'],0,"dev环境agreement-service可用性运行失败")
 
