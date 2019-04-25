@@ -79,6 +79,12 @@ def ymm_refenrence_app(env_id):
     timeData = sharkUtil.triggerGroup(test_suit_id,env_id)
     return timeData
 
+def agreement_service(env_id):
+    test_suit_id = data.requestData.agreement_service_test_suite_id
+    timeData = sharkUtil.triggerGroup(test_suit_id,env_id)
+    return timeData
+
+
 
 
 
