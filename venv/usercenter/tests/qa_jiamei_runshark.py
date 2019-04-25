@@ -14,11 +14,13 @@ env_id = 327
 uc_doorkeeper_center_test_suite_id = data.requestData.uc_doorkeeper_center_test_suite_id
 reference_service_test_suite_id = data.requestData.reference_service_test_suit_id
 ymm_refenrence_app_test_suite_id = data.requestData.ymm_reference_app_test_suite_id
+agreement_service_test_suite_id = data.requestData.agreement_service_test_suite_id
 
 
 uc_doorkeeper_center_timeData = before_shark.uc_doorkeeper_center(env_id)
 reference_service_timeData = before_shark.reference_service(env_id)
 ymm_refenrence_app_timeData = before_shark.ymm_refenrence_app(env_id)
+agreement_service_timeData = before_shark.agreement_service(env_id)
 
 time.sleep(90)
 
@@ -37,6 +39,12 @@ class jiamei_shark_Test(unittest.TestCase):
          reporteponseJson = sharkUtil.queryResult(ymm_refenrence_app_timeData, str(ymm_refenrence_app_test_suite_id))
          self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务"+"refenrence_app"+"有失败的case，报告地址："+data.requestData.report_url_service+"&ref_id="+str(ymm_refenrence_app_test_suite_id)+"&token="+ymm_refenrence_app_timeData)
          print("refenrence_app测试报告地址:" + data.requestData.report_url_service + "&ref_id=" + str(ymm_refenrence_app_test_suite_id) + "&token=" + ymm_refenrence_app_timeData)
+
+
+     def test_agreement_service(self):
+         reporteponseJson = sharkUtil.queryResult(agreement_service_timeData, str(agreement_service_test_suite_id))
+         self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务" + "refenrence_app" + "有失败的case，报告地址：" + data.requestData.report_url_service + "&ref_id=" + str(agreement_service_test_suite_id) + "&token=" + agreement_service_timeData)
+         print("agreement_service测试报告地址:" + data.requestData.report_url_service + "&ref_id=" + str(agreement_service_test_suite_id) + "&token=" + agreement_service_timeData)
 
 
 if __name__ == '__main__':

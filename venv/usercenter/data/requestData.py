@@ -32,6 +32,7 @@ ymm_info_app_test_suite_id = 406
 uc_doorkeeper_center_test_suite_id = 810
 reference_service_test_suit_id = 433
 ymm_reference_app_test_suite_id = 438
+agreement_service_test_suite_id = 1554
 uc_agreement_app = 0
 
 ymm_userCenter_app_test_suite_id =512
