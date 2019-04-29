@@ -14,10 +14,12 @@ env_id = 327
 useraudit_service_test_suite_id = data.requestData.useraudit_service_test_suite_id
 userCenter_app_test_suite_id = data.requestData.ymm_userCenter_app_test_suite_id
 uc_auth_center_test_suite_id = data.requestData.uc_auth_center_test_suite_id
+uc_info_center_test_suite_id = data.requestData.uc_info_center_test_suite_id
 
 useraudit_service_timeData = before_shark.useraudit_service(env_id)
 ymm_userCenter_app_timeData = before_shark.userCenter_app(env_id)
 uc_auth_center_timeData = before_shark.uc_auth_center(env_id)
+uc_info_center_timeData = before_shark.uc_info_center(env_id)
 time.sleep(120)
 
 class haokun_shark_Test(unittest.TestCase):
@@ -35,6 +37,11 @@ class haokun_shark_Test(unittest.TestCase):
          reporteponseJson = sharkUtil.queryResult(uc_auth_center_timeData, str(uc_auth_center_test_suite_id))
          self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务"+"uc_auth_center"+"有失败的case，报告地址："+data.requestData.report_url_service+"&ref_id="+str(uc_auth_center_test_suite_id)+"&token="+uc_auth_center_timeData)
          print("uc_auth_center测试报告地址" + data.requestData.report_url_service + "&ref_id=" + str(uc_auth_center_test_suite_id) + "&token=" + uc_auth_center_timeData)
+
+     def test_uc_info_center(self):
+         reporteponseJson = sharkUtil.queryResult(uc_info_center_timeData, str(uc_info_center_test_suite_id))
+         self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务" + "uc_info_center" + "有失败的case，报告地址：" + data.requestData.report_url_service + "&ref_id=" + str(uc_info_center_test_suite_id) + "&token=" + uc_info_center_timeData)
+         print("uc_info_center测试报告地址:" + data.requestData.report_url_service + "&ref_id=" + str(uc_info_center_test_suite_id) + "&token=" + uc_info_center_timeData)
 
 
 if __name__ == '__main__':
