@@ -13,10 +13,14 @@ import before_shark
 env_id = 327
 uc_check_service_test_suite_id = data.requestData.uc_check_service_test_suite_id
 ymm_info_app_test_suite_id = data.requestData.ymm_info_app_test_suite_id
+new_boss_test_suite_id = data.requestData.new_boss_test_suit_id
+ymm_admin_app_test_suite_id = data.requestData.ymm_admin_app_test_suite_id
 
 
 uc_check_service_timeData = before_shark.uc_check_service(env_id)
 ymm_info_app_timeData = before_shark.ymm_info_app(env_id)
+new_boss_timeData = before_shark.new_boss(env_id)
+ymm_admin_app_timeData = before_shark.ymm_admin_app(env_id)
 time.sleep(60)
 
 class tianlong_shark_Test(unittest.TestCase):
@@ -29,6 +33,22 @@ class tianlong_shark_Test(unittest.TestCase):
          reporteponseJson = sharkUtil.queryResult(ymm_info_app_timeData, str(ymm_info_app_test_suite_id))
          self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务"+"ymm_info_app"+"有失败的case，报告地址："+data.requestData.report_url_service+"&ref_id="+str(ymm_info_app_test_suite_id)+"&token="+ymm_info_app_timeData)
          print("ymm_info_app测试报告地址" + data.requestData.report_url_service + "&ref_id=" + str(ymm_info_app_test_suite_id) + "&token=" + ymm_info_app_timeData)
+
+     def test_new_boss(self):
+         reporteponseJson = sharkUtil.queryResult(new_boss_timeData, str(new_boss_test_suite_id))
+         self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,
+                          msg="服务" + "new_boss" + "有失败的case，报告地址：" + data.requestData.report_url_service + "&ref_id=" + str(
+                              new_boss_test_suite_id) + "&token=" + new_boss_timeData)
+         print("new_boss测试报告地址:" + data.requestData.report_url_service + "&ref_id=" + str(
+             new_boss_test_suite_id) + "&token=" + new_boss_timeData)
+
+     def test_ymm_admin_app(self):
+         reporteponseJson = sharkUtil.queryResult(ymm_admin_app_timeData, str(ymm_admin_app_test_suite_id))
+         self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,
+                          msg="服务" + "ymm-admin-app" + "有失败的case，报告地址：" + data.requestData.report_url_service + "&ref_id=" + str(
+                              ymm_admin_app_test_suite_id) + "&token=" + ymm_admin_app_timeData)
+         print("ymm_admin_app测试报告地址:" + data.requestData.report_url_service + "&ref_id=" + str(
+             ymm_admin_app_test_suite_id) + "&token=" + ymm_admin_app_timeData)
 
 
 if __name__ == '__main__':
