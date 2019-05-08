@@ -49,7 +49,11 @@ def get_pigon_ip_and_port(serviceName, env):
     headers = {}
     response = utils.httpUtil.Get(request_url, headers)
     responseToJsonArrry = json.loads(response)
-    machine_prdJson = responseToJsonArrry[0]
+    responseToJsonArrryNew = []
+    for responseToJson in responseToJsonArrry:
+        if(responseToJson['ready']):
+            responseToJsonArrryNew.append(responseToJson)
+    machine_prdJson = responseToJsonArrryNew[0]
     if(len(machine_prdJson) != 0):
         ip = machine_prdJson['ip']
         print("http://" + ip + ':4080')
@@ -61,4 +65,4 @@ def get_pigon_ip_and_port(serviceName, env):
 if __name__ == '__main__':
    #get_pigon_ip_and_port("uc-doorkeeper-center","qa")
    #get_pigon_ip_and_port("ymm-verifycode-service", "qa")
-   get_pigon_ip_and_port("uc-check-service", "qa")
+   get_pigon_ip_and_port("ymm-verifycode-service", "qa")
