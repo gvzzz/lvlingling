@@ -24,10 +24,10 @@ def getDriverInfo(env_url,path):
     bodyJson = PostJson ["body"]
     phone = authJson["telephone"]
     usertype = authJson["userType"]
-    authResponseJson = utils.getAuth.generateAuthApi(phone, usertype, env)
+    auth = utils.getAuth.generateAuthApi(phone, usertype, env)
     headers = {}
     headers["Content-Type"] = 'application/json'
-    headers["Authorization"] = json.loads(authResponseJson)['auth']
+    headers["Authorization"] = str(auth)
     response = utils.httpUtil.Post(request_url, headers, bodyJson)
     print (response)
     return response

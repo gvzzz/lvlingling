@@ -76,6 +76,24 @@ def getPageId(wikiName):
     pageId = soup.find(attrs={"name": "ajs-page-id"})['content']  #获取meta标签中的content
     return pageId
 
+#生成wiki的时候有一个唯一性编号，拿到这个唯一性编号；还有获取一个token
+def getcreate_wikiIDict(key,parent_id):
+    headers = {}
+    url = 'http://wiki.ymmoa.com/pages/createpage.action?'+'spaceKey='+ key + '&fromPageId='+ parent_id
+    print(url)
+    headers["Cookie"] = 'seraph.confluence=17532008%3A76f9efad8b4b9a0f2e792fd106b38fc94f66c95b; confluence-sidebar.width=256.6666666666667; mywork.tab.tasks=false; JSESSIONID=4A511CC49255C1B35436ED44AFC68A11'
+    headers["Content-Type"] = 'application/x-www-form-urlencoded'
+    response = utils.httpUtil.Get(url, headers)
+    soup = BeautifulSoup(response, "html.parser")  # 创建soup对象
+    create_wikiId = soup.find(attrs={"name": "ajs-attachment-source-content-id"})['content']  # 获取meta标签中的content
+    create_wikiToken = soup.find(attrs={"name": "ajs-atl-token"})['content']  # 获取meta标签中的content
+    create_wikiToken2 = soup.find(attrs={"name": "atlassian-token"})['content']  # 获取meta标签中的content
+    print(create_wikiToken2)
+    create_wikiIDict = {}
+    create_wikiIDict ['create_wikiId'] = create_wikiId
+    create_wikiIDict['create_wikiToken'] = create_wikiToken
+    return create_wikiIDict
+
 
 
 
@@ -84,7 +102,8 @@ def getPageId(wikiName):
 if __name__ == '__main__':
     #getPassRate("dev_info_app_serviceablity",'2019-01-08','2019-01-09')
    # getRssFailedReson('uc-doorkeeper-center','2019-01-08','2019-01-09')
-   getPageId("20190108服务可用性")
+    print(getcreate_wikiIDict('rdTeam', '22105243'))
+
 
 
 

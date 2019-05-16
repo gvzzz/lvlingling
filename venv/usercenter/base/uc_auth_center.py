@@ -7,6 +7,8 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 import utils.httpUtil
 import utils.getIpPort
+import json
+from urllib.parse import quote_plus
 #这是pigeon接口需要去机器的host域名，还有parameter1是方法的参数
 def findUserBlacklistInfo(http_host,parameter1):
     url = http_host + "/invoke.json?validate=true&direct=false&token=undefined&url=http%3A%2F%2Fservice.ymm.com%2Frisk%2FRiskManagementService_1.0.0&method=findUserBlacklistInfo&parameterTypes%5B%5D=java.lang.Long"+"&group=&parameters%5B%5D=" + parameter1
@@ -14,6 +16,23 @@ def findUserBlacklistInfo(http_host,parameter1):
     response = utils.httpUtil.Get(url,headers)
     return response
 
+#terminalType为YMM或者HCB
+def getAuthTokenByUserId(http_host,accountId,terminalType):
+    parameter2_encode = quote_plus(terminalType)
+    url = http_host + '/invoke.json?validate=true&direct=false&token=undefined&group=&url=http%3A%2F%2Fservice.ymm.com%2Fuc-auth-center%2FauthorizationService_1.0.0&method=getAuthTokenByUserId&parameterTypes%5B%5D=java.lang.Long&parameterTypes%5B%5D=java.lang.String'+"&parameters%5B%5D="+accountId+"&parameters%5B%5D="+parameter2_encode
+    headers = {}
+    response = utils.httpUtil.Get(url,headers)
+    responseJson = json.loads(response)
+    if(responseJson['errorCode'] ==0 ):
+        tokeninfo = responseJson['data']['tokeninfo']
+        tokeninfoJson = json.loads(tokeninfo)
+        token = tokeninfoJson['token']
+        return token
+    else :
+        return None
+
 if __name__ == '__main__':
-    http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","dev")
-    findUserBlacklistInfo(http_host, "2")
+    http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center","qa")
+    #findUserBlacklistInfo(http_host, "2")
+    print(getAuthTokenByUserId(http_host,'215860738','YMM'))
+
