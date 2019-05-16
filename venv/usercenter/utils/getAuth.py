@@ -10,9 +10,9 @@ for file in os.listdir(os.getcwd()):
     sys.path.append('../utils')
 import httpUtil
 import json
-import uc_info_center
+import base.uc_info_center
 import utils.getIpPort
-import uc_auth_center
+import base.uc_auth_center
 import base64
 
 
@@ -39,9 +39,9 @@ def generateAuthApi(phone,usertype,env):
     if (auth is None):
         #如果拿到的auth头为null那么调auth-center的获取已经登录的账户的token，只有经登录过才能拿得到（wrench接口是从登录接口里面拿的）
         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-info-center", str(env2))
-        account_id = uc_info_center.getAccountInfoByMobile(http_host,str(phone))
+        account_id = base.uc_info_center.getAccountInfoByMobile(http_host,str(phone))
         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center", str(env2))
-        token = uc_auth_center.getAuthTokenByUserId(http_host,str(account_id),'YMM')
+        token = base.uc_auth_center.getAuthTokenByUserId(http_host,str(account_id),'YMM')
         a64CookieStr = 'u_' + str(account_id) + ':' + token
         return 'Basic ' + str(base64.b64encode(a64CookieStr.encode('utf-8')), 'utf-8')
     return auth
