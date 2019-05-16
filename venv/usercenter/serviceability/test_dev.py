@@ -65,10 +65,10 @@ class runDevLogin_Test(unittest.TestCase):
         env_url = data.requestData.dev
         request_url = env_url + data.requestData.partnerToken_request
         headers = {}
-        authResponseJson = utils.getAuth.generateAuthApi(13001295698, 1, 'dev')
+        auth = utils.getAuth.generateAuthApi(13001295698, 1, 'dev')
         headers["Content-Type"] = 'application/json'
         headers["client-info"] = data.requestData.driver_client
-        headers["Authorization"] = json.loads(authResponseJson)['auth']
+        headers["Authorization"] = str(auth)
         bodyJson = {}
         response = utils.httpUtil.Post(request_url, headers, bodyJson)
         responseJson = json.loads(response)

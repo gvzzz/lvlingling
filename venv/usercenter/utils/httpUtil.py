@@ -20,16 +20,21 @@ def Post(url,headers,body):
 
 #Form类型 数据的post
 def PostForm(url,headers,body):
-        req = request.Request(url=url,data = urllib.parse.urlencode(body).encode(), method="POST",headers=headers)
-        #req = urllib2.Request(url=url, data=json.dumps(body).encode(),headers=headers)
-        response = request.urlopen(req).read()
+        # 需要使用 urllib.parse.urlencode() 将字典转化为字符串，再使用 bytes() 转为字节流。
+        data = bytes(urllib.parse.urlencode(body), encoding='utf8')
+        req = request.Request(url=url,data = data, method="POST",headers=headers)
+        #response = urllib.request.urlopen(url,data=data,method="POST",headers=headers)
+
+
         #try:
                 #result = urllib2.urlopen(req)
                 #response = result.read()
                 #response = urllib.request.urlopen(req).read()
         #except urllib2.HTTPError, e:
                 #print e.code
+        response = request.urlopen(req).read()
         print(response.decode('utf8'))
+
         return response
 
 def Get(url,headers):
