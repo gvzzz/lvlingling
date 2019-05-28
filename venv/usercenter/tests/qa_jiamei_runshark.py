@@ -45,7 +45,7 @@ class jiamei_shark_Test(unittest.TestCase):
 
      def test_agreement_service(self):
          reporteponseJson = sharkUtil.queryResult(agreement_service_timeData, str(agreement_service_test_suite_id))
-         self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务" + "refenrence_app" + "有失败的case，报告地址：" + data.requestData.report_url_service + "&ref_id=" + str(agreement_service_test_suite_id) + "&token=" + agreement_service_timeData)
+         self.assertEqual(reporteponseJson['data']['summary']['total_run_failed'], 0,msg="服务" + "agreement_service" + "有失败的case，报告地址：" + data.requestData.report_url_service + "&ref_id=" + str(agreement_service_test_suite_id) + "&token=" + agreement_service_timeData)
          print("agreement_service测试报告地址:" + data.requestData.report_url_service + "&ref_id=" + str(agreement_service_test_suite_id) + "&token=" + agreement_service_timeData)
 
      def test_userCenter4_service(self):
