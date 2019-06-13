@@ -56,6 +56,8 @@ def Get(url,headers):
 
 
 
+
+
 if __name__ == '__main__':
         #url = "http://docker-beidou.ymmoa.com/internal/api/get_service_port/?name=uc-check-service"
         #headers ={}
@@ -73,6 +75,25 @@ if __name__ == '__main__':
         data["originalVersion"] = '11'
         data["atl_token"] = '8c29bd0ec3d0c8733cd5bb910dd91d2f6dcf226f'
         PostForm(url,headers,data)
+
+        url = 'http://dev-lion.ymmoa.com/lion/config/saveDefaultValueAjax.vhtml'
+
+
+        headers["Cookie"] = "qa_passport=HVCPSJBe4ZIDA5Jdu1O59-iCGuI5dRUt8C_Yof2Z3MjneXBlkC6xtzeVBK3yDiapOHwplKvT0K2XpIZ97XN00AWxe6gsWXRscUA1dW4ujuOSvT8Mapya6IBa770ssgzuv2yVpxAPH3Bw6rB8ep0FSPlXd8SpK9WFPWbdhJ2Jfks; dev_passport=AT8L9xP4LsiHAEUbjPbFjZ_wSLflhfL3NxvmzyVDjgJB3mm-KNaRMX0o9Avo34EDcV3YT8R2etBqEXx8jHS0vm3080qIQclZ4dZzrDh3Rt2L3YYMc2I-Kkqn0p1Y2RS4dckSSE0_MJZwB0TSKal8W4vqVIa9ccTo3hKo5u3rIgs"
+        headers["Content-Type"] = 'application/x-www-form-urlencoded'
+        data = {}
+        data["configId"] = 17439
+        data["envIds"] = 3
+        data["envIds"] = 4
+        data["trim"] = True
+        data["value"] = False
+        data["type"] = 30
+        PostForm(url, headers, data)
+
+
+
+
+
 
 
 

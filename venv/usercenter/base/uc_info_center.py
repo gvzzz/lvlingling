@@ -24,6 +24,9 @@ def getAccountInfoByMobile(http_host,mobile):
     return account_id
 
 
+############################本次hcb的接口##################################
+
+
 if __name__ == '__main__':
     http_host = utils.getIpPort.get_pigon_ip_and_port("uc-info-center","dev")
     #getEnterpriseInfoByAccountId(http_host, "2")

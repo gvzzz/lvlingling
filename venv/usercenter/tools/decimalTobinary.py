@@ -21,6 +21,6 @@ def binaryTodecimal(string_num):
 
 
 if __name__ == '__main__':
-    print(decimalTobinary(11))
-    print(len(decimalTobinary(11)))
-    print(binaryTodecimal("11100000000000000"))
+    print(decimalTobinary(126))
+    print(len(decimalTobinary(126)))
+    print(binaryTodecimal("100000000000000000000000"))
