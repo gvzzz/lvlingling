@@ -11,7 +11,6 @@ def dev_simple_user_info_Open(i):
     utils.lion.modifylion(17439, 3, "true", 30)
     path = "../hcbdata/simple_user_info.json"
     url = "http://ucenter.dev-ag.56qq.com"
-    i = 0
     openLionStr = base.userCenter_server.simple_user_info(url,path,i)
     openLionJson = json.loads(openLionStr)
     return openLionJson
