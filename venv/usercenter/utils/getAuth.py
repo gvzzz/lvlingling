@@ -43,6 +43,7 @@ def generateAuthApi(phone,usertype,env):
         http_host = utils.getIpPort.get_pigon_ip_and_port("uc-auth-center", str(env2))
         token = base.uc_auth_center.getAuthTokenByUserId(http_host,str(account_id),'YMM')
         a64CookieStr = 'u_' + str(account_id) + ':' + token
+        print('Basic ' + str(base64.b64encode(a64CookieStr.encode('utf-8')), 'utf-8'))
         return 'Basic ' + str(base64.b64encode(a64CookieStr.encode('utf-8')), 'utf-8')
     return auth
 
@@ -61,8 +62,8 @@ def getSso(path,env):
 if __name__ == '__main__':
     #generateAuthApi(13423300016,1,"dev")
     #generateAuthApi(15660000090, 2, 'dev')
-    generateAuthApi(15660000000, 2, 'beta')
-    #path = "../data/sso_qa.json"
-    #getSso(path,"qa")
+    #generateAuthApi(15670000101, 1, 'beta')
+    path = "../data/sso_qa.json"
+    getSso(path,"qa")
 
 
