@@ -1,0 +1,38 @@
+{"requestbodys":[
+  {
+    "userId": "20218362",
+    "domainId": 1,
+    "ids":0,
+    "ymmUids":965006065496325986,
+    "showVehicle":true,
+    "onlySSOAccount":true,
+    "picType":true
+},
+  {
+    "userId": "20006048",
+    "domainId": 1,
+    "ids":0,
+    "ymmUids":41,
+    "showVehicle":true,
+    "onlySSOAccount":true,
+    "picType":true
+  },
+  {
+    "userId": "20024346",
+    "domainId": 1,
+    "ids":0,
+    "ymmUids":289927315,
+    "showVehicle":true,
+    "onlySSOAccount":true,
+    "picType":true
+  },
+  {
+    "userId": "20160989",
+    "domainId": 1,
+    "ids":0,
+    "ymmUids":965006065496325658,
+    "showVehicle":true,
+    "onlySSOAccount":true,
+    "picType":true
+  }
+]}

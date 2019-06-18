@@ -1,0 +1,26 @@
+{"requestbodys":[
+  {
+    "userId": "20217986",
+    "domainId": 1,
+    "showAlliance":false,
+    "showPics":false
+},
+  {
+    "userId": "20006048",
+    "domainId": 1,
+    "showAlliance":false,
+    "showPics":false
+  },
+  {
+    "userId": "20024346",
+    "domainId": 1,
+    "showAlliance":false,
+    "showPics":false
+  },
+  {
+    "userId": "20160989",
+    "domainId": 1,
+    "showAlliance":false,
+    "showPics":false
+  }
+]}

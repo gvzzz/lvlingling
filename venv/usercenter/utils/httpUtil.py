@@ -25,7 +25,6 @@ def PostForm(url,headers,body):
         req = request.Request(url=url,data = data, method="POST",headers=headers)
         #response = urllib.request.urlopen(url,data=data,method="POST",headers=headers)
 
-
         #try:
                 #result = urllib2.urlopen(req)
                 #response = result.read()
@@ -36,6 +35,7 @@ def PostForm(url,headers,body):
         print(response.decode('utf8'))
 
         return response
+
 
 def Get(url,headers):
 
