@@ -86,6 +86,91 @@ def get_by_mobiles(env_url,path,i):
     response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
     return response
 
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23368330
+def realname(env_url,path,i):
+    request_url = env_url + "/server/user/realname"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23375731
+def batch_get_by_mobiles(env_url,path,i):
+    request_url = env_url + "/server/user/batch-get-by-mobiles"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376190
+def mobile_exists(env_url,path,i):
+    request_url = env_url + "/server/mobile/exists"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376477
+def get_with_virtual_info(env_url,path,i):
+    request_url = env_url + "/server/user/get-with-virtual-info"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23378616
+def get_all_domain(env_url,path,i):
+    request_url = env_url + "/server/user/consignor/get-all-domain"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23378725
+def can_register(env_url,path,i):
+    request_url = env_url + "/server/user/mobile/can-register"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23383621
+def simple_user_info2(env_url,path,i):
+    request_url = env_url + "/server/simple-user-info2"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+
+
 
 if __name__ == '__main__':
     #path = "../hcbdata/simple_user_info.json"
@@ -98,8 +183,8 @@ if __name__ == '__main__':
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
     #path = '../hcbdata/users_basic_info.json'
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
-    path = '../hcbdata/get_by_mobiles.json'
-    get_by_mobiles("http://ucenter.dev-ag.56qq.com", path, 0)
+    path = '../hcbdata/simple_user_info2.json'
+    simple_user_info2("http://ucenter.dev-ag.56qq.com", path, 0)
 
 
 
