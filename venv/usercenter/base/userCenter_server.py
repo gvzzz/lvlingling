@@ -169,6 +169,78 @@ def simple_user_info2(env_url,path,i):
     response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
     return response
 
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376909
+def get_by_userIds(env_url,path,i):
+    request_url = env_url + "/server/user/get-by-userIds"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23370142
+def getUserByUserIdAndDomainId(env_url,path,i):
+    request_url = env_url + "/server/dubbo/getUserByUserIdAndDomainId"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23375639
+def get_by_bindMobiles(env_url,path,i):
+    request_url = env_url + "/server/user/get-by-bindMobiles"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376018
+def get_driver_by_userIds(env_url,path,i):
+    request_url = env_url + "/server/user/get-driver-by-userIds"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376176
+def auth_get(env_url,path,i):
+    request_url = env_url + "/server/vehicle/auth/get"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23379670
+def get_users(env_url,path,i):
+    request_url = env_url + "/server/saas/user/get-users"
+    print("++++++++++++" + request_url)
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    headers = {}
+    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
+    return response
 
 
 
@@ -183,8 +255,8 @@ if __name__ == '__main__':
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
     #path = '../hcbdata/users_basic_info.json'
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
-    path = '../hcbdata/simple_user_info2.json'
-    simple_user_info2("http://ucenter.dev-ag.56qq.com", path, 0)
+    path = '../hcbdata/get_users.json'
+    get_users("http://ucenter.dev-ag.56qq.com", path, 0)
 
 
 
