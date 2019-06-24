@@ -2,6 +2,8 @@
 import json
 from urllib import request
 import urllib.parse
+from utils import des_utils
+import sso
 
 #json数据的post
 def Post(url,headers,body):
@@ -38,8 +40,6 @@ def PostForm(url,headers,body):
 
 
 def Get(url,headers):
-
-
         req = request.Request(url = url,method="GET",headers=headers)
         response = request.urlopen(req).read()
         #req = urllib2.Request(url = url,headers=headers)
@@ -55,14 +55,61 @@ def Get(url,headers):
 
 
 
+def url_encode(form_data):
+        form_data_list = [str(key) + '=' + str(value) for key, value in form_data.items()]
+        encode_url = '&'.join(form_data_list)
+        return encode_url
 
+
+ # 采用V1类型加密
+def encrypt(post_url, post_param=None, sessionId=-1, token=""):
+        '''if not (post_url and post_param):
+            raise Exception(u"请传入post请求url和post请求参数")
+
+        if not isinstance(post_param, dict):
+            raise Exception(u"传入的post请求参数不为字典，参数格式非法！")'''
+        if (len(post_param)!= 0):
+                #url_encode = url_encode(post_param)
+                encode_data = post_url.strip() + "?" + url_encode(post_param)
+        elif (len(post_param)== 0):
+                encode_data = post_url
+        print("====encode_data=====加密前入参"+encode_data)
+        encrypt_data = des_utils.DesUtil.encrypt_data(encode_data, sessionId, token)
+        print("====encrypt_data====加密后入参"+encrypt_data)
+        return encrypt_data
+
+
+ # 采用V1类型解密
+def decrypt(encrypt_data, token_st=None):
+        return des_utils.DesUtil.decrypt_data(encrypt_data, token_st)
+
+
+def hcbPostForm(dispatch_url, api_url, form_data, token=None):
+        # 如果有token传入，将token加入加密，否则使用默认token
+        if token:
+                encrypt_data = encrypt(api_url, form_data, token.get('sid'), token.get('st'))
+        else:
+                encrypt_data = encrypt(api_url, form_data)
+        post_param = {"content": encrypt_data}
+        r = PostForm(dispatch_url, {}, post_param)
+        print("完整的请求url是：%s" % dispatch_url + api_url)
+        c = r.decode(encoding='utf-8')  # 将byte转string
+        print("===============c" + c)
+        decrypt_data_dict = decrypt(c)
+        print("============decrypt_data_dict" + decrypt_data_dict)
+        json.loads(decrypt_data_dict)
+        try:
+                return json.loads(decrypt_data_dict)
+        except Exception as e:
+                print('ERROR exception caught ===>' + str(e))
+                print(decrypt_data_dict)
 
 
 if __name__ == '__main__':
         #url = "http://docker-beidou.ymmoa.com/internal/api/get_service_port/?name=uc-check-service"
         #headers ={}
         #Get(url,headers)
-        headers={}
+        '''headers={}
         headers["Cookie"] = 'seraph.confluence=17532008%3A76f9efad8b4b9a0f2e792fd106b38fc94f66c95b; confluence-sidebar.width=256.6666666666667; mywork.tab.tasks=false; ymmoa_user={%22name%22:%22%E6%9D%8E%E4%BD%B3%E7%BE%8E%22%2C%22avatarUrl%22:%22%22%2C%22departmentName%22:%22%E5%9F%BA%E7%A1%80%E5%B9%B3%E5%8F%B0%E6%B5%8B%E8%AF%95%E9%83%A8%22%2C%22id%22:10236%2C%22jobNumber%22:%22Y0010236%22}; ymmoa_passport=bUyhPeUamY2Jrs95ugfqJkSgvGeVa7vhgA6_'
         headers["Content-Type"] = 'application/x-www-form-urlencoded'
         url = 'http://wiki.ymmoa.com/pages/doeditpage.action?pageId=19551062'
@@ -88,7 +135,31 @@ if __name__ == '__main__':
         data["trim"] = True
         data["value"] = False
         data["type"] = 30
-        PostForm(url, headers, data)
+        PostForm(url, headers, data)'''
+
+        dispatch_url= 'http://ucenter.dev-ag.56qq.com/mobile/vehicle/auth-info'
+        api_url =""
+        obj = sso.Sso()
+        form_data = {
+        "client": "Android_v7.1",
+        "version": "5.14.0",
+        "domainId": 1,
+        "appClientId": 107,
+        "mobile": 18900000440,
+        "code": 8888,
+        "codeType" : "VERIFICATION_CODE",
+        "dfp": "ee3b66e1-9d09-4793-bfa2-f0ed16300b22"
+}
+        response_dict = obj.post("http://sso.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do", form_data,
+                 token=None)
+        token = {'sid': response_dict['content']['id'], 'st': response_dict['content']['token']}
+        form_data1 = {
+                "st": token.get("st"),
+                "sid": token.get("sid")
+        }
+        hcbPostForm("http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/mobile/vehicle/auth-info", form_data1, None)
+
+
 
 
 

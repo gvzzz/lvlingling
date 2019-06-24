@@ -11,34 +11,33 @@ import utils.lion
 
 
 #第0个json入参
-def dev_server_driver_get_Open(i):
+def qa_vehicle_auth_info_Open(i):
     #将lion开关打开
     utils.lion.modifylion(17439, 3, "true", 30)
     time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
-    path = path_base + "/hcbdata/server_driver_get.json"  # 拼成绝对路径
-    url = "http://ucenter.dev-ag.56qq.com"
-    openLionStr = base.userCenter_server.server_driver_get(url,path,i)
-    openLionJson = json.loads(openLionStr)
+    path = path_base + "/hcbdata/vehicle_auth_info.json"  # 拼成绝对路径
+    diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
+    openLionJson = base.userCenter_server.vehicle_auth_info(diapatch_url,path,i)
+    #openLionJson = json.loads(openLionStr)
     return openLionJson
 
 
-def dev_server_driver_get_Clost(i):
+def qa_vehicle_auth_info_Clost(i):
     # 获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
-    path = path_base + "/hcbdata/server_driver_get.json"  # 拼成绝对路径
-    url = "http://ucenter.dev-ag.56qq.com"
+    path = path_base + "/hcbdata/vehicle_auth_info.json"  # 拼成绝对路径
+    diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
     # 将lion开关关闭
     utils.lion.modifylion(17439, 3, "false", 30)
     time.sleep(1)
-    closeLionStr = base.userCenter_server.server_driver_get(url, path, i)
-    closeLionJson = json.loads(closeLionStr)
+    closeLionJson = base.userCenter_server.vehicle_auth_info(diapatch_url,path,i)
     return closeLionJson
 
 
 def jsondif(i):
-    result = diff(dev_server_driver_get_Open(i), dev_server_driver_get_Clost(i))
+    result = diff(qa_vehicle_auth_info_Open(i), qa_users_basic_info_Clost(i))
     return str(list(result))
 
 
@@ -62,7 +61,7 @@ def writeExcelDaliy(openList,closeList,inputIsSameList,difList):
         mySheet.write(1 + i, 3, str(closeList[i]))
         mySheet.write(1 + i, 4, difList[i])
     today = datetime.datetime.now().strftime('%Y-%m-%d')
-    myWorkbook.save(today +"server_driver_get"+"dev"+ '.xls')
+    myWorkbook.save(today +"vehicle_auth_info"+"qa"+ '.xls')
 
 
 if __name__ == '__main__':
@@ -70,26 +69,10 @@ if __name__ == '__main__':
     closeList = []
     inputIsSameList= []
     difList = []
-    openList.append(dev_server_driver_get_Open(0))
-    closeList.append(dev_server_driver_get_Clost(0))
+    openList.append(qa_vehicle_auth_info_Open(0))
+    closeList.append(qa_vehicle_auth_info_Clost(0))
     inputIsSameList.append("第0个json入参是一致性司机")
     difList.append(jsondif(0))
     writeExcelDaliy(openList, closeList,inputIsSameList,difList)
 
-    openList.append(dev_server_driver_get_Open(1))
-    closeList.append(dev_server_driver_get_Clost(1))
-    inputIsSameList.append("第1个json入参是非一致性司机")
-    difList.append(jsondif(1))
-    writeExcelDaliy(openList, closeList, inputIsSameList, difList)
 
-    openList.append(dev_server_driver_get_Open(2))
-    closeList.append(dev_server_driver_get_Clost(2))
-    inputIsSameList.append("第2个json入参是一致性货主")
-    difList.append(jsondif(2))
-    writeExcelDaliy(openList, closeList, inputIsSameList, difList)
-
-    openList.append(dev_server_driver_get_Open(3))
-    closeList.append(dev_server_driver_get_Clost(3))
-    inputIsSameList.append("第3个json入参是非一致性货主")
-    difList.append(jsondif(3))
-    writeExcelDaliy(openList, closeList, inputIsSameList, difList)

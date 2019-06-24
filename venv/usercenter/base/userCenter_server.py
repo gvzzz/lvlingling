@@ -7,6 +7,14 @@ curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 import utils.httpUtil
+import utils.sso
+
+def sso(form_data):
+    obj = utils.sso.Sso()
+    response_dict = obj.post("http://sso.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do",
+                             form_data,
+                             token=None)
+    return  response_dict
 #http://ucenter.dev-ag.56qq.com   i是jsonArry里面取的值 从0开始
 def simple_user_info(env_url,path,i):
     request_url = env_url+"/server/simple-user-info"
@@ -29,15 +37,25 @@ def consignor_get(env_url,path,i):
     return response
 
 #这个方法有点问题入参是网关鉴权拿到的，对C端
-def vehicle_auth_info(env_url,path,i):
-    request_url = env_url + "/mobile/vehicle/auth-info"
+def vehicle_auth_info(dispatch_url,path,i):
+    api_url =  "/mobile/vehicle/auth-info"
     f = open(path, "r")
     PostJson = json.load(f)
-    bodyJsonArry = PostJson["requestbodys"]
-    bodyJson = bodyJsonArry[i]
-    headers = {}
-    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
-    return response
+    headerJsonArray = PostJson["requsetHeaders"]
+    headerJson = headerJsonArray[i]
+    #先拿着header调sso
+    ssoResponse = sso(headerJson)
+    try:
+        sid = ssoResponse['content']['id']
+        st = ssoResponse['content']['token']
+        bodyJson = {}
+        bodyJson['sid'] = sid
+        bodyJson['st'] = st
+        response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        return response
+    except KeyError:
+        print("sso返回值中不含content")
+
 
 #还未调好 对C端
 def driver_get(env_url,path,i):
@@ -255,8 +273,10 @@ if __name__ == '__main__':
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
     #path = '../hcbdata/users_basic_info.json'
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
-    path = '../hcbdata/get_users.json'
-    get_users("http://ucenter.dev-ag.56qq.com", path, 0)
-
+    #path = '../hcbdata/get_users.json'
+    #get_users("http://ucenter.dev-ag.56qq.com", path, 0)
+    path = '../hcbdata/vehicle_auth_info.json'
+    #vehicle_auth_info("http://ucenter.dev-ag.56qq.com/v1.1/mobile/dispatch.do", path, 0)
+    vehicle_auth_info("http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do", path, 0)
 
 
