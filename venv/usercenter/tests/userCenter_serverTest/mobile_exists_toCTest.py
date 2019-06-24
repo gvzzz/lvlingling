@@ -12,8 +12,8 @@ import utils.lion
 
 #第0个json入参
 def qa_mobile_exists_toC_Open(i):
-    #将lion开关打开
-    utils.lion.modifylion(17439, 3, "true", 30)
+    #将lion开关打开qa是4 dev是3
+    utils.lion.modifylion(17439, 4, "true", 30)
     time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
@@ -21,7 +21,7 @@ def qa_mobile_exists_toC_Open(i):
     diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
     openLionJson = base.userCenter_server.mobile_exists_toC(diapatch_url,path,i)
     #openLionJson = json.loads(openLionStr)
-    return openLionJsonz
+    return openLionJson
 
 
 def qa_mobile_exists_toC_Clost(i):
@@ -29,8 +29,8 @@ def qa_mobile_exists_toC_Clost(i):
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/mobile_exists_toC.json"  # 拼成绝对路径
     diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
-    # 将lion开关关闭
-    utils.lion.modifylion(17439, 3, "false", 30)
+    # 将lion开关关闭qa是4 dev是3
+    utils.lion.modifylion(17439, 4, "false", 30)
     time.sleep(1)
     closeLionJson = base.userCenter_server.mobile_exists_toC(diapatch_url,path,i)
     return closeLionJson

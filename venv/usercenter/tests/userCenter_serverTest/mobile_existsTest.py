@@ -12,8 +12,8 @@ import utils.lion
 
 #第0个json入参
 def dev_mobile_exists_Open(i):
-    #将lion开关打开
-    utils.lion.modifylion(17439, 3, "true", 30)
+    #将lion开关打开qa是4 dev是3
+    utils.lion.modifylion(17439, 4, "true", 30)
     time.sleep(5)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
@@ -29,8 +29,8 @@ def dev_mobile_exists_Clost(i):
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/mobile_exists.json"  # 拼成绝对路径
     url = "http://ucenter.dev-ag.56qq.com"
-    # 将lion开关关闭
-    utils.lion.modifylion(17439, 3, "false", 30)
+    # 将lion开关关闭qa是4 dev是3
+    utils.lion.modifylion(17439, 4, "false", 30)
     time.sleep(5)
     closeLionStr = base.userCenter_server.mobile_exists(url, path, i)
     closeLionJson = json.loads(closeLionStr)

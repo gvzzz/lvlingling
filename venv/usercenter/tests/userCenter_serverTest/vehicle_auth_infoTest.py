@@ -12,8 +12,8 @@ import utils.lion
 
 #第0个json入参
 def qa_vehicle_auth_info_Open(i):
-    #将lion开关打开
-    utils.lion.modifylion(17439, 3, "true", 30)
+    #将lion开关打开 qa是4   dev是3
+    utils.lion.modifylion(17439, 4, "true", 30)
     time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
@@ -29,15 +29,15 @@ def qa_vehicle_auth_info_Clost(i):
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/vehicle_auth_info.json"  # 拼成绝对路径
     diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
-    # 将lion开关关闭
-    utils.lion.modifylion(17439, 3, "false", 30)
+    # 将lion开关关闭 qa是4   dev是3
+    utils.lion.modifylion(17439, 4, "false", 30)
     time.sleep(1)
     closeLionJson = base.userCenter_server.vehicle_auth_info(diapatch_url,path,i)
     return closeLionJson
 
 
 def jsondif(i):
-    result = diff(qa_vehicle_auth_info_Open(i), qa_users_basic_info_Clost(i))
+    result = diff(qa_vehicle_auth_info_Open(i), qa_vehicle_auth_info_Clost(i))
     return str(list(result))
 
 

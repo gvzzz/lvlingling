@@ -12,8 +12,8 @@ import utils.lion
 
 #第0个json入参
 def qa_driver_get_Open(i):
-    #将lion开关打开
-    utils.lion.modifylion(17439, 3, "true", 30)
+    #将lion开关打开qa是4 dev是3
+    utils.lion.modifylion(17439, 4, "true", 30)
     time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
@@ -25,12 +25,12 @@ def qa_driver_get_Open(i):
 
 
 def qa_driver_get_Clost(i):
-    # 获取上上级目录
+    # 获取上上级目录qa是4 dev是3
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/driver_get.json"  # 拼成绝对路径
     diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
     # 将lion开关关闭
-    utils.lion.modifylion(17439, 3, "false", 30)
+    utils.lion.modifylion(17439, 4, "false", 30)
     time.sleep(1)
     closeLionJson = base.userCenter_server.driver_get(diapatch_url,path,i)
     return closeLionJson
