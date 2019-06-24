@@ -57,16 +57,50 @@ def vehicle_auth_info(dispatch_url,path,i):
         print("sso返回值中不含content")
 
 
-#还未调好 对C端
-def driver_get(env_url,path,i):
-    request_url = env_url + "/mobile/driver/get"
+#=
+def driver_get(dispatch_url,path,i):
+    api_url = "/mobile/driver/get"
     f = open(path, "r")
     PostJson = json.load(f)
+    headerJsonArray = PostJson["requsetHeaders"]
+    headerJson = headerJsonArray[i]
     bodyJsonArry = PostJson["requestbodys"]
     bodyJson = bodyJsonArry[i]
-    headers = {}
-    response = utils.httpUtil.PostForm(request_url, headers, bodyJson)
-    return response
+    # 先拿着header调sso
+    ssoResponse = sso(headerJson)
+    try:
+        sid = ssoResponse['content']['id']
+        st = ssoResponse['content']['token']
+        bodyJson['sid'] = sid
+        bodyJson['st'] = st
+        response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        return response
+    except KeyError:
+        print("sso返回值中不含content")
+
+#http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376043
+def mobile_exists_toC(dispatch_url,path,i):
+    api_url = "/mobile/user/mobile/exists"
+    f = open(path, "r")
+    PostJson = json.load(f)
+    headerJsonArray = PostJson["requsetHeaders"]
+    headerJson = headerJsonArray[i]
+    bodyJsonArry = PostJson["requestbodys"]
+    bodyJson = bodyJsonArry[i]
+    # 先拿着header调sso
+    ssoResponse = sso(headerJson)
+    try:
+        sid = ssoResponse['content']['id']
+        st = ssoResponse['content']['token']
+        bodyJson['sid'] = sid
+        bodyJson['st'] = st
+        response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        return response
+    except KeyError:
+        print("sso返回值中不含content")
+
+
+
 
 #这个接口的返回值有问题
 def server_driver_get(env_url,path,i):
@@ -275,8 +309,8 @@ if __name__ == '__main__':
     #users_basic_info("http://ucenter.dev-ag.56qq.com", path, 3)
     #path = '../hcbdata/get_users.json'
     #get_users("http://ucenter.dev-ag.56qq.com", path, 0)
-    path = '../hcbdata/vehicle_auth_info.json'
+    path = '../hcbdata/mobile_exists_toC.json'
     #vehicle_auth_info("http://ucenter.dev-ag.56qq.com/v1.1/mobile/dispatch.do", path, 0)
-    vehicle_auth_info("http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do", path, 0)
+    mobile_exists_toC("http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do", path, 0)
 
 

@@ -27,7 +27,8 @@
   "requestbodys":[
     {
       "domainId":1,
-      "userId":15050
+      "mobile":13833488078,
+      "userCharacter":false
     }
 
 ]}
