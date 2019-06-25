@@ -27,7 +27,7 @@ def qa_driver_get(i):
     closeLionJson = base.userCenter_server.driver_get(diapatch_url, path, i)
     result = diff(openLionJson, closeLionJson)  # 对比的list
     dic = {"openLionJson": openLionJson, "closeLionJson": closeLionJson, 'difStr': str(list(result))}
-    return openLionJson
+    return dic
 
 
 
