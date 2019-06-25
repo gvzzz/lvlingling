@@ -11,7 +11,7 @@ import utils.lion
 
 
 #第0个json入参
-def qa_vehicle_auth_info_Open(i):
+def qa_vehicle_auth_info(i):
     #将lion开关打开 qa是4   dev是3
     utils.lion.modifylion(17439, 4, "true", 30)
     time.sleep(1)
@@ -20,26 +20,14 @@ def qa_vehicle_auth_info_Open(i):
     path = path_base + "/hcbdata/vehicle_auth_info.json"  # 拼成绝对路径
     diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
     openLionJson = base.userCenter_server.vehicle_auth_info(diapatch_url,path,i)
-    #openLionJson = json.loads(openLionStr)
-    return openLionJson
 
-
-def qa_vehicle_auth_info_Clost(i):
-    # 获取上上级目录
-    path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
-    path = path_base + "/hcbdata/vehicle_auth_info.json"  # 拼成绝对路径
-    diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
     # 将lion开关关闭 qa是4   dev是3
     utils.lion.modifylion(17439, 4, "false", 30)
     time.sleep(1)
-    closeLionJson = base.userCenter_server.vehicle_auth_info(diapatch_url,path,i)
-    return closeLionJson
-
-
-def jsondif(i):
-    result = diff(qa_vehicle_auth_info_Open(i), qa_vehicle_auth_info_Clost(i))
-    return str(list(result))
-
+    closeLionJson = base.userCenter_server.vehicle_auth_info(diapatch_url, path, i)
+    result = diff(openLionJson, closeLionJson)  # 对比的list
+    dic = {"openLionJson": openLionJson, "closeLionJson": closeLionJson, 'difStr': str(list(result))}
+    return dic
 
 
 
@@ -69,10 +57,11 @@ if __name__ == '__main__':
     closeList = []
     inputIsSameList= []
     difList = []
-    openList.append(qa_vehicle_auth_info_Open(0))
-    closeList.append(qa_vehicle_auth_info_Clost(0))
+    dict0 = qa_vehicle_auth_info(0)
+    openList.append(dict0.get("openLionJson"))
+    closeList.append(dict0.get("closeLionJson"))
     inputIsSameList.append("第0个json入参是一致性司机")
-    difList.append(jsondif(0))
+    difList.append(dict0.get("difStr"))
     writeExcelDaliy(openList, closeList,inputIsSameList,difList)
 
 
