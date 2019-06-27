@@ -11,9 +11,7 @@ import utils.sso
 
 def sso(form_data):
     obj = utils.sso.Sso()
-    response_dict = obj.post("http://sso.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do",
-                             form_data,
-                             token=None)
+    response_dict = obj.post("http://sso.dev-ag.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do",form_data,None)
     return  response_dict
 #http://ucenter.dev-ag.56qq.com   i是jsonArry里面取的值 从0开始
 def simple_user_info(env_url,path,i):
@@ -38,7 +36,7 @@ def consignor_get(env_url,path,i):
 
 #这个方法有点问题入参是网关鉴权拿到的，对C端
 def vehicle_auth_info(dispatch_url,path,i):
-    api_url =  "/mobile/vehicle/auth-info"
+    #api_url =  "/mobile/vehicle/auth-info"
     f = open(path, "r")
     PostJson = json.load(f)
     headerJsonArray = PostJson["requsetHeaders"]
@@ -51,7 +49,9 @@ def vehicle_auth_info(dispatch_url,path,i):
         bodyJson = {}
         bodyJson['sid'] = sid
         bodyJson['st'] = st
-        response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        #response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        print("完整的请求url是：%s" % dispatch_url)
+        response = utils.httpUtil.PostForm(dispatch_url, {"x-ag-decryption": 'true'}, bodyJson)
         return response
     except KeyError:
         print("sso返回值中不含content")
@@ -59,7 +59,7 @@ def vehicle_auth_info(dispatch_url,path,i):
 
 #=
 def driver_get(dispatch_url,path,i):
-    api_url = "/mobile/driver/get"
+    #api_url = "/mobile/driver/get"
     f = open(path, "r")
     PostJson = json.load(f)
     headerJsonArray = PostJson["requsetHeaders"]
@@ -73,14 +73,16 @@ def driver_get(dispatch_url,path,i):
         st = ssoResponse['content']['token']
         bodyJson['sid'] = sid
         bodyJson['st'] = st
-        response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        #response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        print("完整的请求url是：%s" % dispatch_url)
+        response = utils.httpUtil.PostForm(dispatch_url, {"x-ag-decryption": 'true'}, bodyJson)
         return response
     except KeyError:
         print("sso返回值中不含content")
 
 #http://wiki.ymmoa.com/pages/viewpage.action?pageId=23376043
 def mobile_exists_toC(dispatch_url,path,i):
-    api_url = "/mobile/user/mobile/exists"
+    #api_url = "/mobile/user/mobile/exists"
     f = open(path, "r")
     PostJson = json.load(f)
     headerJsonArray = PostJson["requsetHeaders"]
@@ -94,7 +96,9 @@ def mobile_exists_toC(dispatch_url,path,i):
         st = ssoResponse['content']['token']
         bodyJson['sid'] = sid
         bodyJson['st'] = st
-        response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        #response = utils.httpUtil.hcbPostForm(dispatch_url, api_url, bodyJson)
+        print("完整的请求url是：%s" % dispatch_url)
+        response = utils.httpUtil.PostForm(dispatch_url, {"x-ag-decryption": 'true'}, bodyJson)
         return response
     except KeyError:
         print("sso返回值中不含content")

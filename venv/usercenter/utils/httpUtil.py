@@ -145,20 +145,24 @@ if __name__ == '__main__':
         "version": "5.14.0",
         "domainId": 1,
         "appClientId": 107,
-        "mobile": 18900000440,
+        "mobile": 13521100003,
         "code": 8888,
         "codeType" : "VERIFICATION_CODE",
         "dfp": "ee3b66e1-9d09-4793-bfa2-f0ed16300b22"
 }
-        response_dict = obj.post("http://sso.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do", form_data,
-                 token=None)
+        response_dict = obj.post("http://sso.dev-ag.56qq.com/v1.1/mobile/dispatch.do","/common/app/mobile/login-by-code.do", form_data, None)
+        #response_dict = obj.post("http://sso.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do", form_data,None)
         token = {'sid': response_dict['content']['id'], 'st': response_dict['content']['token']}
         form_data1 = {
                 "st": token.get("st"),
                 "sid": token.get("sid")
         }
-        hcbPostForm("http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/mobile/vehicle/auth-info", form_data1, None)
-
+        #hcbPostForm("http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/mobile/vehicle/auth-info", form_data1, None)
+        #hcbPostForm("http://ucenter.dev-ag.56qq.com/v1.1/mobile/dispatch.do", "/mobile/vehicle/auth-info", form_data1,None)
+        hcbPostForm("http://192.168.206.110:8080/v1.1/mobile/dispatch.do", "/mobile/vehicle/auth-info", form_data1,None)
+        headers = {}
+        headers["x-ag-decryption"] = 'true'
+        PostForm('http://192.168.206.110:8080/mobile/vehicle/auth-info',headers,form_data1)
 
 
 

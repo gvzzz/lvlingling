@@ -13,22 +13,22 @@ import utils.lion
 #第0个json入参
 def qa_driver_get(i):
     #将lion开关打开qa是4 dev是3
-    utils.lion.modifylion(17439, 4, "true", 30)
+    utils.lion.modifylion(17439, 3, "true", 30)
     time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/driver_get.json"  # 拼成绝对路径
-    diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
+    #diapatch_url = "http://ucenter.qa-sh.56qq.com/v1.1/mobile/dispatch.do"
+    diapatch_url = "http://192.168.206.110:8080/mobile/driver/get"
     openLionJson = base.userCenter_server.driver_get(diapatch_url,path,i)
 
     # 将lion开关关闭
-    utils.lion.modifylion(17439, 4, "false", 30)
+    utils.lion.modifylion(17439, 3, "false", 30)
     time.sleep(1)
     closeLionJson = base.userCenter_server.driver_get(diapatch_url, path, i)
     result = diff(openLionJson, closeLionJson)  # 对比的list
     dic = {"openLionJson": openLionJson, "closeLionJson": closeLionJson, 'difStr': str(list(result))}
     return dic
-
 
 
 
@@ -51,7 +51,7 @@ def writeExcelDaliy(openList,closeList,inputIsSameList,difList):
         mySheet.write(1 + i, 3, str(closeList[i]))
         mySheet.write(1 + i, 4, difList[i])
     today = datetime.datetime.now().strftime('%Y-%m-%d')
-    myWorkbook.save(today +"driver_get"+"qa"+ '.xls')
+    myWorkbook.save(today +"driver_get"+"dev"+ '.xls')
 
 
 if __name__ == '__main__':
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     dict0 = qa_driver_get(0)
     openList.append(dict0.get("openLionJson"))
     closeList.append(dict0.get("closeLionJson"))
-    inputIsSameList.append("第0个json入参是一致性司机")
+    inputIsSameList.append("第0个json入参是随机司机")
     difList.append(dict0.get("difStr"))
     writeExcelDaliy(openList, closeList, inputIsSameList, difList)
 
