@@ -14,7 +14,7 @@ import utils.lion
 def dev_realname_Open(i):
     #将lion开关打开
     utils.lion.modifylion(17439, 3, "true", 30)
-    time.sleep(5)
+    time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/realname.json"  # 拼成绝对路径
@@ -31,7 +31,7 @@ def dev_realname_Clost(i):
     url = "http://ucenter.dev-ag.56qq.com"
     # 将lion开关关闭
     utils.lion.modifylion(17439, 3, "false", 30)
-    time.sleep(5)
+    time.sleep(1)
     closeLionStr = base.userCenter_server.realname(url, path, i)
     closeLionJson = json.loads(closeLionStr)
     return closeLionJson

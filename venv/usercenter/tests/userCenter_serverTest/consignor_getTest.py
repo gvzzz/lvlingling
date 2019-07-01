@@ -14,7 +14,7 @@ import utils.lion
 def dev_consignor_get_Open(i):
     #将lion开关打开
     utils.lion.modifylion(17439, 3, "true", 30)
-    time.sleep(5)
+    time.sleep(1)
     #获取上上级目录
     path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     path = path_base + "/hcbdata/consignor_get.json"  # 拼成绝对路径
@@ -31,7 +31,7 @@ def dev_consignor_get_Clost(i):
     url = "http://ucenter.dev-ag.56qq.com"
     # 将lion开关关闭
     utils.lion.modifylion(17439, 3, "false", 30)
-    time.sleep(5)
+    time.sleep(1)
     closeLionStr = base.userCenter_server.consignor_get(url, path, i)
     closeLionJson = json.loads(closeLionStr)
     return closeLionJson
@@ -47,20 +47,29 @@ def jsondif(i):
 
 #写入excel
 def writeExcelDaliy(openList,closeList,inputIsSameList,difList):
-    myWorkbook = xlwt.Workbook()   #创建Excel工作薄
-    mySheet = myWorkbook.add_sheet('A Test Sheet',cell_overwrite_ok= True) #添加Excel工作表,可更改
+    myWorkbook = xlwt.Workbook()  # 创建Excel工作薄
+    mySheet = myWorkbook.add_sheet('A Test Sheet', cell_overwrite_ok=True)  # 添加Excel工作表,可更改
     myStyle = xlwt.easyxf('font: name Times New Roman, color-index red, bold on', num_format_str='#,##0.00')  # 数据格式
-    mySheet.write(0, 0, '环境')  #A0
-    mySheet.write(0, 1, '一致性or不一致')  # B0
-    mySheet.write(0, 2, '开关打开的response')  # C0
-    mySheet.write(0, 3, '开关关闭的response')  # D0
-    mySheet.write(0, 4, 'response对比结果')  # E0
+    mySheet.write(0, 0, '环境')  # A0
+    mySheet.write(0, 1, '入参')  # A0
+    mySheet.write(0, 2, '一致性or不一致')  # B0
+    mySheet.write(0, 3, '开关打开的response')  # C0
+    mySheet.write(0, 4, '开关关闭的response')  # D0
+    mySheet.write(0, 5, 'response对比结果')  # E0
+    # 获取上上级目录
+    path_base = os.path.abspath(os.path.join(os.getcwd(), "../.."))
+    path = path_base + "/hcbdata/consignor_get.json"  # 拼成绝对路径
+    f = open(path, "r")
+    PostJson = json.load(f)
+    bodyJsonArry = PostJson["requestbodys"]
+
     for i in range(len(openList)):
         mySheet.write(1 + i, 0, "dev")
-        mySheet.write(1 + i, 1, inputIsSameList[i])
-        mySheet.write(1 + i, 2, str(openList[i]))
-        mySheet.write(1 + i, 3, str(closeList[i]))
-        mySheet.write(1 + i, 4, difList[i])
+        mySheet.write(1 + i, 1, str(bodyJsonArry[i]))
+        mySheet.write(1 + i, 2, inputIsSameList[i])
+        mySheet.write(1 + i, 3, str(openList[i]))
+        mySheet.write(1 + i, 4, str(closeList[i]))
+        mySheet.write(1 + i, 5, difList[i])
     today = datetime.datetime.now().strftime('%Y-%m-%d')
     myWorkbook.save(today +"consignor_get"+"dev"+ '.xls')
 
