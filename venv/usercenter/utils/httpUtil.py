@@ -2,7 +2,7 @@
 import json
 from urllib import request
 import urllib.parse
-from utils import des_utils
+import des_utils
 import sso
 
 #json数据的post
