@@ -15,7 +15,8 @@ import urllib.parse
 def getRssFailedReson(jobName,startTime,endTime):
     s_time = time.mktime(time.strptime(startTime, '%Y-%m-%d'))  #转成时间戳
     e_time = time.mktime(time.strptime(endTime, '%Y-%m-%d'))  #转成时间戳
-    request_url = "http://http://192.168.198.141:8787/job/"+jobName+"/rssFailed"
+    request_url = "http://192.168.198.141:8787/job/"+jobName+"/rssFailed"
+    print(request_url)
     headers = {}
     headers['Cookie'] = 'JSESSIONID.08c2552e=node0n8pbmy3t2d8713xifsl0fri7s9.node0;'
     response = utils.httpUtil.Get(request_url, headers)
