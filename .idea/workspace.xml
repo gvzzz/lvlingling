@@ -5,16 +5,7 @@
       <change afterPath="$PROJECT_DIR$/../usercentertest/config/log4j.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../usercentertest/src/main/java/utils/Apitools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/hcbdata/consignor_get.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/hcbdata/consignor_get.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/hcbdata/get_by_mobiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/hcbdata/get_by_mobiles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/hcbdata/users_basic_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/hcbdata/users_basic_info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/auth_getTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/auth_getTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/consignor_getTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/consignor_getTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_all_domainTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_all_domainTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_by_mobilesTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_by_mobilesTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_with_virtual_infoTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_with_virtual_infoTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/realnameTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/realnameTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/users_basic_infoTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/users_basic_infoTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +191,7 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest Coverage Results" MODIFIED="1536831742653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_agreement_service_serviceablity_py.coverage" NAME="Unittests in dev_agreement_service_serviceablity.py Coverage Results" MODIFIED="1558001682354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$new_boss_userCenter.coverage" NAME="new_boss_userCenter Coverage Results" MODIFIED="1536828147846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
-    <SUITE FILE_PATH="coverage/userCenter$lion.coverage" NAME="lion Coverage Results" MODIFIED="1560765383021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
+    <SUITE FILE_PATH="coverage/userCenter$lion.coverage" NAME="lion Coverage Results" MODIFIED="1562046712283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_uc_info_center.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_uc_info_center Coverage Results" MODIFIED="1543222364820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_getAuth_py.coverage" NAME="Unittests in getAuth.py Coverage Results" MODIFIED="1545018403242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_new_boss_serviceablity_runQaNewboss_Test_test_qa_new_boss_serviceablity.coverage" NAME="Unittests for qa_new_boss_serviceablity.runQaNewboss_Test.test_qa_new_boss_serviceablity Coverage Results" MODIFIED="1553503154330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
@@ -277,7 +268,7 @@
           <entry key="cfg" value="2" />
           <entry key="json" value="194" />
           <entry key="pstat" value="3" />
-          <entry key="py" value="1010" />
+          <entry key="py" value="1014" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -285,14 +276,14 @@
           <entry key="Ini" value="2" />
           <entry key="JSON" value="194" />
           <entry key="Profiler Session" value="3" />
-          <entry key="Python" value="1010" />
+          <entry key="Python" value="1014" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="144" />
           <entry key="json" value="775" />
-          <entry key="py" value="26070" />
+          <entry key="py" value="26074" />
           <entry key="txt" value="983" />
         </counts>
       </usages-collector>
@@ -300,7 +291,7 @@
         <counts>
           <entry key="JSON" value="775" />
           <entry key="PLAIN_TEXT" value="1127" />
-          <entry key="Python" value="26070" />
+          <entry key="Python" value="26074" />
         </counts>
       </usages-collector>
     </session>
@@ -310,28 +301,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/writeExcel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="102">
+              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="51" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
-                <marker date="1561628878937" expanded="true" signature="255:445" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="1935:10527" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="3602:3605" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="10190:10527" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="10526:10527" ph="..." />
+                <marker date="1552902430269" expanded="true" signature="2446:3374" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="292" selection-start-line="292" selection-end-line="292" />
             </state>
           </provider>
         </entry>
@@ -339,8 +317,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="-691">
+              <caret line="25" column="7" selection-start-line="22" selection-end-line="38" selection-end-column="23" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
                 <marker date="1561627592980" expanded="true" signature="121:122" ph="..." />
@@ -352,19 +330,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/getAuth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="327" selection-start-line="327" selection-end-line="327" />
+            <state relative-caret-position="231">
+              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/parse.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="848" selection-start-line="848" selection-end-line="848" />
+            <state relative-caret-position="292">
+              <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-195">
+              <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -372,52 +359,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/lion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="355">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/driver_getTest.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-501">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="111">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/vehicle_auth_info.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/vehicle_auth_infoTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#23#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_exists_toCTest.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_dev.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="73" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/data/requestData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="84" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#23#33#0" expanded="true" />
+                <marker date="1561628878937" expanded="true" signature="255:445" ph="..." />
+                <marker date="1561628878937" expanded="true" signature="1935:10527" ph="..." />
+                <marker date="1561628878937" expanded="true" signature="3602:3605" ph="..." />
+                <marker date="1561628878937" expanded="true" signature="10190:10527" ph="..." />
+                <marker date="1561628878937" expanded="true" signature="10526:10527" ph="..." />
               </folding>
             </state>
           </provider>
@@ -481,7 +470,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/server_driver_get.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/utils/lion.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/get_driver_by_mobiles.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/base/uc_info_center.py" />
@@ -532,6 +520,7 @@
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_exists_toCTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/vehicle_auth_infoTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/driver_getTest.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py" />
       </list>
     </option>
   </component>
@@ -541,10 +530,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="30" />
     <option name="y" value="23" />
-    <option name="width" value="1249" />
+    <option name="width" value="1250" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -576,20 +565,6 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="usercenter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="userCenter" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="usercenter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="userCenter" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="usercenter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="hcbdata" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -597,6 +572,13 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="usercenter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="serviceability" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="userCenter" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usercenter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -605,7 +587,7 @@
               <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="usercenter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="userCenter_serverTest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="userCenter" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -644,6 +626,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="ocr&#9;null&#9;null&#10;login&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1214,7 +1197,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="23" width="1249" height="777" extended-state="0" />
+    <frame x="31" y="23" width="1249" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.1913836" />
       <window_info id="Structure" order="1" sideWeight="0.503268" side_tool="true" weight="0.1913836" />
@@ -1479,50 +1463,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-            <marker date="1558001286589" expanded="true" signature="971:972" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/get_by_bindMobiles.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/user_reference_service.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/sign.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/can_register.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/driver_get.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="26" column="18" lean-forward="true" selection-end-line="32" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/get_users.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1627,7 +1567,6 @@
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
-            <marker date="1561371181065" expanded="true" signature="263:322" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1781,7 +1720,6 @@
           <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="52" />
           <folding>
             <element signature="e#14#23#0" expanded="true" />
-            <marker date="1561096546794" expanded="true" signature="349:358" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1853,8 +1791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-691">
+          <caret line="25" column="7" selection-start-line="22" selection-end-line="38" selection-end-column="23" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
             <marker date="1561627592980" expanded="true" signature="121:122" ph="..." />
@@ -1866,8 +1804,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="339">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="84" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
             <marker date="1561628878937" expanded="true" signature="255:445" ph="..." />
@@ -1881,8 +1819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/lion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="355">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -1920,6 +1858,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/getAuth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/ocr_service.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/sign.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/writeExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="51" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+            <marker date="1552902430269" expanded="true" signature="2446:3374" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
