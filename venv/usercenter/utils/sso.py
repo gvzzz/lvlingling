@@ -2,12 +2,7 @@
 import os
 import sys
 import json
-import urllib
-#import requests
-#from ucenter.utils.comm_utils import Singleton
-#from ucenter.conf.env import Dev, QA, Shanghai
-#from ucenter.api.serverapi import ServerApis
-#from ucenter.utils.des_utils import DesUtil
+
 import httpUtil
 import des_utils
 
