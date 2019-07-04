@@ -9,7 +9,7 @@ import urllib
 #from ucenter.api.serverapi import ServerApis
 #from ucenter.utils.des_utils import DesUtil
 import httpUtil
-from utils import des_utils
+import des_utils
 
 
 
