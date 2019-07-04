@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+'''
 
 from pyDes import des, ECB, PAD_PKCS5
 import binascii
@@ -9,11 +9,10 @@ NO_SESSION_KEY = "C86EA4369B61AE5E"
 OUT_PUBLIC_KEY = "A891167560B398D8"
 NON_SESSION_SID = -1
 
-'''
     本实现类采用DES/ECB/PKCS5Padding作为基础加密算法，采用两轮加密方式。 第一轮加密（也即内层加密）采用用户会话的Token作为Key
     第二轮加密（也即外层加密）采用客户端、服务器端均知晓的公共Key
     若用户并未登录，即Session为null的情况，则使用另外一个客户端、服务器均知晓的功能Key,NON_SESSION_TOKEN
-'''
+
 
 
 class DesUtil(object):
@@ -101,3 +100,6 @@ if __name__ == "__main__":
     print("加密后的内容: ", encrypt_data)
     data = DesUtil.decrypt_data(encrypt_data, "3411BCCE3FD3B956")
     print("解密后的内容: ", data)
+
+
+'''
