@@ -2,8 +2,8 @@
 import json
 from urllib import request
 import urllib.parse
-import des_utils
-import sso
+from utils import des_utils
+from utils import sso
 
 #json数据的post
 def Post(url,headers,body):

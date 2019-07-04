@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8d06a37-7ff6-42a3-bc9e-a79cae198480" name="Default Changelist" comment="最新代码">
-      <change afterPath="$PROJECT_DIR$/../usercentertest/config/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../usercentertest/src/main/java/utils/Apitools.java" afterDir="false" />
+    <list default="true" id="d8d06a37-7ff6-42a3-bc9e-a79cae198480" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/userCenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/userCenter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/usercenter/utils/sso.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/usercenter/utils/sso.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_runAll_runAll_Test_test_qa_408.coverage" NAME="Unittests for test_runAll.runAll_Test.test_qa_408 Coverage Results" MODIFIED="1547541095674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runAll_Test_test_dev_userCenter4x_service.coverage" NAME="Unittests for test_dev.runAll_Test.test_dev_userCenter4x_service Coverage Results" MODIFIED="1539068049968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_userCenter4_service_py.coverage" NAME="Unittests in userCenter4_service.py Coverage Results" MODIFIED="1536817259027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_info_app_serviceablity_py.coverage" NAME="Unittests in dev_info_app_serviceablity.py Coverage Results" MODIFIED="1558001688559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_useraudit_service_serviceablity_py.coverage" NAME="Unittests in qa_useraudit_service_serviceablity.py Coverage Results" MODIFIED="1558001765088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_useraudit_service_serviceablity_py.coverage" NAME="Unittests in qa_useraudit_service_serviceablity.py Coverage Results" MODIFIED="1562233890214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_info_app_serviceablity_py.coverage" NAME="Unittests in dev_info_app_serviceablity.py Coverage Results" MODIFIED="1562234239045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_useraudit_service_serviceablity_py.coverage" NAME="Unittests in dev_useraudit_service_serviceablity.py Coverage Results" MODIFIED="1558001710950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_dev_uc_info_center_serviceablity_runDevUcInfoCenter_Test_test_qa_uc_info_center.coverage" NAME="Unittests for dev_uc_info_center_serviceablity.runDevUcInfoCenter_Test.test_qa_uc_info_center Coverage Results" MODIFIED="1560824428143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_info_app_serviceablity_runAll_Test_test_qa_info_app_serviceablity.coverage" NAME="Unittests for qa_info_app_serviceablity.runAll_Test.test_qa_info_app_serviceablity Coverage Results" MODIFIED="1545989261742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
@@ -56,7 +56,7 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_dev_doorkeeper_center_serviceablity_runDevDoorkeeperCenter_Test_test_dev_doorkeeper_center.coverage" NAME="Unittests for dev_doorkeeper_center_serviceablity.runDevDoorkeeperCenter_Test.test_dev_doorkeeper_center Coverage Results" MODIFIED="1545989395572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_admin_app_serviceablity_runQaAdminApp_Test_test_qa_admin_app_serviceablity.coverage" NAME="Unittests for qa_admin_app_serviceablity.runQaAdminApp_Test.test_qa_admin_app_serviceablity Coverage Results" MODIFIED="1545987925057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_jiamei_runshark_py.coverage" NAME="Unittests in qa_jiamei_runshark.py Coverage Results" MODIFIED="1554805931030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_user_reference_service_serviceablity_py.coverage" NAME="Unittests in qa_user_reference_service_serviceablity.py Coverage Results" MODIFIED="1558001763473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_user_reference_service_serviceablity_py.coverage" NAME="Unittests in qa_user_reference_service_serviceablity.py Coverage Results" MODIFIED="1562234322897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$get_with_virtual_infoTest.coverage" NAME="get_with_virtual_infoTest Coverage Results" MODIFIED="1561431871575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runDevLogin_Test_test_dev_getloginverifycode.coverage" NAME="Unittests for test_dev.runDevLogin_Test.test_dev_getloginverifycode Coverage Results" MODIFIED="1552617013592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_jiamei_runshark_jiamei_shark_Test_test_agreement_service.coverage" NAME="Unittests for qa_jiamei_runshark.jiamei_shark_Test.test_agreement_service Coverage Results" MODIFIED="1556181401937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -84,21 +84,21 @@
     <SUITE FILE_PATH="coverage/userCenter$userCenter4_x_service.coverage" NAME="userCenter4.x_service Coverage Results" MODIFIED="1539067484269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/base" />
     <SUITE FILE_PATH="coverage/userCenter$get_driver_by_userIdsTest.coverage" NAME="get_driver_by_userIdsTest Coverage Results" MODIFIED="1560931546444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_useraudit_service.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_useraudit_service Coverage Results" MODIFIED="1539143392876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$httpUtil.coverage" NAME="httpUtil Coverage Results" MODIFIED="1561627534555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runQaLogin_Test_test_qa_login.coverage" NAME="Unittests for test_qa.runQaLogin_Test.test_qa_login Coverage Results" MODIFIED="1557994645685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_dev_py.coverage" NAME="Unittests in test_dev.py Coverage Results" MODIFIED="1558001772248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$httpUtil.coverage" NAME="httpUtil Coverage Results" MODIFIED="1562235613742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runQaLogin_Test_test_qa_login.coverage" NAME="Unittests for test_qa.runQaLogin_Test.test_qa_login Coverage Results" MODIFIED="1562234384133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_dev_py.coverage" NAME="Unittests in test_dev.py Coverage Results" MODIFIED="1562235667561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_uc_auth_center.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_uc_auth_center Coverage Results" MODIFIED="1539079556910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$uc_auth_center.coverage" NAME="uc_auth_center Coverage Results" MODIFIED="1560340077646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/base" />
     <SUITE FILE_PATH="coverage/userCenter$reference_app.coverage" NAME="reference_app Coverage Results" MODIFIED="1538288877595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/base" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runAll_Test_test_dev_uc_check_service.coverage" NAME="Unittests for test_dev.runAll_Test.test_dev_uc_check_service Coverage Results" MODIFIED="1539072680288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runDevLogin_Test_test_dev_checkUserStatus.coverage" NAME="Unittests for test_dev.runDevLogin_Test.test_dev_checkUserStatus Coverage Results" MODIFIED="1553049259974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_qa_py.coverage" NAME="Unittests in test_qa.py Coverage Results" MODIFIED="1558001774276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_qa_py.coverage" NAME="Unittests in test_qa.py Coverage Results" MODIFIED="1562235673089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runQaLogin_Test_test_qa_getloginverifycode.coverage" NAME="Unittests for test_qa.runQaLogin_Test.test_qa_getloginverifycode Coverage Results" MODIFIED="1556448512016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$getIpPort.coverage" NAME="getIpPort Coverage Results" MODIFIED="1557286910864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_runAllNew_runAll_sharkTest.coverage" NAME="Unittests for test_runAllNew.runAll_sharkTest Coverage Results" MODIFIED="1537166068083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_reference_app_serviceablity_py.coverage" NAME="Unittests in qa_reference_app_serviceablity.py Coverage Results" MODIFIED="1558001752399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_jiamei_runshark_jiamei_shark_Test_test_uc_doorkeeper_center.coverage" NAME="Unittests for qa_jiamei_runshark.jiamei_shark_Test.test_uc_doorkeeper_center Coverage Results" MODIFIED="1554796235720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_new_boss_serviceablity_py.coverage" NAME="Unittests in dev_new_boss_serviceablity.py Coverage Results" MODIFIED="1558001690076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_new_boss_serviceablity_py.coverage" NAME="Unittests in dev_new_boss_serviceablity.py Coverage Results" MODIFIED="1562234243346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_doorkeeper_center.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest.test_uc_doorkeeper_center Coverage Results" MODIFIED="1536893995730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$can_registerTest.coverage" NAME="can_registerTest Coverage Results" MODIFIED="1561370212240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_new_boss__py.coverage" NAME="Unittests in userCenter4_service1.py Coverage Results" MODIFIED="1536748068313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -162,7 +162,7 @@
     <SUITE FILE_PATH="coverage/userCenter$auth_getTest.coverage" NAME="auth_getTest Coverage Results" MODIFIED="1561532879941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runAll_Test_test_dev_admin_app_serviceablity.coverage" NAME="Unittests for test_dev.runAll_Test.test_dev_admin_app_serviceablity Coverage Results" MODIFIED="1543372117311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_dev_info_app_serviceablity_runDevnfoApp_Test_test_dev_info_app_serviceablity.coverage" NAME="Unittests for dev_info_app_serviceablity.runDevnfoApp_Test.test_dev_info_app_serviceablity Coverage Results" MODIFIED="1552643042664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_agreement_app_serviceablity_py.coverage" NAME="Unittests in dev_agreement_app_serviceablity.py Coverage Results" MODIFIED="1558001679940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_agreement_app_serviceablity_py.coverage" NAME="Unittests in dev_agreement_app_serviceablity.py Coverage Results" MODIFIED="1562234203426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_tianlong_runshark_py.coverage" NAME="Unittests in qa_tianlong_runshark.py Coverage Results" MODIFIED="1554796585576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_dakun_runshark_dakun_shark_Test_test_dakun.coverage" NAME="Unittests for qa_dakun_runshark.dakun_shark_Test.test_dakun Coverage Results" MODIFIED="1554778918021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$mobile_exists_toCTest.coverage" NAME="mobile_exists_toCTest Coverage Results" MODIFIED="1561629543633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
@@ -174,8 +174,8 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_uc_check_service.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_uc_check_service Coverage Results" MODIFIED="1539072616368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$server_driver_getTest.coverage" NAME="server_driver_getTest Coverage Results" MODIFIED="1561532907385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_test_Ymm_info_app_py.coverage" NAME="Unittests in test_Ymm_info_app.py Coverage Results" MODIFIED="1536825705291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_uc_auth_center_serviceablity_py.coverage" NAME="Unittests in dev_uc_auth_center_serviceablity.py Coverage Results" MODIFIED="1558001693194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_userCenter_app_serviceablity_py.coverage" NAME="Unittests in dev_userCenter_app_serviceablity.py Coverage Results" MODIFIED="1558001716065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_uc_auth_center_serviceablity_py.coverage" NAME="Unittests in dev_uc_auth_center_serviceablity.py Coverage Results" MODIFIED="1562234248182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_new_boss_new_boss_sharkTest_test_new_boss.coverage" NAME="Unittests for new_boss.new_boss_sharkTest.test_new_boss Coverage Results" MODIFIED="1536754425469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest_test_uc_check_service.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest.test_uc_check_service Coverage Results" MODIFIED="1536832868070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_reference_app_serviceablity_runQaReferenceApp_Test_test_qa_reference_app_serviceablity.coverage" NAME="Unittests for qa_reference_app_serviceablity.runQaReferenceApp_Test.test_qa_reference_app_serviceablity Coverage Results" MODIFIED="1545988160512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
@@ -187,9 +187,9 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_admin_app_serviceablity.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_admin_app_serviceablity Coverage Results" MODIFIED="1542092345705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runAll_Test_test_dev_uc_auth_center.coverage" NAME="Unittests for test_dev.runAll_Test.test_dev_uc_auth_center Coverage Results" MODIFIED="1544061637140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_uc_check_service_serviceablity_py.coverage" NAME="Unittests in qa_uc_check_service_serviceablity.py Coverage Results" MODIFIED="1558001760084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_doorkeeper_center_serviceablity_py.coverage" NAME="Unittests in dev_doorkeeper_center_serviceablity.py Coverage Results" MODIFIED="1558001686668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_doorkeeper_center_serviceablity_py.coverage" NAME="Unittests in dev_doorkeeper_center_serviceablity.py Coverage Results" MODIFIED="1562234226683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest Coverage Results" MODIFIED="1536831742653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_agreement_service_serviceablity_py.coverage" NAME="Unittests in dev_agreement_service_serviceablity.py Coverage Results" MODIFIED="1558001682354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_agreement_service_serviceablity_py.coverage" NAME="Unittests in dev_agreement_service_serviceablity.py Coverage Results" MODIFIED="1562234206103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$new_boss_userCenter.coverage" NAME="new_boss_userCenter Coverage Results" MODIFIED="1536828147846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
     <SUITE FILE_PATH="coverage/userCenter$lion.coverage" NAME="lion Coverage Results" MODIFIED="1562046712283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_uc_info_center.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_uc_info_center Coverage Results" MODIFIED="1543222364820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
@@ -211,8 +211,8 @@
     <SUITE FILE_PATH="coverage/userCenter$uc_check_service.coverage" NAME="uc_check_service Coverage Results" MODIFIED="1543235028143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/base" />
     <SUITE FILE_PATH="coverage/userCenter$hcbymm.coverage" NAME="hcbymm Coverage Results" MODIFIED="1555506430755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$user_reference_service.coverage" NAME="user_reference_service Coverage Results" MODIFIED="1543222424254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/base" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_admin_app_serviceablity_py.coverage" NAME="Unittests in dev_admin_app_serviceablity.py Coverage Results" MODIFIED="1558001676312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_authenticate_service_serviceablity_py.coverage" NAME="Unittests in dev_authenticate_service_serviceablity.py Coverage Results" MODIFIED="1558001684489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_admin_app_serviceablity_py.coverage" NAME="Unittests in dev_admin_app_serviceablity.py Coverage Results" MODIFIED="1562234196169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_dev_authenticate_service_serviceablity_py.coverage" NAME="Unittests in dev_authenticate_service_serviceablity.py Coverage Results" MODIFIED="1562234223448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_dev_uc_auth_center_serviceablity_runDevUcAuthCenter_Test_test_qa_uc_auth_center.coverage" NAME="Unittests for dev_uc_auth_center_serviceablity.runDevUcAuthCenter_Test.test_qa_uc_auth_center Coverage Results" MODIFIED="1545989545553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runDevLogin_Test_test_dev_login.coverage" NAME="Unittests for test_dev.runDevLogin_Test.test_dev_login Coverage Results" MODIFIED="1554097309571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_ymm_info_app_ymm_info_app_sharkTest_test_userCenter.coverage" NAME="Unittests for ymm_info_app.ymm_info_app_sharkTest.test_userCenter Coverage Results" MODIFIED="1536806124414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -221,7 +221,7 @@
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_dev_runAll_Test_test_dev_new_boss_serviceablity.coverage" NAME="Unittests for test_dev.runAll_Test.test_dev_new_boss_serviceablity Coverage Results" MODIFIED="1542100534741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$vehicle_auth_infoTest.coverage" NAME="vehicle_auth_infoTest Coverage Results" MODIFIED="1561628669482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_qa_dev_sso_sso_Test_test_dev_sso.coverage" NAME="Unittests for qa_dev_sso.sso_Test.test_dev_sso Coverage Results" MODIFIED="1543371898129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
-    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_verifycode_service_serviceablity_py.coverage" NAME="Unittests in qa_verifycode_service_serviceablity.py Coverage Results" MODIFIED="1558001770548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
+    <SUITE FILE_PATH="coverage/userCenter$Unittests_in_qa_verifycode_service_serviceablity_py.coverage" NAME="Unittests in qa_verifycode_service_serviceablity.py Coverage Results" MODIFIED="1562233820954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_qa_runAll_Test_test_qa_userCenter_app_serviceablity.coverage" NAME="Unittests for test_qa.runAll_Test.test_qa_userCenter_app_serviceablity Coverage Results" MODIFIED="1538276190541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/serviceability" />
     <SUITE FILE_PATH="coverage/userCenter$getAuth.coverage" NAME="getAuth Coverage Results" MODIFIED="1560339610709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/utils" />
     <SUITE FILE_PATH="coverage/userCenter$Unittests_for_test_New_boss_new_boss_sharkTest_test_ymm_reference_app.coverage" NAME="Unittests for test_New_boss.new_boss_sharkTest.test_ymm_reference_app Coverage Results" MODIFIED="1537153686409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/usercenter/tests" />
@@ -252,7 +252,7 @@
           <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="2" />
@@ -260,7 +260,7 @@
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="43" />
+          <entry key="project.opened" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -268,7 +268,7 @@
           <entry key="cfg" value="2" />
           <entry key="json" value="194" />
           <entry key="pstat" value="3" />
-          <entry key="py" value="1014" />
+          <entry key="py" value="1053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -276,22 +276,22 @@
           <entry key="Ini" value="2" />
           <entry key="JSON" value="194" />
           <entry key="Profiler Session" value="3" />
-          <entry key="Python" value="1014" />
+          <entry key="Python" value="1053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="144" />
           <entry key="json" value="775" />
-          <entry key="py" value="26074" />
-          <entry key="txt" value="983" />
+          <entry key="py" value="26117" />
+          <entry key="txt" value="995" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="775" />
-          <entry key="PLAIN_TEXT" value="1127" />
-          <entry key="Python" value="26074" />
+          <entry key="PLAIN_TEXT" value="1139" />
+          <entry key="Python" value="26117" />
         </counts>
       </usages-collector>
     </session>
@@ -302,38 +302,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/writeExcel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="51" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-                <marker date="1552902430269" expanded="true" signature="2446:3374" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-691">
-              <caret line="25" column="7" selection-start-line="22" selection-end-line="38" selection-end-column="23" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
               <folding>
-                <element signature="e#23#34#0" expanded="true" />
-                <marker date="1561627592980" expanded="true" signature="121:122" ph="..." />
-                <marker date="1561627592980" expanded="true" signature="1400:1402" ph="..." />
-                <marker date="1561627592980" expanded="true" signature="3909:3911" ph="..." />
+                <element signature="e#24#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/getAuth.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/sso.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -341,8 +325,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
+            <state relative-caret-position="272">
+              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/des_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#48#85#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -350,63 +346,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
+            <state relative-caret-position="540">
               <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/lion.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_userCenter4x_service_serviceablity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="75">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_dev.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="10" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_userCenter_app_serviceablity.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/usercenter/data/requestData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state relative-caret-position="11">
+              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_verifycode_service_serviceablity.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="84" />
+            <state relative-caret-position="105">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
-                <element signature="e#23#33#0" expanded="true" />
-                <marker date="1561628878937" expanded="true" signature="255:445" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="1935:10527" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="3602:3605" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="10190:10527" ph="..." />
-                <marker date="1561628878937" expanded="true" signature="10526:10527" ph="..." />
+                <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -470,16 +450,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/venv/usercenter/utils/lion.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/get_driver_by_mobiles.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/base/uc_info_center.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/simple_user_infoTest.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/realname.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/batch_get_by_mobiles.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/batch_get_by_mobilesTest.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/mobile_exists.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/get_all_domain.json" />
-        <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/can_register.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/can_registerTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/simple_user_info2.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/simple_user_info2Test.py" />
@@ -496,7 +466,6 @@
         <option value="$PROJECT_DIR$/venv/usercenter/utils/test_mobile_user_info.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/utils/des_uitls1.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/server_driver_getTest.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/utils/sso.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/utils/des_utils.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/vehicle_auth_info.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/driver_get.json" />
@@ -515,12 +484,23 @@
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_with_virtual_infoTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/hcbdata/mobile_exists_toC.json" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_existsTest.py" />
-        <option value="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_exists_toCTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/vehicle_auth_infoTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/driver_getTest.py" />
         <option value="$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/qa_useraudit_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/dev_authenticate_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/dev_doorkeeper_center_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/dev_uc_auth_center_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/dev_user_reference_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/dev_useraudit_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/dev_userCenter4x_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/qa_authenticate_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/qa_user_reference_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/serviceability/qa_userCenter4x_service_serviceablity.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/utils/sso.py" />
+        <option value="$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py" />
       </list>
     </option>
   </component>
@@ -632,7 +612,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -670,29 +650,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.driver_getTest">
-    <configuration name="driver_getTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="userCenter" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/driver_getTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in test_qa.py">
     <configuration name="httpUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -715,86 +673,80 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mobile_existsTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for test_qa.runQaLogin_Test.test_qa_login" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/serviceability" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_existsTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_qa.runQaLogin_Test.test_qa_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="mobile_exists_toCTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in qa_user_reference_service_serviceablity.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/serviceability" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_exists_toCTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/usercenter/serviceability/qa_user_reference_service_serviceablity.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="vehicle_auth_infoTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in test_dev.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="userCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/serviceability" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/vehicle_auth_infoTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/usercenter/serviceability/test_dev.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_qa.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="userCenter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/usercenter/serviceability" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.mobile_existsTest" />
+      <item itemvalue="Python tests.Unittests in qa_user_reference_service_serviceablity.py" />
+      <item itemvalue="Python tests.Unittests in test_dev.py" />
+      <item itemvalue="Python tests.Unittests for test_qa.runQaLogin_Test.test_qa_login" />
+      <item itemvalue="Python tests.Unittests in test_qa.py" />
       <item itemvalue="Python.httpUtil" />
-      <item itemvalue="Python.vehicle_auth_infoTest" />
-      <item itemvalue="Python.driver_getTest" />
-      <item itemvalue="Python.mobile_exists_toCTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.driver_getTest" />
-        <item itemvalue="Python.mobile_exists_toCTest" />
-        <item itemvalue="Python.vehicle_auth_infoTest" />
+        <item itemvalue="Python tests.Unittests in test_qa.py" />
+        <item itemvalue="Python tests.Unittests in test_dev.py" />
         <item itemvalue="Python.httpUtil" />
-        <item itemvalue="Python.mobile_existsTest" />
+        <item itemvalue="Python tests.Unittests for test_qa.runQaLogin_Test.test_qa_login" />
+        <item itemvalue="Python tests.Unittests in qa_user_reference_service_serviceablity.py" />
       </list>
     </recent_temporary>
   </component>
@@ -808,13 +760,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536230227277</updated>
-    </task>
-    <task id="LOCAL-00061" summary="切python版本调试">
-      <created>1545797817294</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1545797817294</updated>
     </task>
     <task id="LOCAL-00062" summary="切python版本调试">
       <created>1545803315994</created>
@@ -1152,39 +1097,46 @@
       <option name="project" value="LOCAL" />
       <updated>1561630180926</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="删除pyc文件">
+      <created>1562234615264</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1562234615265</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_qa_user_reference_service_serviceablity_py - 2019.05.16 at 18h 16m 04s.xml">
+    <history-entry file="Unittests_in_dev_new_boss_serviceablity_py - 2019.07.04 at 17h 57m 23s.xml">
+      <configuration name="Unittests in dev_new_boss_serviceablity.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_dev_uc_auth_center_serviceablity_py - 2019.07.04 at 17h 57m 28s.xml">
+      <configuration name="Unittests in dev_uc_auth_center_serviceablity.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_qa_user_reference_service_serviceablity_py - 2019.07.04 at 17h 58m 43s.xml">
       <configuration name="Unittests in qa_user_reference_service_serviceablity.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_qa_useraudit_service_serviceablity_py - 2019.05.16 at 18h 16m 05s.xml">
-      <configuration name="Unittests in qa_useraudit_service_serviceablity.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_qa_userCenter4x_service_serviceablity_py - 2019.05.16 at 18h 16m 07s.xml">
-      <configuration name="Unittests in qa_userCenter4x_service_serviceablity.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_qa_userCenter_app_serviceablity_py - 2019.05.16 at 18h 16m 09s.xml">
-      <configuration name="Unittests in qa_userCenter_app_serviceablity.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_qa_verifycode_service_serviceablity_py - 2019.05.16 at 18h 16m 11s.xml">
-      <configuration name="Unittests in qa_verifycode_service_serviceablity.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_dev_py - 2019.05.16 at 18h 16m 13s.xml">
+    <history-entry file="Unittests_in_test_dev_py - 2019.07.04 at 17h 58m 47s.xml">
       <configuration name="Unittests in test_dev.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_qa_py - 2019.05.16 at 18h 16m 15s.xml">
+    <history-entry file="Unittests_for_test_qa_runQaLogin_Test_test_qa_login - 2019.07.04 at 17h 59m 44s.xml">
+      <configuration name="Unittests for test_qa.runQaLogin_Test.test_qa_login" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_dev_py - 2019.07.04 at 18h 03m 06s.xml">
+      <configuration name="Unittests in test_dev.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_qa_py - 2019.07.04 at 18h 03m 10s.xml">
       <configuration name="Unittests in test_qa.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_qa_agreement_app_serviceablity_py - 2019.06.04 at 17h 53m 42s.xml">
-      <configuration name="Unittests in qa_agreement_app_serviceablity.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_dev_py - 2019.07.04 at 18h 12m 10s.xml">
+      <configuration name="Unittests in test_dev.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_dev_uc_info_center_serviceablity_py - 2019.06.18 at 10h 20m 16s.xml">
-      <configuration name="Unittests in dev_uc_info_center_serviceablity.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_dev_py - 2019.07.04 at 18h 21m 08s.xml">
+      <configuration name="Unittests in test_dev.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_dev_uc_info_center_serviceablity_runDevUcInfoCenter_Test_test_qa_uc_info_center - 2019.06.18 at 10h 37m 46s.xml">
-      <configuration name="Unittests for dev_uc_info_center_serviceablity.runDevUcInfoCenter_Test.test_qa_uc_info_center" configurationId="tests" />
+    <history-entry file="Unittests_in_test_qa_py - 2019.07.04 at 18h 21m 14s.xml">
+      <configuration name="Unittests in test_qa.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1197,10 +1149,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="23" width="1249" height="777" extended-state="6" />
+    <frame x="30" y="23" width="1250" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.1913836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.19453642" />
       <window_info id="Structure" order="1" sideWeight="0.503268" side_tool="true" weight="0.1913836" />
       <window_info id="Favorites" order="2" sideWeight="0.5021739" side_tool="true" weight="0.1913836" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.329927" />
@@ -1258,7 +1210,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改获取IP的接口" />
     <MESSAGE value="补充自动查询dev、qa登录环境的接口" />
     <MESSAGE value="auth循环获取" />
     <MESSAGE value="新增2个服务的可用性" />
@@ -1283,7 +1234,8 @@
     <MESSAGE value="简洁代码" />
     <MESSAGE value="最新代码" />
     <MESSAGE value="改一下对于mobile端的代码 先去双键本地去调" />
-    <option name="LAST_COMMIT_MESSAGE" value="改一下对于mobile端的代码 先去双键本地去调" />
+    <MESSAGE value="删除pyc文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除pyc文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1463,311 +1415,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/get_users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/mobile_exists.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/batch_get_by_mobilesTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/getUserByUserIdAndDomainIdTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_usersTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_driver_by_userIdsTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_by_bindMobilesTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/server_driver_getTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/get_by_mobiles.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/venv/lib/python3.7/site-packages/dictdiffer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="259" selection-start-line="259" selection-end-line="259" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/can_registerTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="88" column="66" lean-forward="true" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/jsondif.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/simple_user_info2Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="62" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../python/venv/lib/python3.7/site-packages/xlwt/Workbook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="362" selection-start-line="362" selection-end-line="362" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/consignor_getTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_by_userIdsTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_all_domainTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="72" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/posixpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/consignor_get.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/auth_get.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/get_with_virtual_info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_by_mobilesTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/mobile_exists_toC.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/realnameTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/getUserByUserIdAndDomainId.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/get_all_domain.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/mobile_existsTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/des_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#48#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/hcbdata/users_basic_info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/sso.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="e#14#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/users_basic_infoTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/auth_getTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="60" column="4" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="65" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/get_with_virtual_infoTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_bootlocale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1789,48 +1436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-691">
-          <caret line="25" column="7" selection-start-line="22" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-            <marker date="1561627592980" expanded="true" signature="121:122" ph="..." />
-            <marker date="1561627592980" expanded="true" signature="1400:1402" ph="..." />
-            <marker date="1561627592980" expanded="true" signature="3909:3911" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="84" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-            <marker date="1561628878937" expanded="true" signature="255:445" ph="..." />
-            <marker date="1561628878937" expanded="true" signature="1935:10527" ph="..." />
-            <marker date="1561628878937" expanded="true" signature="3602:3605" ph="..." />
-            <marker date="1561628878937" expanded="true" signature="10190:10527" ph="..." />
-            <marker date="1561628878937" expanded="true" signature="10526:10527" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/lion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/tests/userCenter_serverTest/vehicle_auth_infoTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1838,9 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1861,22 +1467,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/getAuth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/base/ocr_service.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/sign.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1888,20 +1480,255 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/writeExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="51" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/getAuth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/lion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="84" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/data/getShipperInfo_dev.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/userCenter_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_admin_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/base/admin_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_authenticate_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_doorkeeper_center_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_info_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_uc_auth_center_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_uc_check_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_uc_info_center_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_user_reference_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_useraudit_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_userCenter4x_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_userCenter_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/dev_verifycode_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_admin_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_agreement_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_agreement_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_authenticate_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_doorkeeper_center_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_info_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_new_boss_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_reference_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_uc_auth_center_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_uc_check_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_uc_info_center_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_user_reference_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_useraudit_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_userCenter4x_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_userCenter_app_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/qa_verifycode_service_serviceablity.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/data/requestData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_qa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/serviceability/test_dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/failCrawling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
+        <state relative-caret-position="540">
           <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/usercenter/tools/writeExcel.py">
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/des_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="51" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#23#33#0" expanded="true" />
-            <marker date="1552902430269" expanded="true" signature="2446:3374" ph="..." />
+            <element signature="e#48#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/sso.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/usercenter/utils/httpUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
