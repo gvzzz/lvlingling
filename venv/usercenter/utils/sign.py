@@ -1,5 +1,5 @@
 #coding=utf-8
-
+'''
 import requests
 import base64
 from base64 import b64decode
@@ -73,6 +73,6 @@ class Sign(Singleton):
         form_data.update(sign_data)
         return self.post(dispatch_url, api_url, form_data, json, files)
 
-
+'''
 
 
