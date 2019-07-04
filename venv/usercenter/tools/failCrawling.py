@@ -17,6 +17,7 @@ def getRssFailedReson(jobName,startTime,endTime):
     e_time = time.mktime(time.strptime(endTime, '%Y-%m-%d'))  #转成时间戳
     request_url = "http://http://192.168.198.141:8787/job/"+jobName+"/rssFailed"
     headers = {}
+    headers['Cookie'] = 'JSESSIONID.08c2552e=node0n8pbmy3t2d8713xifsl0fri7s9.node0;'
     response = utils.httpUtil.Get(request_url, headers)
     soup = BeautifulSoup(response, "html.parser")  # 创建soup对象
     tag = soup.find_all('entry')   #找过所有entry的标签的内容
@@ -40,6 +41,7 @@ def getPassRate(jobName,startTime,endTime):
     request_all_url = 'http://192.168.198.141:8787/job/'+jobName+'/rssAll'  #所有的job
     request_failed_url = 'http://192.168.198.141:8787/job/'+jobName+'/rssFailed'       #失败的job
     headers = {}
+    headers['Cookie'] = 'JSESSIONID.08c2552e=node0n8pbmy3t2d8713xifsl0fri7s9.node0;'
     responseAll = utils.httpUtil.Get(request_all_url, headers)
     responseFailed = utils.httpUtil.Get(request_failed_url, headers)
     soupAll = BeautifulSoup(responseAll, "html.parser")  # 创建soup对象
@@ -100,9 +102,9 @@ def getcreate_wikiIDict(key,parent_id):
 
 
 if __name__ == '__main__':
-    #getPassRate("dev_info_app_serviceablity",'2019-01-08','2019-01-09')
-   # getRssFailedReson('uc-doorkeeper-center','2019-01-08','2019-01-09')
-    print(getcreate_wikiIDict('rdTeam', '22105243'))
+    getPassRate("dev_info_app_serviceablity",'2019-07-04','2019-07-05')
+    #getRssFailedReson('uc-doorkeeper-center','2019-07-04','2019-07-05')
+    #print(getcreate_wikiIDict('rdTeam', '22105243'))
 
 
 
