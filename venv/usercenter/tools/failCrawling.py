@@ -37,8 +37,8 @@ def getRssFailedReson(jobName,startTime,endTime):
 def getPassRate(jobName,startTime,endTime):
     s_time = time.mktime(time.strptime(startTime, '%Y-%m-%d'))  # 转成时间戳
     e_time = time.mktime(time.strptime(endTime, '%Y-%m-%d'))  # 转成时间戳
-    request_all_url = 'http://192.168.198.141:8080/jenkins/job/'+jobName+'/rssAll'  #所有的job
-    request_failed_url = 'http://192.168.198.141:8080/jenkins/job/'+jobName+'/rssFailed'       #失败的job
+    request_all_url = 'http://192.168.198.141:8787/job/'+jobName+'/rssAll'  #所有的job
+    request_failed_url = 'http://192.168.198.141:8787/job/'+jobName+'/rssFailed'       #失败的job
     headers = {}
     responseAll = utils.httpUtil.Get(request_all_url, headers)
     responseFailed = utils.httpUtil.Get(request_failed_url, headers)
