@@ -3,8 +3,8 @@ import os
 import sys
 import json
 
-import httpUtil
-import des_utils
+from utils import httpUtil
+from utils import des_utils
 
 
 
