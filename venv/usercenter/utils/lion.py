@@ -3,14 +3,14 @@ import sys
 print(sys.path)
 import os
 #获取项目路径下的目录
-os.chdir('../utils')
+#os.chdir('../utils')
 import httpUtil
 #envIds dev是3 qa是4
 def modifylion(configId,envIds,value,type):
     requesturl = "http://dev-lion.ymmoa.com/lion/config/saveDefaultValueAjax.vhtml"
     headers = {}
     headers[
-        "Cookie"] = "qa_passport=HVCPSJBe4ZIDA5Jdu1O59-iCGuI5dRUt8C_Yof2Z3MjneXBlkC6xtzeVBK3yDiapOHwplKvT0K2XpIZ97XN00AWxe6gsWXRscUA1dW4ujuOSvT8Mapya6IBa770ssgzuv2yVpxAPH3Bw6rB8ep0FSPlXd8SpK9WFPWbdhJ2Jfks; dev_passport=AT8L9xP4LsiHAEUbjPbFjZ_wSLflhfL3NxvmzyVDjgJB3mm-KNaRMX0o9Avo34EDcV3YT8R2etBqEXx8jHS0vm3080qIQclZ4dZzrDh3Rt2L3YYMc2I-Kkqn0p1Y2RS4dckSSE0_MJZwB0TSKal8W4vqVIa9ccTo3hKo5u3rIgs"
+        "Cookie"] = "qa_passport=DEUGVIkwAvaiO-pkn7-WgHrjjM_t4prsbXfiQADo96MfeFewy2MBZwcSEPAdgLJ3GoH8Sx5N-Hbw_raAcHwSlY75NmX04rj9FXgIeOu0E4GELSNBNaF-UzcDu8OqQ5B4mXoKc-l8VEYt-G4KqeYYGUk27b-KcMfsqq0aSNkNbVA; dev_passport=YA9P31HqCljs7egJ6pIQb3Dsax1xDCEJvnLURztJADh5gIpNUE92yoiFJNA8GNWTM0hg0jO5j7P7iVjstj9Ua0XVdQ4MNrI7PaEO2MCjR7mb92doFPgCLyyv7ca_ppqum-ifOBKrSa4jehkepQQNuIC6gT-f_stViDhMlld4xlI"
     headers["Content-Type"] = 'application/x-www-form-urlencoded'
     data = {}
     data["configId"] = configId

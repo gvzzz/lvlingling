@@ -11,6 +11,7 @@ import utils.getIpPort
 #这是pigeon接口需要去机器的host域名，还有parameter1是方法的参数
 def getEnterpriseInfoByAccountId(http_host,account_id):
     url = http_host + "/invoke.json?validate=true&direct=false&token=undefined&group=&url=http%3A%2F%2Fcom.ymm.services%2Fuic%2FenterpriseService&method=getEnterpriseInfoByAccountId&parameterTypes%5B%5D=java.lang.Long"+"&parameters%5B%5D="+account_id
+    "/invoke.json?validate=true&direct=false&token=undefined&group=&parameters%5B%5D=2&url=http%3A%2F%2Fcom.ymm.services%2Fuic%2FaccountRefService&method=getAccountAttrByAccountId&parameterTypes%5B%5D=java.lang.Long"
     headers = {}
     response = utils.httpUtil.Get(url,headers)
     return response

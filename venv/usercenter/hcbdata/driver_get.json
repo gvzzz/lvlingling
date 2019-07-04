@@ -1,0 +1,33 @@
+
+
+{"requsetHeaders":[
+  {
+    "client": "Android_v7.1",
+    "version": "5.14.0",
+    "domainId": 1,
+    "appClientId": 107,
+    "mobile": 13833488078,
+    "code": 8888,
+    "codeType" : "VERIFICATION_CODE",
+    "dfp": "ee3b66e1-9d09-4793-bfa2-f0ed16300b22"
+  },
+  {
+    "client": "Android_v7.1",
+    "version": "5.14.0",
+    "domainId": 1,
+    "appClientId": 107,
+    "mobile": 15670000300,
+    "code": 8888,
+    "codeType" : "VERIFICATION_CODE",
+    "dfp": "ee3b66e1-9d09-4793-bfa2-f0ed16300b22"
+  }
+],
+
+
+  "requestbodys":[
+    {
+      "domainId":1,
+      "userId":15050
+    }
+
+]}

@@ -1,0 +1,22 @@
+{"requestbodys":[
+  {
+    "mobile": 15670000400,
+    "identity": "driver",
+    "userCharacter":""
+},
+  {
+    "mobile": 15670000300,
+    "identity": "driver",
+    "userCharacter":""
+  },
+  {
+    "mobile": 15660000400,
+    "identity": "consignor",
+    "userCharacter": ""
+  },
+  {
+    "mobile": 15660000300,
+    "identity": "consignor",
+    "userCharacter":""
+  }
+]}
