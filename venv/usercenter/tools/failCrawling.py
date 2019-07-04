@@ -15,7 +15,7 @@ import urllib.parse
 def getRssFailedReson(jobName,startTime,endTime):
     s_time = time.mktime(time.strptime(startTime, '%Y-%m-%d'))  #转成时间戳
     e_time = time.mktime(time.strptime(endTime, '%Y-%m-%d'))  #转成时间戳
-    request_url = "http://192.168.198.141:8080/jenkins/job/"+jobName+"/rssFailed"
+    request_url = "http://http://192.168.198.141:8787/job/"+jobName+"/rssFailed"
     headers = {}
     response = utils.httpUtil.Get(request_url, headers)
     soup = BeautifulSoup(response, "html.parser")  # 创建soup对象
