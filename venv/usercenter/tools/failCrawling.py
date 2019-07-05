@@ -17,7 +17,7 @@ def getRssFailedReson(jobName,startTime,endTime):
     e_time = time.mktime(time.strptime(endTime, '%Y-%m-%d'))  #转成时间戳
     request_url = "http://192.168.198.141:8787/job/"+jobName+"/rssFailed"
     headers = {}
-    headers['Cookie'] = 'JSESSIONID.08c2552e=node0n8pbmy3t2d8713xifsl0fri7s9.node0;'
+    headers['Cookie'] = 'ACEGI_SECURITY_HASHED_REMEMBER_ME_COOKIE=cWE6MTU2MzUwMjE3ODc1MToxMjliY2Y4NGI1MmRjZDc3MzFmYzQ5OGQ2ZTc2ZjNiZjllNzQ1YWZlOTk1YTA2YzMyNmY3NzUxMjA0MTU2Yzdh;'
     response = utils.httpUtil.Get(request_url, headers)
     soup = BeautifulSoup(response, "html.parser")  # 创建soup对象
     tag = soup.find_all('entry')   #找过所有entry的标签的内容
@@ -41,7 +41,7 @@ def getPassRate(jobName,startTime,endTime):
     request_all_url = 'http://192.168.198.141:8787/job/'+jobName+'/rssAll'  #所有的job
     request_failed_url = 'http://192.168.198.141:8787/job/'+jobName+'/rssFailed'       #失败的job
     headers = {}
-    headers['Cookie'] = 'JSESSIONID.08c2552e=node0n8pbmy3t2d8713xifsl0fri7s9.node0;'
+    headers['Cookie'] = 'ACEGI_SECURITY_HASHED_REMEMBER_ME_COOKIE=cWE6MTU2MzUwMjE3ODc1MToxMjliY2Y4NGI1MmRjZDc3MzFmYzQ5OGQ2ZTc2ZjNiZjllNzQ1YWZlOTk1YTA2YzMyNmY3NzUxMjA0MTU2Yzdh'
     responseAll = utils.httpUtil.Get(request_all_url, headers)
     responseFailed = utils.httpUtil.Get(request_failed_url, headers)
     soupAll = BeautifulSoup(responseAll, "html.parser")  # 创建soup对象
