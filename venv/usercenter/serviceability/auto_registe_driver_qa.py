@@ -1,5 +1,5 @@
-from base import userCenter_app
-from base import admin_app
+import base.userCenter_app
+import base.admin_app
 from tools import auto_create
 from data import requestData
 import unittest
@@ -11,25 +11,25 @@ class auto_registe_driver_qa_Test(unittest.TestCase):
         #telephone = '13037815083'
         env_url_c = requestData.qa
         print("==============================自动化司机的手机========================================" + telephone)
-        loginResponseJson = userCenter_app.login(env_url_c, telephone, 1)
+        loginResponseJson = base.userCenter_app.login(env_url_c, telephone, 1)
         self.assertEqual(loginResponseJson['result'], 1, "注册登录接口出了问题")
         account_id = loginResponseJson['info']['profileInfo']['userId']
 
         # 第二步开始走提交司机的资料
         driverAuthenticate_path = '../data/driverAuthenticate_qa.json'
         idCard = obj.idCardCreate()
-        driverAuthenticateJson = userCenter_app.driverAuthenticate(env_url_c, driverAuthenticate_path, telephone, idCard)
+        driverAuthenticateJson = base.userCenter_app.driverAuthenticate(env_url_c, driverAuthenticate_path, telephone, idCard)
         self.assertEqual(driverAuthenticateJson['result'], 1, "司机认证资料的提交接口出了问题")
 
         # 第三步开始走司机审核通过的流程
         env_url_b = requestData.qa_background
         shipper_approve_path = "../data/driverauditpass_qa.json"
-        driverauditpassJson = admin_app.driverauditpass(env_url_b, shipper_approve_path, account_id, telephone)
+        driverauditpassJson = base.admin_app.driverauditpass(env_url_b, shipper_approve_path, account_id, telephone)
         self.assertEqual(driverauditpassJson['result'], 1, "司机后台头像审核通过接口出了问题")
 
         # 第四步开始行驶证信息 并且AI审核通过
         submitVehicleLicense_path = '../data/submitVehicleLicense_qa.json'
-        submitVehicleLicenseJson = userCenter_app.submitVehicleLicense(env_url_c, submitVehicleLicense_path, telephone)
+        submitVehicleLicenseJson = base.userCenter_app.submitVehicleLicense(env_url_c, submitVehicleLicense_path, telephone)
         self.assertEqual(submitVehicleLicenseJson['result'], 1, "司机提交行驶证信息接口出了问题")
 
 

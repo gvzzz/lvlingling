@@ -1,5 +1,5 @@
-from base import userCenter_app
-from base import admin_app
+import base.userCenter_app
+import base.admin_app
 from tools import auto_create
 from data import requestData
 import unittest
@@ -11,30 +11,30 @@ class auto_registe_shipper_qa_Test(unittest.TestCase):
         #telephone = '15668000004'
         env_url_c = requestData.dev
         print("====================自动化货主的手机====================="+telephone)
-        loginResponseJson = userCenter_app.login(env_url_c, telephone, 2)
+        loginResponseJson = base.userCenter_app.login(env_url_c, telephone, 2)
         self.assertEqual(loginResponseJson['result'], 1, "注册登录接口出了问题")
         account_id = loginResponseJson['info']['profileInfo']['userId']
         #第二步开始走提交货主的资料
         shipperAuthenticate_path = '../data/shipperAuthenticate_dev.json'
         idCard = obj.idCardCreate()
-        shipperAuthenticateJson = userCenter_app.shipperAuthenticate(env_url_c, shipperAuthenticate_path, telephone, idCard)
+        shipperAuthenticateJson = base.userCenter_app.shipperAuthenticate(env_url_c, shipperAuthenticate_path, telephone, idCard)
         self.assertEqual(shipperAuthenticateJson['result'], 1, "货主认证资料提交接口出了问题")
         #第三步开始走货主审核通过的流程
         env_url_b = requestData.dev_background
         shipper_approve_path = "../data/shipper_approve_dev.json"
-        shipper_approveJson = admin_app.shipper_approve(env_url_b, shipper_approve_path, account_id)
+        shipper_approveJson = base.admin_app.shipper_approve(env_url_b, shipper_approve_path, account_id)
         self.assertEqual(shipper_approveJson['result'], 1, "货主新头像通过接口出了问题")
         #第四步开始提交公司资料
         shipperUploadChangedInfoNew_path = '../data/shipperUploadChangedInfoNew_dev.json'
-        shipperUploadChangedInfoNewJson = userCenter_app.shipperUploadChangedInfoNew(env_url_c,shipperUploadChangedInfoNew_path,telephone)
+        shipperUploadChangedInfoNewJson = base.userCenter_app.shipperUploadChangedInfoNew(env_url_c,shipperUploadChangedInfoNew_path,telephone)
         print(shipperUploadChangedInfoNewJson['result'])
         self.assertEqual(shipperUploadChangedInfoNewJson['result'], 1, "货主公司资料提交接口出了问题")
         # 第五步查询需要资料审核的batchId的信息
         getShipperChanged_path = '../data/getShipperChanged_dev.json'
-        batchId = admin_app.getShipperChanged(env_url_b, getShipperChanged_path, telephone)
+        batchId = base.admin_app.getShipperChanged(env_url_b, getShipperChanged_path, telephone)
         #第六步货主资料审核通过
         auditUserChanged_path = "../data/auditUserChanged_dev.json"
-        auditUserChangedJson = admin_app.auditUserChanged(env_url_b, auditUserChanged_path, account_id, telephone, batchId)
+        auditUserChangedJson = base.admin_app.auditUserChanged(env_url_b, auditUserChanged_path, account_id, telephone, batchId)
         self.assertEqual(auditUserChangedJson['result'], 1, "货主公司资料审核通过接口出了问题")
 
 
