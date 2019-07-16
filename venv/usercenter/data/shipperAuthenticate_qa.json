@@ -1,0 +1,25 @@
+{
+    "picParams":[
+        {
+            "picUrl":"/ymmfile/user-pub/bdf40a6c-7728-4957-9dc3-63d04367a19e",
+            "picType":106,
+            "imgBase64Str":"",
+            "picId":0,
+            "url":"https://qaimage.ymm56.com/ymmfile/user-pub/e3d51e87-5f94-4b67-a72b-3cfe9dfca5f2",
+            "picSource":0
+        },
+        {
+            "picUrl":"/ymmfile/user-pri/59d04cc6-0885-4fb7-b55e-b5ac4f4b290e",
+            "picType":102,
+            "imgBase64Str":"",
+            "picId":0,
+            "url":"https://dev-image56-conf-oss.ymm56.com/ymmfile/user-pri/59d04cc6-0885-4fb7-b55e-b5ac4f4b290e?Expires=1562764559&OSSAccessKeyId=LTAIq0WRi8jPwg5y&Signature=3JHT8V2E27tFktEIdJQQx1rv%2FRY%3D",
+            "picSource":0
+        }
+    ],
+    "idCard":"330127198909306713",
+    "idCardAddress":"",
+    "processType":1,
+    "userName":"自动化货主",
+    "idCardLocationId":0
+}

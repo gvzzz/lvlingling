@@ -1,0 +1,22 @@
+{
+  "idCard": "11010419880403199X",
+  "picParams": [
+    {
+      "picUrl": "/ymmfile/user-pub/bdf40a6c-7728-4957-9dc3-63d04367a19e",
+      "picType": "106"
+    },
+    {
+      "picUrl": "ymmfile/user-pri/aef541fd-9b87-490b-906b-62a02f8ea2b0",
+      "picType": "101"
+    }
+  ],
+  "userName": "自动化司机",
+  "driverLicenseRequestId": "",
+  "truckLoad": 10,
+  "truckLength": 6.8,
+  "brand": "东风",
+  "licenceNo": "渝A12345",
+  "truckBirth": 2019,
+  "truckType": 3,
+  "userProtocol": 6
+}

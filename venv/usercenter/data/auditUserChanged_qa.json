@@ -1,0 +1,21 @@
+{
+    "auth":{
+
+    },
+    "header":{
+        "Authorization":"Basic YV84MDo0OWRjNTJlNmJmMmFiZTVlZjZlMmJiNWIwZjFlZTJkNzY1YjkyMmFlNmNjOGI5NWQzOWRjMDZjMjFjODQ4Zjhj",
+        "ymmoa-passport":"",
+        "Content-Type":"application/json",
+        "Cookie":"qa_passport=Pn_VzWqUpXEldTX9Y2dhNztN2kumlMU6SpPYWkRiOCNTROhuS_kv0151k0x952AnDwTG8NNYbUaAxKjC3b-Hx4dnSRabw5hERjNTfNZRY07oiLzkBoT5lYHBzFYBcwCVOHs4A3XwC-c7M6ZKVokbnijs2I5tOTUXN_ujqanTIr0"
+    },
+    "body":{
+        "userId":"967933835900115673",
+        "batchId":1563193590239,
+        "telephone":15668000004,
+        "shipperTag":"99",
+        "changeType":"202",
+        "platform":0,
+        "auditResult":1,
+        "reasonCodeNotPass":""
+    }
+}

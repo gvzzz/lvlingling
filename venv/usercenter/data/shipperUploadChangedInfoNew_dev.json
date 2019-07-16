@@ -1,0 +1,25 @@
+ {
+    "changeType": "202",
+    "cityId": 310103,
+    "companyAddress": "哈哈哈哈",
+    "companyLicensePicSource": "2",
+    "companyLicenseUrl": "ymmfile/user-pub/bdf40a6c-7728-4957-9dc3-63d04367a19e",
+    "companyName": "自动化测试",
+    "localPicUri": {
+      "authority": {
+        "decoded": "",
+        "encoded": ""
+      },
+      "fragment": {},
+      "path": {
+        "decoded": "/storage/emulated/0/Download/timg(1).jpg",
+        "encoded": "/storage/emulated/0/Download/timg(1).jpg"
+      },
+      "query": {},
+      "scheme": "file",
+      "uriString": "file:///storage/emulated/0/Download/timg(1).jpg",
+      "host": "NOT CACHED",
+      "port": -2
+    },
+    "pageName": "audit_company_info"
+ }

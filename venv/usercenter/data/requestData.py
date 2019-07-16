@@ -48,6 +48,11 @@ authenticate_service_test_suite_id = 497
 #服务的url
 qa = "http://qa.ymm56.com"
 dev = "http://dev.ymm56.com"
+
+
+#大后台url
+qa_background = 'http://qa.ymmoa.com'
+dev_background = 'http://dev-boss.ymmoa.com'
 #new_boss
 getuserstatus_request = "/new_boss/users/getuserstatus"
 getuserstatus_header_qa= {"Content-Type": 'application/json',"Authorization":"Basic YV83MDo0OWRjNTJlNmJmMmFiZTVlZjZlMmJiNWIwZjFlZTJkNzY1YjkyMmFlNmNjOGI5NWQzOWRjMDZjMjFjODQ4Zjhj"}
@@ -60,6 +65,11 @@ checkUserStatus_request = "/ymm-userCenter-app/user/checkUserStatus"
 getloginverifycode_request = "/ymm-userCenter-app/user/getloginverifycode"
 login_request = "/ymm-userCenter-app/account/login"
 partnerToken_request = '/ymm-userCenter-app/token/partnerToken'
+shipperAuthenticate_request = '/ymm-userCenter-app/account/shipperAuthenticate'
+shipperUploadChangedInfoNew_request = '/ymm-userCenter-app/authenticate/shipperUploadChangedInfoNew'
+driverAuthenticate_request = '/ymm-userCenter-app/account/driverAuthenticate'
+submitVehicleLicense_request = '/ymm-userCenter-app/account/driver/submitVehicleLicense'
+
 
 
 #info_app
@@ -73,6 +83,10 @@ getCopilotlist_request = "/ymm-reference-app/copilot/list"
 #admin_app
 findByTelephone_request = "/ymm-admin-app/audit/review/findByTelephone"
 getTelephoneAudit_request = "/ymm-admin-app/selfUpdate/getTelephoneAudit"
+shipper_approve_request = "/ymm-admin-app/audit/newshipper/approve"
+auditUserChanged_request = '/ymm-admin-app/audit/driver/auditUserChanged'
+getShipperChanged_request = '/ymm-admin-app/audit/driver/getShipperChanged'
+driverauditpass_request = '/ymm-admin-app/audit/newdriver/driverauditpass'
 
 
 #clientinfo
