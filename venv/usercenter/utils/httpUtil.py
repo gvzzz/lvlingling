@@ -149,9 +149,11 @@ if __name__ == '__main__':
         "code": 8888,
         "codeType" : "VERIFICATION_CODE",
         "dfp": "ee3b66e1-9d09-4793-bfa2-f0ed16300b22"
+
 }
         response_dict = obj.post("http://sso.dev-ag.56qq.com/v1.1/mobile/dispatch.do","/common/app/mobile/login-by-code.do", form_data, None)
         #response_dict = obj.post("http://sso.qa-sh.56qq.com/v1.1/mobile/dispatch.do", "/common/app/mobile/login-by-code.do", form_data,None)
+        print(response_dict)
         token = {'sid': response_dict['content']['id'], 'st': response_dict['content']['token']}
         form_data1 = {
                 "st": token.get("st"),

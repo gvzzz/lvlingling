@@ -56,14 +56,15 @@ def getSso(path,env):
     response = httpUtil.Post(request_url,headers,PostJson)
     responseToJson = json.loads(response)
     ymmoa_passport = responseToJson["result"]["passport"]
-    print (ymmoa_passport)
+    return ymmoa_passport
+
 
 
 if __name__ == '__main__':
     #generateAuthApi(13423300016,1,"dev")
     #generateAuthApi(15660000090, 2, 'dev')
-    #generateAuthApi(15670000101, 1, 'beta')
+    #generateAuthApi(15668000004, 2, 'beta')
     path = "../data/sso_qa.json"
-    getSso(path,"qa")
+    getSso(path, "qa")
 
 
