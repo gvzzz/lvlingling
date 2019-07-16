@@ -1,5 +1,5 @@
-import userCenter_app
-import admin_app
+from base import userCenter_app
+from base import admin_app
 from tools import auto_create
 from data import requestData
 import unittest
